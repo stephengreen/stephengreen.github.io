@@ -1,0 +1,892 @@
+/*-- scss:defaults --*/
+
+$ui-font: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+
+/*-- scss:rules --*/
+
+// ── Base typography ─────────────────────────────────────────
+
+body {
+  line-height: 1.78;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+
+h2 {
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.6rem;
+}
+
+h3 { font-size: 1.2rem; font-weight: 600; }
+h4 { font-size: 1.05rem; font-weight: 600; }
+
+// ── Navbar ──────────────────────────────────────────────────
+
+.navbar {
+  font-family: $ui-font;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 0.88rem;
+  padding: 0.6rem 0;
+
+  .navbar-brand {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.73rem;
+    letter-spacing: 0.1em;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  // Navbar social icons
+  .navbar-nav .nav-link iconify-icon {
+    vertical-align: -0.15em;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+
+  .navbar-nav .nav-link:hover iconify-icon {
+    opacity: 1;
+  }
+}
+
+[data-bs-theme="dark"] .navbar {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+// ── Quarto <p> collapse ─────────────────────────────────────
+// Quarto wraps inline div content in <p> tags, adding margins.
+// Collapse these inside layout components.
+
+.hero-home, .hero-text, .hero-links, .hero-photo-wrap,
+.hero-subtitle,
+.section-label,
+.featured-pub-body, .featured-pub-image, .pub-journal, .pub-summary, .pub-links,
+.news-item .news-date, .news-item .news-title,
+.software-logo, .software-links,
+.cv-entry .cv-dates, .cv-entry .cv-role, .cv-entry .cv-institution, .cv-entry .cv-details,
+.research-preview,
+.talk-entry .talk-meta, .talk-entry .talk-links,
+.talk-card .talk-card-body, .talk-card .talk-meta,
+.research-area-image {
+  > p {
+    margin-bottom: 0;
+  }
+}
+
+// ── Homepage ────────────────────────────────────────────────
+
+.hero-band {
+  background: linear-gradient(180deg, rgba(0,0,0,0.018) 0%, transparent 100%);
+  padding: 3.5rem 0 2.5rem;
+}
+
+[data-bs-theme="dark"] .hero-band {
+  background: linear-gradient(180deg, rgba(255,255,255,0.015) 0%, transparent 100%);
+}
+
+.hero-home {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.hero-photo-wrap {
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  }
+}
+
+// The h1 creates a <section class="hero-text">, so target it
+.hero-text,
+section.hero-text {
+  > h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.hero-subtitle {
+  font-family: $ui-font;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #5a6577;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.hero-bio {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+// Body text left-aligned within the centered hero
+.hero-text {
+  text-align: left;
+
+  > h1, > section > h1 {
+    text-align: center;
+  }
+}
+
+.hero-links {
+  font-family: $ui-font;
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 1rem;
+  justify-content: center;
+
+  // Override Quarto's wrapping of links in a <p>
+  > p {
+    display: flex;
+    gap: 1.1rem;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: inherit;
+    opacity: 0.35;
+    transition: all 0.2s;
+    line-height: 1;
+
+    &:hover {
+      opacity: 1;
+      color: var(--bs-primary);
+    }
+  }
+
+  iconify-icon {
+    font-size: 1.3rem !important;
+  }
+}
+
+[data-bs-theme="dark"] .hero-subtitle {
+  color: #7a8ba0;
+}
+
+// Home content sections
+.home-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.home-band {
+  padding: 2.5rem 0;
+}
+
+.home-band--warm {
+  background: rgba(0,0,0,0.012);
+}
+
+[data-bs-theme="dark"] .home-band--warm {
+  background: rgba(255,255,255,0.012);
+}
+
+// Section label
+.section-label {
+  font-family: $ui-font;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--bs-primary);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid;
+  display: inline-block;
+}
+
+// Featured publication
+.featured-pub-block {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+
+  .featured-pub-image {
+    flex-shrink: 0;
+    width: 180px;
+
+    img {
+      width: 100%;
+      border-radius: 3px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    }
+  }
+
+  .featured-pub-body {
+    flex: 1;
+
+    .pub-journal {
+      font-family: $ui-font;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--bs-primary);
+      margin-bottom: 0.2rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+    }
+
+    .pub-summary {
+      font-size: 0.93rem;
+      color: #5a6577;
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+
+    .pub-links {
+      font-family: $ui-font;
+      font-size: 0.82rem;
+    }
+  }
+}
+
+[data-bs-theme="dark"] .featured-pub-block .featured-pub-body .pub-summary {
+  color: #7a8ba0;
+}
+
+@media (max-width: 640px) {
+  .featured-pub-block {
+    flex-direction: column;
+    .featured-pub-image { width: 100%; max-width: 260px; }
+  }
+}
+
+// Research previews
+.research-preview {
+  margin-bottom: 1.75rem;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(30, 90, 150, 0.15);
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+
+    a { text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+
+  p {
+    font-size: 0.93rem;
+    color: #5a6577;
+    margin-bottom: 0.2rem;
+    line-height: 1.7;
+  }
+
+  .read-more {
+    font-family: $ui-font;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+}
+
+[data-bs-theme="dark"] .research-preview {
+  border-left-color: rgba(107, 163, 214, 0.2);
+  p { color: #7a8ba0; }
+}
+
+// News items - use flex but handle <p> wrapping
+.news-item {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+
+  &:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .news-date {
+    font-family: $ui-font;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #8896a8;
+    white-space: nowrap;
+    min-width: 72px;
+    padding-top: 0.15rem;
+  }
+
+  .news-title {
+    font-size: 0.93rem;
+    line-height: 1.5;
+  }
+}
+
+[data-bs-theme="dark"] .news-item {
+  border-bottom-color: rgba(255,255,255,0.04);
+}
+
+// Software block
+.software-block {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background: rgba(30, 90, 150, 0.04);
+  border-radius: 4px;
+  border-left: 3px solid var(--bs-primary);
+
+  .software-logo img { width: 70px; }
+
+  .software-body {
+    flex: 1;
+    font-size: 0.93rem;
+
+    strong { font-size: 1rem; }
+
+    .software-links {
+      font-family: $ui-font;
+      font-size: 0.82rem;
+      font-weight: 500;
+      margin-top: 0.3rem;
+    }
+  }
+}
+
+[data-bs-theme="dark"] .software-block {
+  background: rgba(107, 163, 214, 0.05);
+}
+
+// Section divider
+.section-rule {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  margin: 0;
+}
+
+[data-bs-theme="dark"] .section-rule {
+  border-top-color: rgba(255, 255, 255, 0.06);
+}
+
+// ── Research overview ────────────────────────────────────────
+
+.research-area {
+  margin-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+  &:last-child { border-bottom: none; padding-bottom: 0; }
+
+  > h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+
+    a { text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+
+  .research-area-image {
+    margin-bottom: 1.25rem;
+
+    img {
+      width: 100%;
+      max-width: 550px;
+      border-radius: 4px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.06);
+    }
+
+    // Hide Quarto's auto-caption since we use alt text
+    .quarto-figure { margin-bottom: 0; }
+    figcaption {
+      font-family: $ui-font;
+      font-size: 0.78rem;
+      color: #8896a8;
+      margin-top: 0.4rem;
+      line-height: 1.5;
+    }
+  }
+
+  .research-area-content {
+    p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .read-more {
+      font-family: $ui-font;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+  }
+}
+
+[data-bs-theme="dark"] .research-area {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+
+  .research-area-image figcaption { color: #7a8ba0; }
+}
+
+// ── Timeline (research pages) ───────────────────────────────
+// Redesigned: simpler, no pseudo-elements for dots
+
+.timeline {
+  border-left: 2px solid rgba(30, 90, 150, 0.12);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0 1.5rem 0.5rem;
+
+  > p {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+    font-size: 0.95rem;
+    line-height: 1.75;
+
+    // Year dot
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1.5rem;
+      top: 0.6em;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--bs-primary);
+      transform: translateX(calc(-50% - 1px));
+    }
+
+    strong:first-child {
+      font-family: $ui-font;
+      color: var(--bs-primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+  }
+}
+
+[data-bs-theme="dark"] .timeline {
+  border-left-color: rgba(107, 163, 214, 0.12);
+}
+
+// ── CV layout ───────────────────────────────────────────────
+// Clean table-style instead of timeline with dots
+
+.cv-timeline {
+  margin-bottom: 1rem;
+
+  // Remove the pseudo-element line
+  &::before { display: none; }
+
+  .cv-entry {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 0 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    padding-left: 0;
+
+    // Remove the dot pseudo-element
+    &::before { display: none; }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .cv-dates {
+      font-family: $ui-font;
+      font-size: 0.85rem;
+      color: var(--bs-primary);
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      padding-top: 0.15rem;
+    }
+
+    .cv-role {
+      font-weight: 600;
+      font-size: 1.02rem;
+      grid-column: 2;
+    }
+
+    .cv-institution {
+      font-family: $ui-font;
+      font-size: 0.92rem;
+      color: #5a6577;
+      grid-column: 2;
+    }
+
+    .cv-details {
+      font-size: 0.92rem;
+      color: #5a6577;
+      grid-column: 2;
+    }
+  }
+}
+
+[data-bs-theme="dark"] .cv-timeline {
+  .cv-entry {
+    border-bottom-color: rgba(255,255,255,0.04);
+  }
+  .cv-entry .cv-institution,
+  .cv-entry .cv-details { color: #7a8ba0; }
+}
+
+@media (max-width: 480px) {
+  .cv-timeline .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    .cv-role, .cv-institution, .cv-details {
+      grid-column: 1;
+    }
+  }
+}
+
+// ── Team ────────────────────────────────────────────────────
+
+.team-card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  height: 100%;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.9rem;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  }
+
+  .team-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .team-role {
+    font-family: $ui-font;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.4rem;
+  }
+
+  .team-role--pi { color: var(--bs-primary); }
+  .team-role--postdoc { color: #2e7d5b; }
+  .team-role--fellow { color: #b8860b; }
+  .team-role--phd { color: #6b5ba8; }
+
+  .team-meta {
+    font-family: $ui-font;
+    font-size: 0.78rem;
+    color: #8896a8;
+    margin-bottom: 0.4rem;
+  }
+
+  .team-desc {
+    font-size: 0.85rem;
+    color: #5a6577;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+}
+
+.avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.9rem;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+
+.avatar-blue { background: #4a7fb5; }
+.avatar-purple { background: #7b6ba8; }
+.avatar-teal { background: #3a8f7d; }
+.avatar-rose { background: #b85c6f; }
+
+[data-bs-theme="dark"] .team-card {
+  .team-meta { color: #7a8ba0; }
+  .team-desc { color: #7a8ba0; }
+}
+
+// ── Publication highlights ──────────────────────────────────
+
+.pub-highlight {
+  padding: 1rem 0;
+
+  .pub-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+  }
+
+  .pub-venue {
+    font-family: $ui-font;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bs-primary);
+    margin-bottom: 0.2rem;
+  }
+
+  .pub-desc {
+    font-size: 0.9rem;
+    color: #5a6577;
+  }
+}
+
+[data-bs-theme="dark"] .pub-highlight {
+  .pub-desc { color: #7a8ba0; }
+}
+
+// ── Full bibliography ───────────────────────────────────────
+
+// Year group headings
+.year-group h2 {
+  font-family: $ui-font;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--bs-primary);
+  border-bottom: 2px solid;
+  padding-bottom: 0.25rem;
+  margin-top: 2.5rem;
+  letter-spacing: 0.03em;
+}
+
+// Hide the auto-generated "References" appendix heading
+#quarto-appendix .quarto-appendix-heading {
+  display: none;
+}
+
+// Hide the [N] numbering since we re-sorted by year
+#refs .csl-left-margin {
+  display: none;
+}
+
+#refs .csl-right-inline {
+  margin: 0;
+  padding: 0;
+}
+
+#refs .csl-entry {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+  font-size: 0.92rem;
+}
+
+[data-bs-theme="dark"] #refs .csl-entry {
+  border-bottom-color: rgba(255,255,255,0.03);
+}
+
+// ── Buttons ─────────────────────────────────────────────────
+
+.btn {
+  font-family: $ui-font;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.4rem 1.15rem;
+  border-radius: 3px;
+}
+
+// ── Talks ──────────────────────────────────────────────────
+
+// Grid of talk cards with YouTube thumbnails
+.talk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .talk-grid { grid-template-columns: 1fr; }
+}
+
+.talk-card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.2s;
+
+  &:hover { box-shadow: 0 3px 16px rgba(0, 0, 0, 0.06); }
+
+  .talk-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+  }
+
+  .talk-card-body {
+    padding: 0.9rem 1rem;
+
+    p {
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 0.15rem;
+
+      a { text-decoration: none; &:hover { text-decoration: underline; } }
+    }
+
+    // Venue line (second paragraph)
+    > p:nth-of-type(2) {
+      font-size: 0.85rem;
+      color: #5a6577;
+    }
+
+    .talk-slides-link {
+      font-family: $ui-font;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+  }
+}
+
+[data-bs-theme="dark"] .talk-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+
+  .talk-card-body > p:nth-of-type(2) { color: #7a8ba0; }
+}
+
+// Talk meta label (Invited, Keynote, etc.)
+.talk-meta {
+  font-family: $ui-font;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--bs-primary);
+  margin-bottom: 0.15rem;
+
+  > p { margin-bottom: 0; }
+}
+
+// Simple list talk entries (lecture series)
+.talk-entry {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:last-child { border-bottom: none; }
+
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    line-height: 1.4;
+
+    a { text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+
+  > p {
+    font-size: 0.9rem;
+    color: #5a6577;
+    margin-bottom: 0.3rem;
+  }
+
+  .talk-links {
+    font-family: $ui-font;
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+
+    a { text-decoration: none; &:hover { text-decoration: underline; } }
+  }
+}
+
+[data-bs-theme="dark"] .talk-entry {
+  border-bottom-color: rgba(255, 255, 255, 0.05);
+  > p { color: #7a8ba0; }
+}
+
+// ── Footer ──────────────────────────────────────────────────
+
+.nav-footer {
+  font-family: $ui-font;
+  font-size: 0.88rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+
+  a {
+    color: inherit;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    &:hover { opacity: 1; }
+  }
+
+  // Social icons in footer
+  iconify-icon {
+    font-size: 1.1rem !important;
+    vertical-align: -0.15em;
+  }
+}
+
+[data-bs-theme="dark"] .nav-footer {
+  border-top-color: rgba(255, 255, 255, 0.06);
+}
+
+// ── Content pages ───────────────────────────────────────────
+
+.quarto-title-block {
+  margin-bottom: 2rem;
+}
+
+.quarto-title .title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+blockquote {
+  border-left: 3px solid var(--bs-primary);
+  padding-left: 1.25rem;
+  font-style: italic;
+  color: #5a6577;
+}
+
+[data-bs-theme="dark"] blockquote {
+  color: #7a8ba0;
+}
+
+.column-margin, .margin-caption {
+  font-family: $ui-font;
+  font-size: 0.83rem;
+}
+
+.lightbox img {
+  cursor: zoom-in;
+}
+
+@media (max-width: 768px) {
+  h1, .quarto-title .title { font-size: 1.8rem; }
+}

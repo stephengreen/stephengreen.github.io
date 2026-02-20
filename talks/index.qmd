@@ -1,0 +1,149 @@
+---
+title: Talks
+toc: true
+---
+
+Over 80 research presentations, including more than 50 invited talks at international conferences, workshops, and seminars. Below is a selection of recent recorded talks. See my [CV](/cv/) for the full list.
+
+
+## Selected Recorded Talks
+
+::: {.talk-grid}
+
+::: {.talk-card}
+[![](https://img.youtube.com/vi/gl5DchHeQF0/mqdefault.jpg){.talk-thumb}](https://youtu.be/gl5DchHeQF0)
+
+::: {.talk-card-body}
+::: {.talk-meta}
+Invited &middot; 2025
+:::
+**[AI/ML for Gravitational-Wave Data Analysis](https://youtu.be/gl5DchHeQF0)**
+
+The Future of Gravitational-Wave Astronomy, ICTS Bangalore
+:::
+:::
+
+::: {.talk-card}
+[![](https://img.youtube.com/vi/XN9DNp5fTn8/mqdefault.jpg){.talk-thumb}](https://youtu.be/XN9DNp5fTn8)
+
+::: {.talk-card-body}
+::: {.talk-meta}
+Keynote &middot; 2022
+:::
+**[Simulation-Based Inference for Gravitational Waves](https://youtu.be/XN9DNp5fTn8)**
+
+Bayesian Deep Learning for Cosmology, APC Paris
+
+[Slides (PDF)](https://indico.in2p3.fr/event/26887/contributions/111734/attachments/71719/102177/apc-2022-b.pdf){.talk-slides-link}
+:::
+:::
+
+::: {.talk-card}
+[![](https://img.youtube.com/vi/v0z2mb-pvs4/mqdefault.jpg){.talk-thumb}](https://youtu.be/v0z2mb-pvs4)
+
+::: {.talk-card-body}
+::: {.talk-meta}
+Invited Seminar &middot; 2023
+:::
+**[Machine Learning for Gravitational-Wave Astronomy](https://youtu.be/v0z2mb-pvs4)**
+
+Gr@v Seminar, University of Aveiro
+:::
+:::
+
+::: {.talk-card}
+[![](https://img.youtube.com/vi/SzWH2Xd2jEA/mqdefault.jpg){.talk-thumb}](https://www.youtube.com/watch?v=SzWH2Xd2jEA)
+
+::: {.talk-card-body}
+::: {.talk-meta}
+Invited &middot; 2021
+:::
+**[Real-time GW Parameter Estimation Using Machine Learning](https://www.youtube.com/watch?v=SzWH2Xd2jEA)**
+
+Source Inference and PE in GW Astronomy, IPAM UCLA
+
+[Slides (PDF)](http://helper.ipam.ucla.edu/publications/gwaws3/gwaws3_17049.pdf){.talk-slides-link}
+:::
+:::
+
+::: {.talk-card}
+[![](https://img.youtube.com/vi/WGzDGs7LN-0/mqdefault.jpg){.talk-thumb}](https://youtu.be/WGzDGs7LN-0)
+
+::: {.talk-card-body}
+::: {.talk-meta}
+Invited Seminar &middot; 2021
+:::
+**[Simulation-Based Inference for Gravitational Waves](https://youtu.be/WGzDGs7LN-0)**
+
+SISSA & IFPU Gravity Webinar, Trieste
+:::
+:::
+
+::: {.talk-card}
+[![](https://img.youtube.com/vi/HB-Rw5kRUfg/mqdefault.jpg){.talk-thumb}](https://www.youtube.com/watch?v=HB-Rw5kRUfg&t=2967s)
+
+::: {.talk-card-body}
+::: {.talk-meta}
+Contributed &middot; 2020
+:::
+**[Teukolsky Formalism for Nonlinear Kerr Perturbations](https://www.youtube.com/watch?v=HB-Rw5kRUfg&t=2967s)**
+
+Capra Meeting, Perimeter Institute
+:::
+:::
+
+:::
+
+
+## Lecture Series
+
+::: {.talk-entry}
+::: {.talk-meta}
+Lecturer &middot; 2023
+:::
+
+### Machine Learning for Gravitational Waves
+
+Kavli-Villum Summer School on Gravitational Waves, Corfu, Greece
+:::
+
+::: {.talk-entry}
+::: {.talk-meta}
+Lecturer &middot; 2022
+:::
+
+### GW Parameter Estimation with Bayesian Machine Learning
+
+LISA Data Analysis School, Toulouse, France
+:::
+
+::: {.talk-entry}
+::: {.talk-meta}
+Lecturer &middot; 2021
+:::
+
+### [Machine Learning for GW Data Analysis](https://imprs-gw-lectures.aei.mpg.de/2021-making-sense-of-data/week-4/)
+
+IMPRS Course on Statistics for GW Astronomy, AEI
+
+::: {.talk-links}
+[{{< iconify mdi:play-circle >}} Recordings & Slides](https://imprs-gw-lectures.aei.mpg.de/2021-making-sense-of-data/week-4/)
+:::
+:::
+
+
+## Recent Invited Presentations
+
+A selection of recent invited seminars and conference talks (2024--2025):
+
+- The Future of Gravitational Wave Astronomy, ICTS, Bangalore (2025)
+- Workshop on Scientific ML for GW Astronomy, ICERM, Brown University (2025)
+- CENTRA Seminar, Instituto Superior T&eacute;cnico, Lisbon (2025)
+- Gravity Seminars at University of Mississippi, KU Leuven, University of Milan Bicocca, Universitat de les Illes Balears (2025)
+- ICG Colloquium, University of Portsmouth (2024)
+- Challenges and Future Perspectives in GW Astronomy, Lorentz Center, Leiden (2024)
+- PAX IX Workshop (panelist), King's College London (2024)
+- Dawn VII Workshop (panelist), University of British Columbia (2024)
+- Gravity Seminar, Niels Bohr Institute, Copenhagen (2024)
+- Geometry, Analysis and Gravitation Seminar, Queen Mary, London (2024)
+- Gravity Seminar, Cardiff University (2024)

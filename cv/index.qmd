@@ -1,0 +1,235 @@
+---
+title: Curriculum Vitae
+toc: true
+---
+
+[{{< iconify mdi:file-pdf-box size=1.2em >}} Download PDF](cv.pdf){.btn .btn-primary .mb-4}
+
+## Experience
+
+::: {.cv-timeline}
+
+::: {.cv-entry}
+::: {.cv-dates}
+2025 -- present
+:::
+::: {.cv-role}
+Principal Research Fellow
+:::
+::: {.cv-institution}
+University of Nottingham, School of Mathematical Sciences
+:::
+::: {.cv-details}
+Permanent, research-only (equivalent to Associate Professor). Member of LIGO Scientific Collaboration since 2018. Member of LISA Consortium since 2021.
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-dates}
+2022 -- 2025
+:::
+::: {.cv-role}
+Senior Research Fellow
+:::
+::: {.cv-institution}
+University of Nottingham, School of Mathematical Sciences
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-dates}
+2021 -- 2022
+:::
+::: {.cv-role}
+Senior Scientist
+:::
+::: {.cv-institution}
+Max Planck Institute for Gravitational Physics, Potsdam-Golm, Germany
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-dates}
+2017 -- 2021
+:::
+::: {.cv-role}
+Junior Scientist / Postdoctoral Researcher
+:::
+::: {.cv-institution}
+Max Planck Institute for Gravitational Physics, Potsdam-Golm, Germany
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-dates}
+2014 -- 2017
+:::
+::: {.cv-role}
+Postdoctoral Researcher
+:::
+::: {.cv-institution}
+Perimeter Institute for Theoretical Physics, Waterloo, Canada
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-dates}
+2012 -- 2014
+:::
+::: {.cv-role}
+CITA National Postdoctoral Fellow
+:::
+::: {.cv-institution}
+University of Guelph, Department of Physics, Canada
+:::
+::: {.cv-details}
+Adviser: Luis Lehner
+:::
+:::
+
+:::
+
+## Education
+
+::: {.cv-timeline}
+
+::: {.cv-entry}
+::: {.cv-dates}
+2012
+:::
+::: {.cv-role}
+Ph.D. in Physics
+:::
+::: {.cv-institution}
+University of Chicago
+:::
+::: {.cv-details}
+Thesis: *Nonlinear Backreaction in Cosmology*. Adviser: Robert M. Wald.
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-dates}
+2006
+:::
+::: {.cv-role}
+S.M. in Physical Sciences
+:::
+::: {.cv-institution}
+University of Chicago
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-dates}
+2005
+:::
+::: {.cv-role}
+Honours B.Sc. in Mathematics and Physics with High Distinction
+:::
+::: {.cv-institution}
+University of Toronto (Trinity College)
+:::
+:::
+
+:::
+
+## Funding
+
+### Grants and Fellowships
+
+- **UKRI Future Leaders Fellowship** (2024--2028)
+  *AI-Driven Inference for Gravitational Waves: Accelerating Discoveries in Fundamental Physics.*
+  Amount: £1,522,003. Role: Fellow.
+
+- **STFC Gravitational Waves Consolidated Grant** (2025--2028)
+  *Precision Gravity with LIGO-Virgo-KAGRA.*
+  Amount: £363,058. Role: Project co-Lead.
+
+- **Nottingham Research Fellowship** (2022--2025)
+  *Black holes, gravitational waves, and machine learning probes.*
+  Amount: £221,500 (salary + £75,000 research funds, linked to permanent position). Role: Fellow.
+
+### Supervised Fellowships
+
+- **1851 Research Fellowship** (2025--2028)
+  Fellow: Dr. Matthew Mould. *Uncovering black-hole binary origins with gravitational waves and machine learning.* Amount: £236,050.
+
+
+## Teaching & Supervision
+
+### Postdoctoral Researchers
+
+- Alexandre Göttel (Nottingham, 2025--present)
+- Lorenzo Pompili (Nottingham, 2025--present)
+- Matthew Mould (Nottingham, 2025--present, 1851 Research Fellow)
+
+### PhD Students Supervised
+
+- Cecilia Fabbri (Nottingham, 2024--present)
+- Jacopo Lestingi (Nottingham, 2023--present)
+- Alex Roussopoulos (Nottingham, 2023--present)
+
+### PhD Students Co-supervised
+
+- Annalena Kofler (MPI-IS, 2023--present)
+- Jonas Wildberger (MPI-IS, 2021--2023)
+- Maximilian Dax (MPI-IS, 2020--2025)
+- Nihar Gupte (AEI, 2021--2022)
+- Pablo Bosch (Perimeter, 2015--2019)
+
+### Schools
+
+- **Kavli-Villum Summer School on Gravitational Waves**, Corfu, Greece (2023)
+  Lecturer, "Machine Learning for Gravitational Waves"
+- **LISA Data Analysis: From Classical Methods to Machine Learning**, Toulouse, France (2022)
+  Lecturer, "GW Parameter Estimation with Bayesian Machine Learning"
+- **Numerical Methods in Gravity and Holography**, Universidad de Concepción, Chile (2017)
+  Lecturer, "Stability of Gravitational Systems on Bounded Domains"
+
+### Courses
+
+- Lecturer, ML component of IMPRS course on statistics for GW astronomy, AEI (2021)
+- Grader, graduate general relativity, University of Chicago (2008, 2010--2012)
+- Teaching assistant, introductory physics, University of Chicago (2005--2007)
+
+
+## Service
+
+### Conference Organizing
+
+- GWFreeride Workshop, Sexten Center for Astrophysics, Italy (2026)
+- GW:UK, University of Nottingham (2026)
+- Nonlinear Black Hole Perturbation Theory, University of Nottingham (2025)
+- Tales of Gravity, University of Nottingham (2025)
+- 26th Midwest Relativity Meeting, Perimeter Institute (2016)
+
+### Referee Activities
+
+Astronomy & Astrophysics, Classical and Quantum Gravity, European Physical Journal C, JCAP, JHEP, MNRAS, Nature Astronomy, Nature Communications, Physics Letters B, Physical Review Letters, Physical Review D
+
+### Other
+
+- AEI Colloquium Series organizer (2019--2022)
+- AEI Astrophysical and Cosmological Relativity Seminar organizer (2018--2019)
+- PhD admissions committee, ACR Division, MPI for Gravitational Physics (2020--2022)
+
+
+## Selected Awards
+
+- Marie Skłodowska-Curie Actions Seal of Excellence (2017)
+- CITA National Fellowship (2012--2014)
+- Nathan Sugarman Award for excellence in graduate research, Enrico Fermi Institute (2012)
+- Blue Apple Award for best student talk, Midwest Relativity Meeting (2011)
+- NSERC Postgraduate Scholarship D (2007--2010)
+- Chancellor's Gold Medal in Science, Trinity College, University of Toronto (2005)
+
+
+## Publications
+
+See the [Publications page](/publications/) for a full list and highlighted papers.
+
+
+## Presentations
+
+Over 80 research talks, including more than 50 invited presentations. See the [Talks page](/talks/) for selected recordings, or the CV PDF for the full list.

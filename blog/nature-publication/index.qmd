@@ -1,0 +1,24 @@
+---
+title: "Dingo-BNS Paper Published in Nature"
+author: "Stephen Green"
+date: "2025-03-05"
+categories: [news, paper, dingo]
+image: "bns.jpg"
+nocite: |
+    @Dax:2024mcn
+---
+
+I'm very happy to share that the paper **"Real-time inference for binary neutron star mergers using machine learning"** has been published in [*Nature*](https://doi.org/10.1038/s41586-025-08593-z).
+
+In this work, led by [Max Dax](https://max-dax.github.io), we showed that neural posterior estimation can be used to enable one-second inference for binary neutron stars (BNSs). We obtain complete inference results (including sky localization, orientation, component masses and spins) without making any approximations. Fast inference like this is crucial for multimessenger astronomy, as it enables telescopes to find BNS mergers in the sky as early as possible --- even before the merger takes place.
+
+![Artist representation of multi-messenger BNS observation. Gravitational waves detected by LIGO-Virgo-KAGRA can be used to localize the source in the sky and perform follow-up electromagnetic observations.](bns.jpg)
+
+Our approach hinges on two key advancements to our [Dingo](https://github.com/dingo-gw/dingo) framework:
+
+* **Heterodyning.** We take advantage of the known chirping nature of BNS waveforms to factor out the bulk of the signal. Namely, we know from general relativity that the phase of the waveform, in frequency domain, goes to leading order as
+$$\varphi = \frac{3}{128}\left(\frac{\pi G\mathcal M f}{c^3}\right)^{-5/3},$$
+where $\mathcal M = (m_1 m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass of the system, $f$ the frequency, and $c$ and $G$ the speed of light and gravitational constant, respectively. By multiplying the data by $e^{i\varphi}$ we effectively cancel out most of the oscillations.
+* **Multibanding.** We use a coarser resolution at higher frequencies, enabling greater compression of the data for input to the neural network.
+
+Together, heterodyning and multibanding greatly simplify the data and reduce its dimensionality. However, to successfully heterodyne, it is necessary to know an approximation to the chirp mass.

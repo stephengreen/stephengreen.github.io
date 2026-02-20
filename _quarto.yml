@@ -1,0 +1,87 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - CNAME
+    - .nojekyll
+  # pre-render: python scripts/fetch_inspire.py
+
+  preview:
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+website:
+  title: "Stephen Green"
+  image: "profile.jpg"
+  site-url: https://stephenrgreen.com
+  description: "{{< var description >}}"
+  open-graph: true
+  twitter-card: true
+
+  navbar:
+    background: light
+    pinned: true
+
+    left:
+      - text: "Research"
+        href: research/index.qmd
+      - text: "Publications"
+        href: publications/index.qmd
+      - text: "Talks"
+        href: talks/index.qmd
+      - text: "Team"
+        href: team/index.qmd
+      - text: "News"
+        href: blog/index.qmd
+      - text: "CV"
+        href: cv/index.qmd
+
+    right:
+      - text: "{{< iconify fa6-brands:github size=1.2em title='GitHub' >}}"
+        href: https://github.com/{{< var github >}}
+        aria-label: GitHub
+      - text: "{{< iconify fa6-brands:bluesky size=1.2em title='Bluesky' >}}"
+        href: https://bsky.app/profile/{{< var bluesky >}}
+        aria-label: Bluesky
+      - text: "{{< iconify academicons:google-scholar size=1.3em title='Google Scholar' >}}"
+        href: https://scholar.google.com/citations?user={{< var google-scholar >}}&hl=en
+        aria-label: Google Scholar
+      - text: "{{< iconify mdi:email-outline size=1.3em title='Email' >}}"
+        href: "mailto:{{< var email >}}"
+        aria-label: Email
+
+  search:
+    location: navbar
+    type: textbox
+
+  page-footer:
+    left: |
+      School of Mathematical Sciences, University of Nottingham
+      <br>[{{< var email >}}](mailto:{{< var email >}})
+    center: |
+      [{{< iconify fa6-brands:github size=1.1em >}}](https://github.com/{{< var github >}})&ensp;
+      [{{< iconify fa6-brands:bluesky size=1.1em >}}](https://bsky.app/profile/{{< var bluesky >}})&ensp;
+      [{{< iconify academicons:google-scholar size=1.1em >}}](https://scholar.google.com/citations?user={{< var google-scholar >}}&hl=en)&ensp;
+      [{{< iconify academicons:orcid size=1.1em >}}](https://orcid.org/{{< var orcid >}})
+    right: "&copy; 2026 Stephen Green"
+
+bibliography: [references/INSPIRE.bib, references/references-other.bib]
+csl: references/aps.csl
+
+execute:
+  freeze: true
+
+format:
+  html:
+    fontsize: 1.05em
+    theme:
+      light: [default, styles/theme-light.scss, styles/custom.scss]
+      dark: [default, styles/theme-dark.scss, styles/custom.scss]
+    toc: true
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true

@@ -1,0 +1,172 @@
+---
+pagetitle: "Stephen Green"
+page-layout: custom
+toc: false
+---
+
+::: {.hero-band}
+::: {.hero-home}
+
+::: {.hero-photo-wrap}
+![](profile.jpg)
+:::
+
+::: {.hero-text}
+
+# Stephen Green
+
+::: {.hero-subtitle}
+Principal Research Fellow &middot; University of Nottingham
+:::
+
+I am a physicist working on **machine learning for gravitational waves** and **black hole perturbation theory**. My group develops [simulation-based inference methods](research/sbi/) that can analyze gravitational-wave signals in seconds rather than days, and I work on [foundational problems in classical gravity](research/gravity/) including extreme mass-ratio inspirals, spacetime turbulence, and cosmological backreaction.
+
+I hold a [UKRI Future Leaders Fellowship](https://www.ukri.org/news/68-new-future-leaders-fellows-awarded-104-million-in-the-eighth-round/) and am a member of the LIGO Scientific Collaboration and the LISA Consortium.
+
+::: {.hero-links}
+[{{< iconify fa6-brands:github size=1.3em >}}](https://github.com/{{< var github >}})
+[{{< iconify fa6-brands:bluesky size=1.3em >}}](https://bsky.app/profile/{{< var bluesky >}})
+[{{< iconify academicons:google-scholar size=1.3em >}}](https://scholar.google.com/citations?user={{< var google-scholar >}}&hl=en)
+[{{< iconify academicons:inspire size=1.3em >}}](https://inspirehep.net/authors/{{< var inspire >}})
+[{{< iconify mdi:email size=1.3em >}}](mailto:{{< var email >}})
+:::
+
+:::
+
+:::
+:::
+
+::: {.home-band}
+::: {.home-content}
+
+::: {.section-label}
+Featured
+:::
+
+::: {.featured-pub-block}
+
+::: {.featured-pub-image}
+![](blog/nature-publication/bns.jpg)
+:::
+
+::: {.featured-pub-body}
+
+::: {.pub-journal}
+Nature &middot; 2025
+:::
+
+### Real-time inference for binary neutron star mergers using machine learning
+
+::: {.pub-summary}
+Led by Max Dax, this work demonstrates that neural posterior estimation can enable one-second inference for binary neutron star mergers --- complete parameter estimation including sky localization, crucial for multimessenger astronomy.
+:::
+
+::: {.pub-links}
+[Read article](https://doi.org/10.1038/s41586-025-08593-z){.btn .btn-primary .btn-sm .me-2}
+[arXiv](https://arxiv.org/abs/2307.12585){.btn .btn-outline-primary .btn-sm}
+:::
+
+:::
+
+:::
+
+:::
+:::
+
+::: {.home-band .home-band--warm}
+::: {.home-content}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-7}
+
+::: {.section-label}
+Research
+:::
+
+::: {.research-preview}
+### [Machine Learning for Gravitational Waves](research/sbi/)
+
+Amortized neural posteriors for fast and accurate parameter estimation of gravitational-wave signals. Developer of the [Dingo](https://github.com/dingo-gw/dingo) inference code.
+
+[Read more &rarr;](research/sbi/){.read-more}
+:::
+
+::: {.research-preview}
+### [Classical Gravity](research/gravity/)
+
+Black hole perturbation theory and metric reconstruction. Nonlinear dynamics and turbulence in anti-de Sitter spacetime. Backreaction in cosmology.
+
+[Read more &rarr;](research/gravity/){.read-more}
+:::
+
+:::
+
+::: {.g-col-12 .g-col-md-5}
+
+::: {.section-label}
+News
+:::
+
+::: {.news-item}
+::: {.news-date}
+Jan 2026
+:::
+::: {.news-title}
+[GWFreeride workshop in the Dolomites](blog/gwfreeride/)
+:::
+:::
+
+::: {.news-item}
+::: {.news-date}
+Mar 2025
+:::
+::: {.news-title}
+[Dingo-BNS paper published in *Nature*](blog/nature-publication/)
+:::
+:::
+
+::: {.news-item}
+::: {.news-date}
+Jul 2024
+:::
+::: {.news-title}
+[Awarded UKRI Future Leaders Fellowship](blog/flf/)
+:::
+:::
+
+:::
+
+:::
+
+:::
+:::
+
+::: {.home-band}
+::: {.home-content}
+
+::: {.section-label}
+Software
+:::
+
+::: {.software-block}
+
+::: {.software-logo}
+![](images/dingo_05.png)
+:::
+
+::: {.software-body}
+**Dingo** --- Deep Inference for Gravitational-wave Observations. Open-source simulation-based inference for gravitational waves, developed for use by the LIGO-Virgo-KAGRA collaboration.
+
+::: {.software-links}
+[{{< iconify fa6-brands:github >}} GitHub](https://github.com/dingo-gw/dingo){.me-3}
+[Trained Networks](https://zenodo.org/communities/dingo-gw/records)
+:::
+
+:::
+
+:::
+
+:::
+:::
+

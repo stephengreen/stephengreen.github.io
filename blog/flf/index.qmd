@@ -1,0 +1,13 @@
+---
+title: "UKRI Future Leaders Fellowship"
+author: "Stephen Green"
+date: "2024-07-18"
+categories: [news, funding]
+image: "UKRI-logo.png"
+---
+
+I'm happy to announce that I've been awarded a [UKRI Future Leaders Fellowship](https://www.ukri.org/councils/ukri/funding/future-leaders-fellowships/) to develop AI methods for gravitational-wave data analysis.
+
+The fellowship, titled *"AI-Driven Inference for Gravitational Waves: Accelerating Discoveries in Fundamental Physics"*, will support my group's work on simulation-based inference, in particular development of the [Dingo](https://github.com/dingo-gw/dingo) package for fast and accurate parameter estimation of gravitational-wave signals.
+
+This is a four-year fellowship (2024--2028) that will fund postdocs and PhD students working at the intersection of machine learning and gravitational-wave astronomy. I'm excited about the science we'll be able to do with this support.

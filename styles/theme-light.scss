@@ -1,0 +1,25 @@
+/*-- scss:defaults --*/
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=Source+Sans+3:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+// Serif body (distill.pub / journal feel)
+$font-family-sans-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+$headings-font-family: 'Source Serif 4', Georgia, serif;
+$font-family-monospace: 'JetBrains Mono', monospace;
+
+// Warm off-white background, dark navy text
+$body-bg: #faf9f6;
+$body-color: #1b2a4a;
+$link-color: #1e5a96;
+$primary: #1e5a96;
+
+// Navbar - slightly darker than body
+$navbar-bg: #f3f1ec;
+$navbar-fg: #1b2a4a;
+
+// Footer
+$footer-bg: #efede8;
+$footer-fg: #5a6577;
+
+/*-- scss:rules --*/

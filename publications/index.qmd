@@ -1,0 +1,77 @@
+---
+title: Publications
+toc: true
+bibliography: ../references/INSPIRE.bib
+csl: ../references/aps.csl
+nocite: '@*'
+citeproc: false
+filters:
+  - quarto
+  - ../scripts/group-refs-by-year.lua
+---
+
+For a complete list of publications including LVK collaboration papers, see [INSPIRE](https://inspirehep.net/authors/1073848) and [Google Scholar](https://scholar.google.com/citations?user=sqvBC1wAAAAJ&hl=en).
+
+## Highlights
+
+::: {.pub-highlight}
+::: {.pub-title}
+Real-time inference for binary neutron star mergers using machine learning
+:::
+::: {.pub-venue}
+Nature (2025)
+:::
+::: {.pub-desc}
+Led by M. Dax. Neural posterior estimation enables one-second inference for BNS mergers, crucial for multimessenger astronomy. [doi:10.1038/s41586-025-08593-z](https://doi.org/10.1038/s41586-025-08593-z)
+:::
+:::
+
+::: {.pub-highlight}
+::: {.pub-title}
+Evidence for eccentricity in the population of binary black holes observed by LIGO-Virgo-KAGRA
+:::
+::: {.pub-venue}
+Physical Review D (2025)
+:::
+::: {.pub-desc}
+Led by N. Gupte. Fast SBI analysis of O1--O3 events reveals evidence for orbital eccentricity. [arXiv:2404.14286](https://arxiv.org/abs/2404.14286)
+:::
+:::
+
+::: {.pub-highlight}
+::: {.pub-title}
+Neural importance sampling for rapid and reliable gravitational-wave inference
+:::
+::: {.pub-venue}
+Physical Review Letters (2023)
+:::
+::: {.pub-desc}
+With M. Dax et al. Importance sampling to verify and correct neural posterior estimates, with precise evidence computation. [arXiv:2210.05686](https://arxiv.org/abs/2210.05686)
+:::
+:::
+
+::: {.pub-highlight}
+::: {.pub-title}
+Real-time gravitational wave science with neural posterior estimation
+:::
+::: {.pub-venue}
+Physical Review Letters (2021)
+:::
+::: {.pub-desc}
+With M. Dax et al. First amortized neural posterior estimation for real GW events, achieving results in seconds. [arXiv:2106.12594](https://arxiv.org/abs/2106.12594)
+:::
+:::
+
+::: {.pub-highlight}
+::: {.pub-title}
+How well is our universe described by an FLRW model?
+:::
+::: {.pub-venue}
+Classical and Quantum Gravity (2014)
+:::
+::: {.pub-desc}
+With R. Wald. Definitive framework for cosmological backreaction, showing it cannot mimic dark energy. [arXiv:1407.8084](https://arxiv.org/abs/1407.8084)
+:::
+:::
+
+## Full Bibliography

@@ -1,0 +1,48 @@
+---
+title: Research
+toc: false
+---
+
+My research develops computational and mathematical methods for gravitational-wave astronomy, and addresses foundational questions in general relativity. Two threads connect this work: extracting physics from complex data, and the nonlinear dynamics of Einstein's equations.
+
+::: {.research-area}
+
+### [Machine Learning for Gravitational Waves](sbi/)
+
+::: {.research-area-content}
+
+::: {.research-area-image}
+![Posterior distributions for the first detected gravitational-wave event GW150914, comparing traditional MCMC sampling (blue) with Dingo neural posterior estimation (orange). Dingo produces equivalent results in seconds rather than days.](sbi/posterior_GW150914_full.jpg)
+:::
+
+Gravitational-wave detectors are observing an accelerating number of black hole and neutron star mergers, and extracting the physics from each event requires computationally intensive Bayesian inference. We develop **simulation-based inference** methods that train neural networks to directly learn the posterior distribution from simulated data, bypassing the likelihood entirely.
+
+Our open-source code [**Dingo**](https://github.com/dingo-gw/dingo) produces full 15-dimensional posterior distributions for binary black hole mergers in seconds --- a speedup of $10^4$--$10^5$ over traditional samplers, with statistically equivalent results. We have applied Dingo to [all events from the first three LIGO-Virgo observing runs](https://arxiv.org/abs/2404.14286), finding the first evidence for orbital eccentricity in the binary black hole population. Most recently, we extended these methods to [binary neutron star mergers](https://doi.org/10.1038/s41586-025-08593-z) (Nature, 2025), enabling real-time sky localization for multimessenger follow-up.
+
+[Read more &rarr;](sbi/){.read-more}
+
+:::
+:::
+
+::: {.research-area}
+
+### [Classical Gravity](gravity/)
+
+::: {.research-area-content}
+
+::: {.research-area-image}
+![Gravitational turbulence in anti-de Sitter spacetime. Vorticity snapshots from numerical simulations showing the inverse energy cascade from small to large scales, analogous to two-dimensional fluid turbulence.](gravity/turbulence-small.jpg)
+:::
+
+I work on foundational problems in gravitational physics, spanning perturbation theory, nonlinear dynamics, and cosmology.
+
+In **black hole perturbation theory**, with S. Hollands and others, we developed new techniques for [metric reconstruction in Kerr spacetime](https://arxiv.org/abs/1908.09095) that enable second-order self-force calculations --- essential for modelling extreme mass-ratio inspirals for the future LISA detector.
+
+In **anti-de Sitter spacetime**, we discovered that confined gravitational waves undergo a [turbulent inverse cascade](https://arxiv.org/abs/1309.7940), transferring energy to ever-larger scales. Using two-timescale perturbation theory, we identified [islands of stability](https://arxiv.org/abs/1504.04161) amid generic instability, connecting to the classical Fermi-Pasta-Ulam-Tsingou problem.
+
+In **cosmology**, with R. Wald, we established a rigorous [perturbative framework for backreaction](https://arxiv.org/abs/1407.8084), showing that nonlinear effects from inhomogeneities cannot mimic dark energy.
+
+[Read more &rarr;](gravity/){.read-more}
+
+:::
+:::
