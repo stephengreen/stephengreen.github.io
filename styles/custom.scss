@@ -74,6 +74,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 .talk-entry .talk-meta, .talk-entry .talk-links,
 .talk-card .talk-card-body, .talk-card .talk-meta,
 .pub-highlight .pub-title, .pub-highlight .pub-venue, .pub-highlight .pub-desc,
+.pub-img, .pub-eq,
 .research-area-image {
   > p {
     margin-bottom: 0;
@@ -724,6 +725,58 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 [data-bs-theme="dark"] .pub-highlight {
   border-left-color: rgba(107, 163, 214, 0.2);
   .pub-desc { color: #7a8ba0; }
+}
+
+// Publication highlight rows (image + text)
+.pub-row {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+
+  .pub-highlight {
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 0;  // .pub-row handles spacing
+  }
+
+  .pub-img {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 1rem;  // align with pub-highlight padding
+
+    img {
+      max-width: 200px;
+      max-height: 150px;
+      width: auto;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+  }
+
+  .pub-eq {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    font-size: 0.85em;
+    color: #5a6577;
+  }
+}
+
+[data-bs-theme="dark"] .pub-row .pub-eq {
+  color: #7a8ba0;
+}
+
+@media (max-width: 576px) {
+  .pub-row {
+    flex-direction: column;
+    .pub-img { width: 100%; max-width: 200px; }
+    .pub-eq { padding-left: 0; }
+  }
 }
 
 // ── Full bibliography ───────────────────────────────────────

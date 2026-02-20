@@ -14,25 +14,57 @@ filters:
 
 ## Recent Highlights
 
+:::: {.pub-row}
 ::: {.pub-highlight key="Dax:2024mcn"}
 M. Dax et al. Neural posterior estimation enables one-second inference for BNS mergers, including sky localization crucial for multimessenger follow-up.
 :::
 
+::: {.pub-img}
+![](images/dax-bns.jpg)
+:::
+::::
+
+:::: {.pub-row}
 ::: {.pub-highlight key="Gupte:2024jfe"}
 N. Gupte et al. Amortized SBI analysis of all O1--O3 events reveals evidence for orbital eccentricity in three binary black holes.
 :::
 
+::: {.pub-img}
+![](images/gupte-eccentricity.jpg)
+:::
+::::
+
+:::: {.pub-row}
 ::: {.pub-highlight key="Dax:2021tsq"}
 M. Dax et al. First neural posterior estimation for real gravitational-wave events amortized across noise PSDs, achieving results in seconds.
 :::
 
+::: {.pub-img}
+![](images/dax-dingo.jpg)
+:::
+::::
+
+:::: {.pub-row}
 ::: {.pub-highlight key="Green:2022htq"}
 S. Green, S. Hollands, and P. Zimmerman. Construction of conserved bilinear form for the Teukolsky equation, proving QNM orthogonality for Kerr black holes.
 :::
 
+::: {.pub-eq}
+$$\langle\langle\Upsilon_1,\Upsilon_2\rangle\rangle = \Pi_{\Sigma_{\mathbb{C}}}[\Psi_2^{4/3}\mathcal{J}\Upsilon_1,\Upsilon_2]$$
+
+$$c_{\ell mn} = \frac{\langle\langle {}_s\Upsilon_{\ell mn},\Upsilon_s\rangle\rangle}{\langle\langle {}_s\Upsilon_{\ell mn},{}_s\Upsilon_{\ell mn}\rangle\rangle}$$
+:::
+::::
+
+:::: {.pub-row}
 ::: {.pub-highlight key="Cannizzaro:2023jle"}
 E. Cannizzaro, L. Sberna, S. Green, and S. Hollands. Application of QNM perturbation theory to compute frequency shifts from massive scalar boson clouds.
 :::
+
+::: {.pub-img}
+![](images/cannizzaro-boson.jpg)
+:::
+::::
 
 
 ## Bibliography
