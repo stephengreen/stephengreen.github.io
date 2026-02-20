@@ -4,6 +4,10 @@
 --   2. Expands .pub-highlight divs: pulls title, journal, year from bib data
 --   3. Sorts bibliography entries by year (descending)
 --   4. Groups them with H2 year headings
+--   5. Injects citation counts from references/citations.json
+
+-- Citation counts (loaded in Pandoc function)
+local citation_counts = {}
 
 -- Journal abbreviation to full name mapping
 local journal_names = {
@@ -76,6 +80,22 @@ local function get_entry_year(item, ref_lookup)
 end
 
 function Pandoc(doc)
+  -- Load citation counts from JSON (graceful fallback)
+  -- Resolve path relative to the script's directory (scripts/ -> references/)
+  do
+    local script_dir = pandoc.path.directory(PANDOC_SCRIPT_FILE)
+    local citations_path = pandoc.path.join({script_dir, "..", "references", "citations.json"})
+    local f = io.open(citations_path, "r")
+    if f then
+      local content = f:read("*a")
+      f:close()
+      local ok, decoded = pcall(pandoc.json.decode, content)
+      if ok and type(decoded) == "table" then
+        citation_counts = decoded
+      end
+    end
+  end
+
   doc = pandoc.utils.citeproc(doc)
   local ref_lookup = build_ref_lookup(doc)
 
@@ -104,10 +124,22 @@ function Pandoc(doc)
         pandoc.Attr("", {"pub-title"}))
 
       -- Build venue div
-      local venue = (info.journal or "")
-      if info.year then venue = venue .. " (" .. info.year .. ")" end
+      local venue_inlines = pandoc.List()
+      local venue_text = (info.journal or "")
+      if info.year then venue_text = venue_text .. " (" .. info.year .. ")" end
+      venue_inlines:insert(pandoc.Str(venue_text))
+
+      -- Append citation count if > 0
+      local cite_count = citation_counts[key]
+      if cite_count and cite_count > 0 then
+        venue_inlines:insert(pandoc.Str(" "))
+        venue_inlines:insert(pandoc.Span(
+          {pandoc.Str("· " .. string.format("%d", cite_count) .. " citations")},
+          pandoc.Attr("", {"pub-citations"})))
+      end
+
       local venue_div = pandoc.Div(
-        {pandoc.Plain({pandoc.Str(venue)})},
+        {pandoc.Plain(venue_inlines)},
         pandoc.Attr("", {"pub-venue"}))
 
       -- Build description div: keep existing content + append citation
@@ -152,6 +184,30 @@ function Pandoc(doc)
 
       for _, item in ipairs(el.content) do
         if item.t == "Div" and item.classes:includes("csl-entry") then
+          -- Append citation count if >= 5
+          local entry_id = (item.identifier or ""):gsub("^ref%-", "")
+          local count = citation_counts[entry_id]
+          if count and count >= 5 then
+            local cite_span = pandoc.Span(
+              {pandoc.Str(" [" .. string.format("%d", count) .. " citations]")},
+              pandoc.Attr("", {"bib-citations"}))
+            -- Find the csl-right-inline Span inside the entry's Para/Plain
+            -- and append the citation count inside it
+            local inserted = false
+            for _, block in ipairs(item.content) do
+              if block.t == "Para" or block.t == "Plain" then
+                for i = #block.content, 1, -1 do
+                  local el = block.content[i]
+                  if el.t == "Span" and el.classes:includes("csl-right-inline") then
+                    el.content:insert(cite_span)
+                    inserted = true
+                    break
+                  end
+                end
+              end
+              if inserted then break end
+            end
+          end
           local year = get_entry_year(item, ref_lookup)
           table.insert(entries, { year = year, item = item })
         else

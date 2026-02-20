@@ -20,6 +20,7 @@ import urllib.parse
 AUTHOR_ID = "S.R.Green.1"
 INSPIRE_RECID = "1073848"
 BIB_OUTPUT = os.path.join(os.path.dirname(__file__), "..", "references", "INSPIRE.bib")
+CITATIONS_OUTPUT = os.path.join(os.path.dirname(__file__), "..", "references", "citations.json")
 
 # Large collaborations to filter
 COLLAB_KEYWORDS = [
@@ -90,6 +91,7 @@ def main():
     try:
         # Fetch all records for this author
         personal_keys = set()
+        citation_counts = {}
         page = 1
         page_size = 100
 
@@ -109,6 +111,8 @@ def main():
                     key = get_texkey(record)
                     if key:
                         personal_keys.add(key)
+                        count = record.get("metadata", {}).get("citation_count", 0)
+                        citation_counts[key] = count or 0
 
             total = data.get("hits", {}).get("total", 0)
             if page * page_size >= total:
@@ -178,6 +182,14 @@ def main():
             f.write(output)
 
         print(f"[INSPIRE] Wrote {len(filtered_entries)} entries to {bib_path}")
+
+        # Write citation counts JSON
+        citations_path = os.path.abspath(CITATIONS_OUTPUT)
+        with open(citations_path, "w", encoding="utf-8") as f:
+            json.dump(citation_counts, f, indent=2, sort_keys=True)
+            f.write("\n")
+
+        print(f"[INSPIRE] Wrote citation counts for {len(citation_counts)} papers to {citations_path}")
 
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
         print(f"[INSPIRE] Network error: {e}")

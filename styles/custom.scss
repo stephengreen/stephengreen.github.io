@@ -70,6 +70,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 .news-item .news-date, .news-item .news-title,
 .software-logo, .software-links,
 .cv-entry .cv-dates, .cv-entry .cv-role, .cv-entry .cv-institution, .cv-entry .cv-details,
+.team-card, .team-card .team-name, .team-card .team-role, .team-card .team-meta, .team-card .team-desc,
 .research-preview,
 .talk-entry .talk-meta, .talk-entry .talk-links,
 .talk-card .talk-card-body, .talk-card .talk-meta,
@@ -646,7 +647,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.15rem;
   }
 
   .team-role--pi { color: var(--bs-primary); }
@@ -662,6 +663,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   }
 
   .team-desc {
+    font-family: $ui-font;
     font-size: 0.85rem;
     color: #5a6577;
     margin-bottom: 0;
@@ -725,6 +727,28 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 [data-bs-theme="dark"] .pub-highlight {
   border-left-color: rgba(107, 163, 214, 0.2);
   .pub-desc { color: #7a8ba0; }
+}
+
+// Citation counts (inline in venue/meta lines)
+.pub-citations {
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.9em;
+  margin-left: 0.15em;
+  color: #8896a8;
+}
+
+.bib-citations {
+  font-family: $ui-font;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8896a8;
+}
+
+[data-bs-theme="dark"] {
+  .pub-citations { color: #7a8ba0; }
+  .bib-citations { color: #6b7d91; }
 }
 
 // Publication highlight rows (image + text)
