@@ -86,6 +86,35 @@ Led by Max Dax, this work demonstrates that neural posterior estimation can enab
 
 :::
 
+::: {.section-rule}
+:::
+
+::: {.featured-pub-block}
+
+::: {.featured-pub-image}
+![](https://img.youtube.com/vi/gl5DchHeQF0/mqdefault.jpg)
+:::
+
+::: {.featured-pub-body}
+
+::: {.pub-journal}
+Invited Talk &middot; 2025
+:::
+
+### AI/ML for Gravitational-Wave Data Analysis
+
+::: {.pub-summary}
+The Future of Gravitational-Wave Astronomy, ICTS Bangalore
+:::
+
+::: {.pub-links}
+[Watch talk](https://www.youtube.com/watch?v=gl5DchHeQF0){.btn .btn-primary .btn-sm}
+:::
+
+:::
+
+:::
+
 :::
 :::
 
