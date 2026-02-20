@@ -1,6 +1,8 @@
 ---
 title: Publications
+description: Selected highlights and full bibliography of publications on gravitational waves, machine learning, and classical gravity.
 toc: true
+body-classes: pub-page
 bibliography: ../references/INSPIRE.bib
 csl: ../references/aps.csl
 nocite: '@*'
@@ -9,8 +11,6 @@ filters:
   - quarto
   - ../scripts/group-refs-by-year.lua
 ---
-
-For a complete list of publications including LVK collaboration papers, see [INSPIRE](https://inspirehep.net/authors/1073848) and [Google Scholar](https://scholar.google.com/citations?user=sqvBC1wAAAAJ&hl=en).
 
 ## Highlights
 
@@ -22,7 +22,7 @@ Real-time inference for binary neutron star mergers using machine learning
 Nature (2025)
 :::
 ::: {.pub-desc}
-Led by M. Dax. Neural posterior estimation enables one-second inference for BNS mergers, crucial for multimessenger astronomy. [doi:10.1038/s41586-025-08593-z](https://doi.org/10.1038/s41586-025-08593-z)
+M. Dax et al. Neural posterior estimation enables one-second inference for BNS mergers, including sky localization crucial for multimessenger follow-up. [doi:10.1038/s41586-025-08593-z](https://doi.org/10.1038/s41586-025-08593-z)
 :::
 :::
 
@@ -34,7 +34,7 @@ Evidence for eccentricity in the population of binary black holes observed by LI
 Physical Review D (2025)
 :::
 ::: {.pub-desc}
-Led by N. Gupte. Fast SBI analysis of O1--O3 events reveals evidence for orbital eccentricity. [arXiv:2404.14286](https://arxiv.org/abs/2404.14286)
+N. Gupte et al. Amortized SBI analysis of all O1--O3 events reveals evidence for orbital eccentricity in three binary black holes. [arXiv:2404.14286](https://arxiv.org/abs/2404.14286)
 :::
 :::
 
@@ -46,7 +46,7 @@ Neural importance sampling for rapid and reliable gravitational-wave inference
 Physical Review Letters (2023)
 :::
 ::: {.pub-desc}
-With M. Dax et al. Importance sampling to verify and correct neural posterior estimates, with precise evidence computation. [arXiv:2210.05686](https://arxiv.org/abs/2210.05686)
+M. Dax et al. Importance sampling to verify and correct neural posterior estimates, with precise Bayesian evidence computation. [arXiv:2210.05686](https://arxiv.org/abs/2210.05686)
 :::
 :::
 
@@ -58,7 +58,31 @@ Real-time gravitational wave science with neural posterior estimation
 Physical Review Letters (2021)
 :::
 ::: {.pub-desc}
-With M. Dax et al. First amortized neural posterior estimation for real GW events, achieving results in seconds. [arXiv:2106.12594](https://arxiv.org/abs/2106.12594)
+M. Dax et al. First amortized neural posterior estimation for real gravitational-wave events, achieving results in seconds. [arXiv:2106.12594](https://arxiv.org/abs/2106.12594)
+:::
+:::
+
+::: {.pub-highlight}
+::: {.pub-title}
+Conserved currents for a Kerr black hole and orthogonality of quasinormal modes
+:::
+::: {.pub-venue}
+Physical Review D (2023)
+:::
+::: {.pub-desc}
+S. Green, S. Hollands, and P. Zimmerman. Construction of conserved bilinear form for the Teukolsky equation, proving QNM orthogonality for Kerr black holes. [arXiv:2210.15935](https://arxiv.org/abs/2210.15935)
+:::
+:::
+
+::: {.pub-highlight}
+::: {.pub-title}
+Relativistic Perturbation Theory for Black-Hole Boson Clouds
+:::
+::: {.pub-venue}
+Physical Review Letters (2024)
+:::
+::: {.pub-desc}
+E. Cannizzaro, L. Sberna, S. Green, and S. Hollands. Application of QNM perturbation theory to compute frequency shifts from massive scalar boson clouds. [doi:10.1103/PhysRevLett.132.051401](https://doi.org/10.1103/PhysRevLett.132.051401)
 :::
 :::
 
@@ -70,8 +94,12 @@ How well is our universe described by an FLRW model?
 Classical and Quantum Gravity (2014)
 :::
 ::: {.pub-desc}
-With R. Wald. Definitive framework for cosmological backreaction, showing it cannot mimic dark energy. [arXiv:1407.8084](https://arxiv.org/abs/1407.8084)
+S. Green and R. Wald. Rigorous perturbative framework for cosmological backreaction, proving that inhomogeneities cannot mimic dark energy. [arXiv:1407.8084](https://arxiv.org/abs/1407.8084)
 :::
 :::
 
-## Full Bibliography
+## Publications
+
+::: {.callout-note appearance="simple"}
+Short-author-list publications only. For LVK collaboration papers, see [INSPIRE](https://inspirehep.net/authors/1073848) and [Google Scholar](https://scholar.google.com/citations?user=sqvBC1wAAAAJ&hl=en).
+:::

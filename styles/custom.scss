@@ -47,22 +47,12 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   .nav-link {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.73rem;
+    font-size: 0.76rem;
     letter-spacing: 0.1em;
     padding-left: 0.75rem !important;
     padding-right: 0.75rem !important;
   }
 
-  // Navbar social icons
-  .navbar-nav .nav-link iconify-icon {
-    vertical-align: -0.15em;
-    opacity: 0.5;
-    transition: opacity 0.2s;
-  }
-
-  .navbar-nav .nav-link:hover iconify-icon {
-    opacity: 1;
-  }
 }
 
 [data-bs-theme="dark"] .navbar {
@@ -73,8 +63,8 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 // Quarto wraps inline div content in <p> tags, adding margins.
 // Collapse these inside layout components.
 
-.hero-home, .hero-text, .hero-links, .hero-photo-wrap,
-.hero-subtitle,
+.hero-home, .hero-text-col, .hero-links, .hero-photo-wrap,
+.hero-photo-col, .hero-subtitle, .hero-affiliations,
 .section-label,
 .featured-pub-body, .featured-pub-image, .pub-journal, .pub-summary, .pub-links,
 .news-item .news-date, .news-item .news-title,
@@ -83,6 +73,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 .research-preview,
 .talk-entry .talk-meta, .talk-entry .talk-links,
 .talk-card .talk-card-body, .talk-card .talk-meta,
+.pub-highlight .pub-title, .pub-highlight .pub-venue, .pub-highlight .pub-desc,
 .research-area-image {
   > p {
     margin-bottom: 0;
@@ -92,41 +83,77 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 // ── Homepage ────────────────────────────────────────────────
 
 .hero-band {
-  background: linear-gradient(180deg, rgba(0,0,0,0.018) 0%, transparent 100%);
-  padding: 3.5rem 0 2.5rem;
+  background: linear-gradient(180deg, rgba(30, 90, 150, 0.04) 0%, rgba(30, 90, 150, 0.01) 100%);
+  padding: 3.5rem 0 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 [data-bs-theme="dark"] .hero-band {
-  background: linear-gradient(180deg, rgba(255,255,255,0.015) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(107, 163, 214, 0.04) 0%, rgba(107, 163, 214, 0.01) 100%);
+  border-bottom-color: rgba(255, 255, 255, 0.05);
 }
 
 .hero-home {
-  max-width: 700px;
+  max-width: 820px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+.hero-grid {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.hero-photo-col {
+  flex-shrink: 0;
   text-align: center;
 }
 
 .hero-photo-wrap {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   img {
-    width: 170px;
-    height: 170px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
   }
 }
 
-// The h1 creates a <section class="hero-text">, so target it
-.hero-text,
-section.hero-text {
-  > h1 {
+.hero-text-col {
+  flex: 1;
+
+  // Quarto wraps content in a section with the h1's id
+  > h1, > section > h1 {
     font-size: 2.2rem;
     margin-bottom: 0;
     margin-top: 0;
   }
+
+  > p, > section > p {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  // Subtle links — underline only, inherit text color
+  a {
+    color: inherit;
+    text-decoration-color: rgba(30, 90, 150, 0.35);
+    text-underline-offset: 0.15em;
+    transition: text-decoration-color 0.2s;
+
+    &:hover {
+      text-decoration-color: var(--bs-primary);
+      color: var(--bs-primary);
+    }
+  }
+}
+
+[data-bs-theme="dark"] .hero-text-col a {
+  text-decoration-color: rgba(107, 163, 214, 0.35);
 }
 
 .hero-subtitle {
@@ -134,42 +161,45 @@ section.hero-text {
   font-size: 0.88rem;
   font-weight: 500;
   color: #5a6577;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.01em;
-  text-align: center;
 }
 
-.hero-bio {
-  font-size: 1rem;
-  line-height: 1.8;
+.hero-affiliations {
+  font-family: $ui-font;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #5a6577;
+  letter-spacing: 0.01em;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+
+  > p { margin-bottom: 0; }
 }
 
-// Body text left-aligned within the centered hero
-.hero-text {
-  text-align: left;
-
-  > h1, > section > h1 {
-    text-align: center;
-  }
+[data-bs-theme="dark"] .hero-affiliations {
+  color: #7a8ba0;
+  border-top-color: rgba(255, 255, 255, 0.06);
 }
 
 .hero-links {
   font-family: $ui-font;
   display: flex;
-  gap: 1.1rem;
-  margin-top: 1rem;
+  gap: 1rem;
+  margin-top: 0.25rem;
   justify-content: center;
 
   // Override Quarto's wrapping of links in a <p>
   > p {
     display: flex;
-    gap: 1.1rem;
+    gap: 1rem;
     margin-bottom: 0;
   }
 
   a {
     color: inherit;
-    opacity: 0.35;
+    opacity: 0.5;
     transition: all 0.2s;
     line-height: 1;
 
@@ -180,12 +210,26 @@ section.hero-text {
   }
 
   iconify-icon {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
 [data-bs-theme="dark"] .hero-subtitle {
   color: #7a8ba0;
+}
+
+@media (max-width: 640px) {
+  .hero-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text-col {
+    > h1, > section > h1 { text-align: center; }
+  }
+
+  .hero-affiliations { text-align: center; }
 }
 
 // Home content sections
@@ -408,7 +452,7 @@ section.hero-text {
 
     img {
       width: 100%;
-      max-width: 550px;
+      max-width: 650px;
       border-radius: 4px;
       box-shadow: 0 1px 10px rgba(0,0,0,0.06);
     }
@@ -432,8 +476,20 @@ section.hero-text {
 
     .read-more {
       font-family: $ui-font;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.3rem 0.9rem;
+      border: 1px solid var(--bs-primary);
+      border-radius: 3px;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        background: var(--bs-primary);
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -573,7 +629,7 @@ section.hero-text {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.5rem;
     box-shadow: 0 1px 8px rgba(0,0,0,0.06);
   }
 
@@ -623,7 +679,7 @@ section.hero-text {
   font-size: 2rem;
   font-weight: 600;
   color: white;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.5rem;
   box-shadow: 0 1px 8px rgba(0,0,0,0.06);
 }
 
@@ -640,7 +696,9 @@ section.hero-text {
 // ── Publication highlights ──────────────────────────────────
 
 .pub-highlight {
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 1.25rem;
+  border-left: 3px solid rgba(30, 90, 150, 0.15);
+  margin-bottom: 0.5rem;
 
   .pub-title {
     font-weight: 600;
@@ -664,6 +722,7 @@ section.hero-text {
 }
 
 [data-bs-theme="dark"] .pub-highlight {
+  border-left-color: rgba(107, 163, 214, 0.2);
   .pub-desc { color: #7a8ba0; }
 }
 
@@ -686,12 +745,12 @@ section.hero-text {
   display: none;
 }
 
-// Hide the [N] numbering since we re-sorted by year
-#refs .csl-left-margin {
+// On the publications page, hide [N] numbering since we re-sorted by year
+.pub-page #refs .csl-left-margin {
   display: none;
 }
 
-#refs .csl-right-inline {
+.pub-page #refs .csl-right-inline {
   margin: 0;
   padding: 0;
 }

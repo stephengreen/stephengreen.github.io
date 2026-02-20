@@ -1,5 +1,6 @@
 ---
 title: Research
+description: Research overview covering simulation-based inference for gravitational waves and foundational problems in classical gravity.
 toc: false
 ---
 
@@ -36,7 +37,7 @@ Our open-source code [**Dingo**](https://github.com/dingo-gw/dingo) produces ful
 
 I work on foundational problems in gravitational physics, spanning perturbation theory, nonlinear dynamics, and cosmology.
 
-In **black hole perturbation theory**, with S. Hollands and others, we developed new techniques for [metric reconstruction in Kerr spacetime](https://arxiv.org/abs/1908.09095) that enable second-order self-force calculations --- essential for modelling extreme mass-ratio inspirals for the future LISA detector.
+In **black hole perturbation theory**, with S. Hollands and others, we developed new techniques for [metric reconstruction in Kerr spacetime](https://arxiv.org/abs/1908.09095) that enable second-order self-force calculations, and established the [orthogonality of quasinormal modes](https://arxiv.org/abs/2210.15935), providing the foundation for a perturbation theory of black holes with applications to [boson clouds](https://doi.org/10.1103/PhysRevLett.132.051401) (PRL) and [nonlinear ringdown](https://arxiv.org/abs/2112.11168).
 
 In **anti-de Sitter spacetime**, we discovered that confined gravitational waves undergo a [turbulent inverse cascade](https://arxiv.org/abs/1309.7940), transferring energy to ever-larger scales. Using two-timescale perturbation theory, we identified [islands of stability](https://arxiv.org/abs/1504.04161) amid generic instability, connecting to the classical Fermi-Pasta-Ulam-Tsingou problem.
 

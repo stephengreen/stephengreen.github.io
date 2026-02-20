@@ -1,5 +1,6 @@
 ---
 title: Team
+description: Research group members working on gravitational waves, machine learning, and theoretical gravity at the University of Nottingham.
 toc: true
 ---
 
@@ -22,6 +23,9 @@ Principal Investigator
 ::: {.team-meta}
 UKRI Future Leaders Fellow
 :::
+::: {.team-desc}
+Simulation-based inference for gravitational waves, black hole perturbation theory, nonlinear dynamics in AdS, cosmological backreaction.
+:::
 :::
 :::
 
@@ -43,7 +47,7 @@ GW data analysis, simulation-based inference, dark matter searches with LIGO.
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.team-card}
-<div class="avatar-placeholder avatar-blue">LP</div>
+<img src="images/lorenzo.png" alt="Lorenzo Pompili">
 
 ::: {.team-name}
 [Lorenzo Pompili](https://lorenzopompili00.github.io/)
@@ -59,7 +63,7 @@ Waveform modeling (effective-one-body), tests of general relativity.
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.team-card}
-<div class="avatar-placeholder avatar-rose">MM</div>
+<img src="images/matthew.jpg" alt="Matthew Mould">
 
 ::: {.team-name}
 [Matthew Mould](https://www.mattmould.com/)
@@ -121,15 +125,6 @@ Population inference and simulation-based inference for gravitational waves.
 :::
 :::
 
-:::
-
-
-## Affiliated Students
-
-PhD students based at partner institutes whom I co-supervise and work with closely on a day-to-day basis.
-
-::: {.grid .gap-4}
-
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.team-card}
 <img src="images/annalena.jpg" alt="Annalena Kofler">
@@ -138,7 +133,7 @@ PhD students based at partner institutes whom I co-supervise and work with close
 [Annalena Kofler](https://www.annalenakofler.com)
 :::
 ::: {.team-role .team-role--phd}
-PhD Student
+Affiliated PhD Student
 :::
 ::: {.team-meta}
 MPI for Intelligent Systems, Tübingen
@@ -154,10 +149,8 @@ Advanced architectures, scaling, and flexible networks.
 
 ## Join Us
 
-We are looking for motivated researchers at all levels. If you are interested in gravitational waves or machine learning, please get in touch. We regularly have openings for:
+Our group sits at the intersection of machine learning and gravitational-wave physics, with strong ties to the LVK collaboration, the LISA Consortium, and the ML groups at MPI-IS Tübingen. We are funded by a [UKRI Future Leaders Fellowship](/blog/flf/) (2024--2028) and an STFC Consolidated Grant.
 
-- **Postdoctoral Fellowships**
-- **PhD Students**
-- **Visiting Researchers**
+We welcome enquiries from prospective postdocs, PhD students, and visiting researchers. Current interests include simulation-based inference for next-generation detectors, neural waveform modelling, and black hole perturbation theory for LISA sources.
 
-For current opportunities, check the [latest news](/blog/) or contact [Dr. Stephen Green](mailto:stephen.green2@nottingham.ac.uk) directly.
+For current opportunities, contact [Stephen Green](mailto:stephen.green2@nottingham.ac.uk).

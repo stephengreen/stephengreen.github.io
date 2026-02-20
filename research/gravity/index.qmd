@@ -1,6 +1,6 @@
 ---
 title: Classical Gravity
-description: Black hole perturbation theory, dynamics in anti-de Sitter spacetime, and backreaction in cosmology.
+description: Black hole perturbation theory, quasinormal mode orthogonality, dynamics in anti-de Sitter spacetime, and backreaction in cosmology.
 toc: true
 ---
 
@@ -10,11 +10,21 @@ My work in theoretical gravitational physics spans black hole perturbation theor
 
 Extreme mass-ratio inspirals are an exciting source for the future LISA gravitational-wave detector, but making predictions for waveforms is extremely complicated. For accurate parameter estimation, the "self force" must be calculated to second order in the mass ratio.
 
+### Metric reconstruction and self-force
+
 The self-force framework treats the small body as a "perturbation" about a much larger Kerr black hole. Because we are dealing with a spin-2 field, perturbation theory in general relativity is in general quite complicated. However, for perturbations of Kerr, the problem reduces to that of a single complex scalar field (a curvature scalar), which satisfies a *separable* wave equation. This discovery by Teukolsky is based on hidden symmetries of the Kerr spacetime.
 
 Remarkably, in vacuum, solutions for the metric perturbation can be obtained from solutions for the curvature scalar, using a method involving a Hertz potential. However, in the presence of sources, this method breaks down, and one must treat the metric perturbation directly. Since second-order perturbations are sourced nonlinearly by first order perturbations, the Teukolsky framework cannot be used to simplify second order calculations.
 
-Very recently, with S. Hollands and P. Zimmerman, we found a method to obtain the metric perturbation from the curvature scalar *even in the presence of sources*. It requires the introduction of a corrector tensor $x_{ab}$, which disposes of the problematic source terms and which can be calculated by solving ordinary differential equations. The next goals of this project are to apply the corrector tensor technique to calculate the field of a point particle in Kerr and confront the self-force problem.
+With S. Hollands and P. Zimmerman, we found a method to obtain the metric perturbation from the curvature scalar *even in the presence of sources* [@Green:2019nam]. It requires the introduction of a corrector tensor $x_{ab}$, which disposes of the problematic source terms and which can be calculated by solving ordinary differential equations. Subsequently, with V. Toomani, P. Zimmerman, and S. Hollands, we developed a complete metric reconstruction scheme for self-force calculations [@Toomani:2021jlo], combining the corrector tensor with CCK reconstruction in radiation gauge.
+
+### Quasinormal mode orthogonality
+
+Quasinormal modes (QNMs) describe how black holes ring down after being perturbed, but they are not orthogonal with respect to the standard Klein-Gordon inner product --- they grow exponentially toward the horizon and spatial infinity, so the usual inner product is ill-defined. With S. Hollands and P. Zimmerman, we constructed conserved currents (based on the symplectic current) for the Teukolsky equation that yield a well-defined bilinear form, and proved that QNMs of Kerr are orthogonal with respect to it [@Green:2022htq]. This provides the foundation for a perturbation theory of black holes, analogous to how normal mode orthogonality underpins quantum mechanics and other areas of wave physics.
+
+### Applications: boson clouds and nonlinear ringdown
+
+With E. Cannizzaro, L. Sberna, and S. Hollands, we applied this perturbation theory to compute how a massive scalar boson cloud around a Kerr black hole modifies QNM frequencies --- published in PRL [@Cannizzaro:2023jle]. Follow-up work examined the excitation of scalar QNMs from boson clouds [@Cannizzaro:2025vpb]. Separately, with L. Sberna, P. Bosch, W. East, and L. Lehner, we studied nonlinear effects in the black hole ringdown, showing that absorption of one QNM can excite others [@Sberna:2021eui].
 
 
 ## Dynamics in Anti-de Sitter Spacetime
@@ -39,7 +49,7 @@ When large AdS black holes are perturbed, they ring down very slowly, i.e., they
 
 With F. Carrasco and L. Lehner, we studied this ringdown numerically by exploiting this correspondence between the spacetime metric and the fluid [@Green:2013zba]. We considered a relativistic viscous fluid in $(2+1)$-dimensional flat spacetime, which is dual to a black hole in $3+1$ dimensions. We showed that under evolution, the fluid develops turbulent vortices and eddies, and that there are dual cascades of energy and enstrophy. We extrapolated these results into the black hole spacetime and verified that they matched direct gravitational studies.
 
-This research motivated later work proposing that even *asymptotically flat* black holes might go turbulent --- provided they are nearly extremally spinning [@Yang:2014tla]. Indeed, near-extreme Kerr has a set of *zero-damped modes* which become arbitrarily long lived as the spin $a\to M$. Finally, in 2025, in work led by S. Hollands and his student C. Iuliano, we found evidence for turbulent cascades near extremality [@Iuliano:2024ogr]. This work involved combining metric reconstruction together with quasi-normal mode orthogonality to express the modes as a coupled nonlinear system.
+This research motivated later work proposing that even *asymptotically flat* black holes might go turbulent --- provided they are nearly extremally spinning [@Yang:2014tla]. Indeed, near-extreme Kerr has a set of *zero-damped modes* which become arbitrarily long lived as the spin $a\to M$. Finally, in 2025, in work led by S. Hollands and his student C. Iuliano, we found evidence for turbulent cascades near extremality [@Iuliano:2024ogr]. This work involved combining metric reconstruction [@Green:2019nam] together with quasi-normal mode orthogonality [@Green:2022htq] to express the modes as a coupled nonlinear system.
 
 ### Superradiant instabilities
 
@@ -58,8 +68,8 @@ Anti-de Sitter spacetime provides a naturally reflecting boundary at infinity, a
 
 Although the universe is homogeneous and isotropic at large cosmological scales, density perturbations can be very large at small scales (e.g., galaxies, stars, etc.). When passing from the small scale description, where Einstein's equation holds, to the large scale description, some sort of averaging is necessary. This is nontrivial because the Einstein equation is nonlinear, so that small scale structure can potentially affect the large scale dynamics. It has even been suggested that such effects could mimic a cosmological constant.
 
-For my PhD research (with R. Wald) I developed a framework [@Green:2010qy] in which such "backreaction" effects could be calculated, and proved that the only way in which significant effects could occur is via gravitational radiation, thus ruling this scenario out as an explanation for dark energy. We then used this framework to establish a perturbative relationship between Newtonian and relativistic cosmology [@Green:2011wc].
+With R. Wald, I developed a framework [@Green:2010qy] in which such "backreaction" effects could be calculated, and proved that the only way in which significant effects could occur is via gravitational radiation, thus ruling this scenario out as an explanation for dark energy. We then used this framework to establish a perturbative relationship between Newtonian and relativistic cosmology [@Green:2011wc].
 
 Our work on backreaction was controversial in certain communities, leading to heated discussions on the arXiv (see [@Buchert:2015iva] and our reply [@Green:2015bma]). In [@Green:2016cwo] we summarize our approach, and argue that the key point is that the universe should be viewed at the level of the metric, *not* the curvature. At the level of metric perturbations, the universe is homogeneous to one part in $10^4$ except near strong field objects like black holes. We prove general results that such inhomogeneities cannot lead to significant backreaction.
 
-![At the level of the spacetime *metric*, the universe is very nearly FLRW. By contrast, density (and hence curvature) inhomogeneities are much larger.](averaging.png)
+![At the level of the spacetime *metric*, the universe is very nearly FLRW. By contrast, density (and hence curvature) inhomogeneities are much larger.](averaging.png){.lightbox}

@@ -1,9 +1,10 @@
 ---
 title: Talks
+description: Selected recorded talks and invited presentations on simulation-based inference, gravitational waves, and classical gravity.
 toc: true
 ---
 
-Over 80 research presentations, including more than 50 invited talks at international conferences, workshops, and seminars. Below is a selection of recent recorded talks. See my [CV](/cv/) for the full list.
+Over 80 presentations at venues including ICTS Bangalore, IPAM UCLA, the Lorentz Center, and the Niels Bohr Institute. Below is a selection of recorded talks; see my [CV](/cv/) for the full list.
 
 
 ## Selected Recorded Talks
@@ -15,7 +16,7 @@ Over 80 research presentations, including more than 50 invited talks at internat
 
 ::: {.talk-card-body}
 ::: {.talk-meta}
-Invited &middot; 2025
+Invited Talk &middot; 2025
 :::
 **[AI/ML for Gravitational-Wave Data Analysis](https://youtu.be/gl5DchHeQF0)**
 
@@ -24,11 +25,26 @@ The Future of Gravitational-Wave Astronomy, ICTS Bangalore
 :::
 
 ::: {.talk-card}
+[![](https://brown.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=edf1cbaa-bbad-479a-9919-b2e600fd881f&mode=Delivery&thumbnailWidth=320){.talk-thumb}](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=edf1cbaa-bbad-479a-9919-b2e600fd881f)
+
+::: {.talk-card-body}
+::: {.talk-meta}
+Invited Talk &middot; 2025
+:::
+**[Neural Posterior Estimation for GW Inference](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=edf1cbaa-bbad-479a-9919-b2e600fd881f)**
+
+Workshop on Scientific ML for GW Astronomy, ICERM, Brown University
+
+[Slides (PDF)](https://app.icerm.brown.edu/assets/524/9108/9108_5239_Green_060420251100_Slides.pdf){.talk-slides-link}
+:::
+:::
+
+::: {.talk-card}
 [![](https://img.youtube.com/vi/XN9DNp5fTn8/mqdefault.jpg){.talk-thumb}](https://youtu.be/XN9DNp5fTn8)
 
 ::: {.talk-card-body}
 ::: {.talk-meta}
-Keynote &middot; 2022
+Keynote Talk &middot; 2022
 :::
 **[Simulation-Based Inference for Gravitational Waves](https://youtu.be/XN9DNp5fTn8)**
 
@@ -39,24 +55,11 @@ Bayesian Deep Learning for Cosmology, APC Paris
 :::
 
 ::: {.talk-card}
-[![](https://img.youtube.com/vi/v0z2mb-pvs4/mqdefault.jpg){.talk-thumb}](https://youtu.be/v0z2mb-pvs4)
-
-::: {.talk-card-body}
-::: {.talk-meta}
-Invited Seminar &middot; 2023
-:::
-**[Machine Learning for Gravitational-Wave Astronomy](https://youtu.be/v0z2mb-pvs4)**
-
-Gr@v Seminar, University of Aveiro
-:::
-:::
-
-::: {.talk-card}
 [![](https://img.youtube.com/vi/SzWH2Xd2jEA/mqdefault.jpg){.talk-thumb}](https://www.youtube.com/watch?v=SzWH2Xd2jEA)
 
 ::: {.talk-card-body}
 ::: {.talk-meta}
-Invited &middot; 2021
+Invited Talk &middot; 2021
 :::
 **[Real-time GW Parameter Estimation Using Machine Learning](https://www.youtube.com/watch?v=SzWH2Xd2jEA)**
 
@@ -67,15 +70,15 @@ Source Inference and PE in GW Astronomy, IPAM UCLA
 :::
 
 ::: {.talk-card}
-[![](https://img.youtube.com/vi/WGzDGs7LN-0/mqdefault.jpg){.talk-thumb}](https://youtu.be/WGzDGs7LN-0)
+[![](capra-2021-thumb.jpg){.talk-thumb}](https://pirsa.org/21060044)
 
 ::: {.talk-card-body}
 ::: {.talk-meta}
-Invited Seminar &middot; 2021
+Conference Talk &middot; 2021
 :::
-**[Simulation-Based Inference for Gravitational Waves](https://youtu.be/WGzDGs7LN-0)**
+**[Lorenz-Gauge Reconstruction for Teukolsky Solutions with Sources](https://pirsa.org/21060044)**
 
-SISSA & IFPU Gravity Webinar, Trieste
+24th Capra Meeting, Perimeter Institute
 :::
 :::
 
@@ -84,18 +87,18 @@ SISSA & IFPU Gravity Webinar, Trieste
 
 ::: {.talk-card-body}
 ::: {.talk-meta}
-Contributed &middot; 2020
+Conference Talk &middot; 2020
 :::
 **[Teukolsky Formalism for Nonlinear Kerr Perturbations](https://www.youtube.com/watch?v=HB-Rw5kRUfg&t=2967s)**
 
-Capra Meeting, Perimeter Institute
+23rd Capra Meeting, UT Austin
 :::
 :::
 
 :::
 
 
-## Lecture Series
+## PhD Schools
 
 ::: {.talk-entry}
 ::: {.talk-meta}
@@ -132,18 +135,3 @@ IMPRS Course on Statistics for GW Astronomy, AEI
 :::
 
 
-## Recent Invited Presentations
-
-A selection of recent invited seminars and conference talks (2024--2025):
-
-- The Future of Gravitational Wave Astronomy, ICTS, Bangalore (2025)
-- Workshop on Scientific ML for GW Astronomy, ICERM, Brown University (2025)
-- CENTRA Seminar, Instituto Superior T&eacute;cnico, Lisbon (2025)
-- Gravity Seminars at University of Mississippi, KU Leuven, University of Milan Bicocca, Universitat de les Illes Balears (2025)
-- ICG Colloquium, University of Portsmouth (2024)
-- Challenges and Future Perspectives in GW Astronomy, Lorentz Center, Leiden (2024)
-- PAX IX Workshop (panelist), King's College London (2024)
-- Dawn VII Workshop (panelist), University of British Columbia (2024)
-- Gravity Seminar, Niels Bohr Institute, Copenhagen (2024)
-- Geometry, Analysis and Gravitation Seminar, Queen Mary, London (2024)
-- Gravity Seminar, Cardiff University (2024)

@@ -1,0 +1,12 @@
+---
+title: "Congratulations Dr Dax!"
+author: "Stephen Green"
+date: "2025-07-17"
+categories: [news, team]
+---
+
+Congratulations to [Max Dax](https://max-dax.github.io/), who defended his PhD at the Max Planck Institute for Intelligent Systems in July 2025. Max will take up a position as Principal Investigator at the [Ellis Institute](https://ellis.eu/) in Tübingen in September, where he will lead research on probabilistic AI and scientific applications.
+
+Max and I worked closely together over five years developing [Dingo](https://github.com/dingo-gw/dingo), our simulation-based inference framework for gravitational waves. His PhD research produced a remarkable series of results --- from the first amortized neural posterior estimation for real gravitational-wave events ([PRL, 2021](https://arxiv.org/abs/2106.12594)), to neural importance sampling ([PRL, 2023](https://arxiv.org/abs/2210.05686)), to the extension to binary neutron stars published in [*Nature*](https://doi.org/10.1038/s41586-025-08593-z) (2025). These methods are now being adopted within the LIGO-Virgo-KAGRA collaboration.
+
+It has been a privilege to be part of Max's scientific development, and I look forward to continued collaboration as he builds his own group!

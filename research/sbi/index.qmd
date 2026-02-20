@@ -4,51 +4,25 @@ description: Simulation-based inference for fast and accurate gravitational-wave
 toc: true
 ---
 
-Traditional Bayesian inference is too slow for the flood of detections expected from next-generation observatories. Simulation-based inference offers a path to real-time astrophysics.
+As gravitational-wave observatories detect growing numbers of compact binary mergers, the computational cost of Bayesian parameter estimation becomes a critical bottleneck. Simulation-based inference (SBI) bypasses this bottleneck by training neural networks to learn the posterior distribution directly from simulated data.
 
 ## Background
 
 ### GW parameter estimation
 
-Once a gravitational wave is observed, one has to determine the properties of the source that could have given rise to the observation, i.e., the masses, spins, location, and orientation of the binary. We do this using Bayesian inference. Given a *likelihood* $p(d|\theta)$ for data $d$ given system parameters $\theta$, and a *prior* $p(\theta)$ for the parameters, the *posterior* probability is given by
+Extracting source properties (masses, spins, sky location, orientation) from a gravitational-wave observation requires Bayesian inference. Given a *likelihood* $p(d|\theta)$ for data $d$ given parameters $\theta$, and a *prior* $p(\theta)$, the *posterior* is
 $$
-p(\theta|d) = \frac{p(d|\theta)p(\theta)}{p(d)},
+p(\theta|d) = \frac{p(d|\theta)p(\theta)}{p(d)}.
 $$
-where $p(d)$ is a normalizing factor called the *evidence*. In GW parameter estimation, one usually assumes that noise is additive, stationary, and Gaussian; the likelihood is then the probability that after subtracting a proposed signal waveform $h(\theta)$ from the data, the residual $n\equiv d - h(\theta)$ is stationary Gaussian noise.
-
-Generally, one represents the posterior using a collection of samples $\theta \sim p(\theta|d)$. To draw samples, MCMC or nested sampling are usually used, and amount to exploring the parameter space and repeatedly comparing simulated waveforms to data. However, this can be very computationally costly: a single analysis can require millions of waveform simulations, each of which can take from milliseconds to seconds depending on the waveform model, with the most realistic models also the most costly. An excellent review of data analysis is given by [@LIGOScientific:2019hgc].
+Standard samplers (MCMC, nested sampling) require millions of waveform evaluations per event, each costing milliseconds to seconds depending on the model. This makes traditional methods prohibitively expensive at high event rates.
 
 ### Simulation-based inference
 
-SBI is an emerging inference paradigm, based on **simulating data** --- with no likelihood evaluations. It becomes extremely powerful when coupled with modern neural network-based density estimators. The essential idea is to train a neural network to learn a representation of the distribution of interest: for neural posterior estimation (NPE) this means to learn the posterior, $q_\phi(\theta | d) \to p(\theta|d)$. Here, $q_\phi$ denotes the neural network with tunable parameters $\phi$. Once trained, sampling is extremely fast. A trained network can be re-used any time new data are observed, thus amortizing training costs across observations.
-
-#### Normalizing flows
-
-Normalizing flows are commonly used in SBI for density estimation. These define a conditional distribution in terms of a mapping $f_d: u \mapsto \theta$ from a much simpler *base* distribution $\pi(u)$, typically taken to be standard normal. The density of the flow is then given by the change of variables rule,
-$$
-q(\theta|d) = \pi(f_d^{-1}(\theta)) \left| \det J_{f_d^{-1}} \right|.
-$$
-To evaluate the density, $f_d$ must be invertible with simple Jacobian determinant. There are various ways to define such an $f_d$ using neural networks (e.g., compositions of affine transformations, splines, etc.). To draw samples, one samples $u \sim \pi(u)$ then sets $\theta = f_d(u)$. This is fast and fully parallelizable on GPUs.
-
-#### Training
-
-Training uses the maximum log likelihood loss,
+SBI replaces likelihood evaluations with **simulations**. A neural network $q_\phi(\theta | d)$ is trained to approximate the posterior by minimizing
 $$
 L[\phi] = \mathbb{E}_{p(\theta, d)}\left[-\log q_\phi(\theta|d)\right],
 $$
-which is equivalent to minimizing the Kullback-Leibler divergence between the posterior and $q_\phi$.
-
-To estimate the loss, one requires samples from the joint distribution over $(d,\theta)$. The most efficient way to do this is to sample hierarchically:
-$$
-\theta^{(i)} \sim p(\theta), \quad d^{(i)} \sim p(d | \theta^{(i)}), \quad i = 1, \ldots N,
-$$
-so on a mini-batch, the loss becomes $\frac{1}{N}\sum_{i=1}^{N}[-\log q_\phi(\theta^{(i)}|d^{(i)})]$. In other words, to generate training data for GW analysis:
-
-1. Sample truth parameters $\theta^{(i)}\sim p(\theta)$ from the prior,
-2. Generate a waveform $h(\theta^{(i)})$ using a signal model, and
-3. Add a noise realization, $d^{(i)} = h(\theta^{(i)}) + n^{(i)}, \quad n^{(i)} \sim p(n)$.
-
-Importantly, the training process requires **no likelihood evaluations** --- only simulated data. SBI still uses the likelihood, but *instead of evaluating it, we sample from it.*
+over simulated data pairs $(\theta, d)$ drawn from the prior and likelihood. Once trained, the network produces posterior samples via fast forward passes, and can be re-used for every new observation --- amortizing the training cost. For a review of GW data analysis, see [@LIGOScientific:2019hgc].
 
 
 ## Our research
@@ -69,21 +43,15 @@ My collaborators and I are an interdisciplinary team developing SBI methods for 
 
 **2024** -- Extension to **binary neutron stars** [@Dax:2024mcn], coupling classical GW data analysis techniques such as heterodyning and multibanding with prior conditioning to tackle the problem of high data dimensionality. We obtain complete inference results in one second, enabling localization even before the merger takes place.
 
+**2025** -- BNS work published in [*Nature*](https://doi.org/10.1038/s41586-025-08593-z) [@Dax:2024mcn], demonstrating real-time sky localization for **multimessenger follow-up** --- enabling telescopes to find neutron star mergers even before the merger takes place.
+
 :::
 
 We also develop and maintain the [Dingo code {{< iconify fa6-brands:github >}}](https://github.com/dingo-gw/dingo), which implements these methods. Dingo has already been used to drive GW science forward, including finding evidence for eccentric models and making forecasts for next-generation observatories.
 
 ![Posterior distribution for the first detection, GW150914, comparing our code (Dingo, orange) against MCMC (LALInference, blue). The distributions are in excellent agreement.](posterior_GW150914_full.jpg)
 
-### Key advantages
-
-SBI has several advantages over traditional inference methods:
-
-* **Speed.** Sampling requires only forward passes through the network, which are fully parallelizable on GPUs. Results are typically obtained in seconds, enabling rapid follow-up of high event rates and multi-messenger observations.
-
-* **Accuracy.** SBI works even when no analytic likelihood is available. For example, instead of assuming stationary Gaussian noise, one can train directly on real detector noise --- allowing the network to learn and marginalize over noise properties.
-
-* **Flexibility.** Neural networks can ingest data in any convenient representation --- time domain, frequency domain, or time--frequency. This enables efficient approaches such as multi-banding for binary neutron stars, as well as direct time-domain analyses.
+Beyond speed, SBI brings qualitative advantages: it works even without an analytic likelihood (e.g., training on real detector noise rather than assuming Gaussian stationarity), and the network can ingest data in any representation --- time domain, frequency domain, or multi-banded --- enabling analysis strategies that are difficult with traditional samplers.
 
 
 ## GW science with Dingo
@@ -100,6 +68,6 @@ Using standard techniques, analyzing a single event with an eccentric model can 
 
 With the Bayesian evidence from importance sampling, one can compare eccentric versus quasi-circular models. Nihar found consistent evidence for eccentricity, both from individual Bayes factors and from a population-level analysis. For further details see the full paper [@Gupte:2024jfe].
 
-### Outlook
+### Next steps
 
-SBI is still in its early stages for gravitational waves, and there are huge opportunities ahead. Going forwards, we are focused on continued performance enhancements using advanced architectures, extensions to future detectors and new types of sources, and more accurate inference using realistic noise modeling.
+We are currently working on extending Dingo to precessing and higher-order-mode waveform models, implementing realistic non-Gaussian noise modelling, and preparing for deployment within the LVK low-latency infrastructure for O5 and beyond.

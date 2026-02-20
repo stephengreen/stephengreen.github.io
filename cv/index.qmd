@@ -1,5 +1,6 @@
 ---
 title: Curriculum Vitae
+description: Academic CV of Stephen Green, Principal Research Fellow at the University of Nottingham.
 toc: true
 ---
 
@@ -170,11 +171,11 @@ University of Toronto (Trinity College)
 - Jacopo Lestingi (Nottingham, 2023--present)
 - Alex Roussopoulos (Nottingham, 2023--present)
 
-### PhD Students Co-supervised
+### PhD Students Co-supervised or Closely Collaborated With
 
 - Annalena Kofler (MPI-IS, 2023--present)
+- Maximilian Dax (MPI-IS, 2020--2025; now Principal Investigator, Ellis Institute)
 - Jonas Wildberger (MPI-IS, 2021--2023)
-- Maximilian Dax (MPI-IS, 2020--2025)
 - Nihar Gupte (AEI, 2021--2022)
 - Pablo Bosch (Perimeter, 2015--2019)
 

@@ -1,0 +1,9 @@
+<% const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; %>
+<% for (const item of items) { %>
+<%   const d = new Date(item.date); %>
+<%   const label = months[d.getUTCMonth()] + ' ' + d.getUTCFullYear(); %>
+<div class="news-item">
+  <div class="news-date"><p><%= label %></p></div>
+  <div class="news-title"><p><a href="<%= item.path %>"><%= item.title %></a></p></div>
+</div>
+<% } %>

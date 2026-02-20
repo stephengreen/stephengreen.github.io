@@ -1,0 +1,16 @@
+---
+pagetitle: "Page Not Found"
+description: "The page you're looking for doesn't exist."
+toc: false
+---
+
+# Page Not Found
+
+The page you're looking for doesn't exist or may have moved. This site was recently rebuilt, so some old URLs may no longer work.
+
+Try one of these:
+
+- [Home](/) --- main page
+- [Research](/research/) --- research overview
+- [Publications](/publications/) --- full publication list
+- [CV](/cv/) --- curriculum vitae

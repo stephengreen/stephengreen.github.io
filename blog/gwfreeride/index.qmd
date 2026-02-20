@@ -1,5 +1,5 @@
 ---
-title: "GWFreeride Workshop in the Dolomites"
+title: "GWFreeride Workshop in Sexten"
 author: "Stephen Green"
 date: "2026-01-30"
 categories: [workshop, news]
