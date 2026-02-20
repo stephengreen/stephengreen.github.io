@@ -1,6 +1,6 @@
 ---
 title: Team
-description: Research group members working on gravitational waves, machine learning, and theoretical gravity at the University of Nottingham.
+description-meta: Research group members working on gravitational waves, machine learning, and theoretical gravity at the University of Nottingham.
 toc: true
 ---
 

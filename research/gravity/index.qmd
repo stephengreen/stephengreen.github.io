@@ -1,6 +1,6 @@
 ---
 title: Classical Gravity
-description: Black hole perturbation theory, quasinormal mode orthogonality, dynamics in anti-de Sitter spacetime, and backreaction in cosmology.
+description-meta: Black hole perturbation theory, quasinormal mode orthogonality, dynamics in anti-de Sitter spacetime, and backreaction in cosmology.
 toc: true
 ---
 

@@ -740,9 +740,19 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   letter-spacing: 0.03em;
 }
 
-// Hide the auto-generated "References" appendix heading
+// First year heading after the callout doesn't need extra space
+#refs > .year-group:first-child h2 {
+  margin-top: 1rem;
+}
+
+// Hide the auto-generated "References" appendix heading and border
 #quarto-appendix .quarto-appendix-heading {
   display: none;
+}
+.pub-page #quarto-appendix.default {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 // On the publications page, hide [N] numbering since we re-sorted by year

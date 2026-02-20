@@ -1,6 +1,6 @@
 ---
 title: Machine Learning for Gravitational Waves
-description: Simulation-based inference for fast and accurate gravitational-wave parameter estimation.
+description-meta: Simulation-based inference for fast and accurate gravitational-wave parameter estimation.
 toc: true
 ---
 
