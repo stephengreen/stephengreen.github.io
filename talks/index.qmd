@@ -12,7 +12,7 @@ Over 80 presentations at venues including ICTS Bangalore, IPAM UCLA, the Lorentz
 ::: {.talk-grid}
 
 ::: {.talk-card}
-[![](https://img.youtube.com/vi/gl5DchHeQF0/mqdefault.jpg){.talk-thumb}](https://youtu.be/gl5DchHeQF0)
+[![](https://img.youtube.com/vi/gl5DchHeQF0/hqdefault.jpg){.talk-thumb}](https://youtu.be/gl5DchHeQF0)
 
 ::: {.talk-card-body}
 ::: {.talk-meta}
@@ -40,7 +40,7 @@ Workshop on Scientific ML for GW Astronomy, ICERM, Brown University
 :::
 
 ::: {.talk-card}
-[![](https://img.youtube.com/vi/XN9DNp5fTn8/mqdefault.jpg){.talk-thumb}](https://youtu.be/XN9DNp5fTn8)
+[![](https://img.youtube.com/vi/XN9DNp5fTn8/hqdefault.jpg){.talk-thumb}](https://youtu.be/XN9DNp5fTn8)
 
 ::: {.talk-card-body}
 ::: {.talk-meta}
@@ -55,7 +55,7 @@ Bayesian Deep Learning for Cosmology, APC Paris
 :::
 
 ::: {.talk-card}
-[![](https://img.youtube.com/vi/SzWH2Xd2jEA/mqdefault.jpg){.talk-thumb}](https://www.youtube.com/watch?v=SzWH2Xd2jEA)
+[![](https://img.youtube.com/vi/SzWH2Xd2jEA/hqdefault.jpg){.talk-thumb}](https://www.youtube.com/watch?v=SzWH2Xd2jEA)
 
 ::: {.talk-card-body}
 ::: {.talk-meta}
@@ -83,7 +83,7 @@ Conference Talk &middot; 2021
 :::
 
 ::: {.talk-card}
-[![](https://img.youtube.com/vi/HB-Rw5kRUfg/mqdefault.jpg){.talk-thumb}](https://www.youtube.com/watch?v=HB-Rw5kRUfg&t=2967s)
+[![](https://img.youtube.com/vi/HB-Rw5kRUfg/hqdefault.jpg){.talk-thumb}](https://www.youtube.com/watch?v=HB-Rw5kRUfg&t=2967s)
 
 ::: {.talk-card-body}
 ::: {.talk-meta}

@@ -1,6 +1,9 @@
 /*-- scss:defaults --*/
 
 $ui-font: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+$muted: #5a6577;        // secondary text (light)
+$muted-dark: #7a8ba0;   // secondary text (dark)
+$faint: #8896a8;         // dates, meta labels (light)
 
 /*-- scss:rules --*/
 
@@ -26,7 +29,7 @@ h2 {
   margin-bottom: 0.6rem;
 }
 
-h3 { font-size: 1.2rem; font-weight: 600; }
+h3 { font-size: 1.25rem; font-weight: 600; }
 h4 { font-size: 1.05rem; font-weight: 600; }
 
 // ── Navbar ──────────────────────────────────────────────────
@@ -34,7 +37,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 .navbar {
   font-family: $ui-font;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  font-size: 0.88rem;
+  font-size: 0.93rem;
   padding: 0.6rem 0;
 
   .navbar-brand {
@@ -47,7 +50,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   .nav-link {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.76rem;
+    font-size: 0.78rem;
     letter-spacing: 0.1em;
     padding-left: 0.75rem !important;
     padding-right: 0.75rem !important;
@@ -135,7 +138,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   }
 
   > p, > section > p {
-    font-size: 0.98rem;
+    font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
   }
@@ -160,18 +163,18 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
 .hero-subtitle {
   font-family: $ui-font;
-  font-size: 0.88rem;
+  font-size: 0.93rem;
   font-weight: 500;
-  color: #5a6577;
+  color: $muted;
   margin-bottom: 1rem;
   letter-spacing: 0.01em;
 }
 
 .hero-affiliations {
   font-family: $ui-font;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: #5a6577;
+  color: $muted;
   letter-spacing: 0.01em;
   margin-top: 0.5rem;
   padding-top: 0.75rem;
@@ -181,7 +184,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 }
 
 [data-bs-theme="dark"] .hero-affiliations {
-  color: #7a8ba0;
+  color: $muted-dark;
   border-top-color: rgba(255, 255, 255, 0.06);
 }
 
@@ -217,10 +220,10 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 }
 
 [data-bs-theme="dark"] .hero-subtitle {
-  color: #7a8ba0;
+  color: $muted-dark;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 576px) {
   .hero-grid {
     flex-direction: column;
     align-items: center;
@@ -256,7 +259,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 // Section label
 .section-label {
   font-family: $ui-font;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -292,7 +295,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
     .pub-journal {
       font-family: $ui-font;
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -301,7 +304,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     }
 
     h3 {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 600;
       line-height: 1.4;
       margin-top: 0;
@@ -310,23 +313,23 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
     .pub-summary {
       font-size: 0.93rem;
-      color: #5a6577;
+      color: $muted;
       line-height: 1.7;
       margin-bottom: 0.6rem;
     }
 
     .pub-links {
       font-family: $ui-font;
-      font-size: 0.82rem;
+      font-size: 0.85rem;
     }
   }
 }
 
 [data-bs-theme="dark"] .featured-pub-block .featured-pub-body .pub-summary {
-  color: #7a8ba0;
+  color: $muted-dark;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 576px) {
   .featured-pub-block {
     flex-direction: column;
     .featured-pub-image { width: 100%; max-width: 260px; }
@@ -340,7 +343,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   border-left: 3px solid rgba(30, 90, 150, 0.15);
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 0.25rem;
 
     a { text-decoration: none; &:hover { text-decoration: underline; } }
@@ -348,21 +351,21 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
   p {
     font-size: 0.93rem;
-    color: #5a6577;
+    color: $muted;
     margin-bottom: 0.2rem;
     line-height: 1.7;
   }
 
   .read-more {
     font-family: $ui-font;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     font-weight: 600;
   }
 }
 
 [data-bs-theme="dark"] .research-preview {
   border-left-color: rgba(107, 163, 214, 0.2);
-  p { color: #7a8ba0; }
+  p { color: $muted-dark; }
 }
 
 // News items - use flex but handle <p> wrapping
@@ -377,9 +380,9 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
   .news-date {
     font-family: $ui-font;
-    font-size: 0.75rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    color: #8896a8;
+    color: $faint;
     white-space: nowrap;
     min-width: 72px;
     padding-top: 0.15rem;
@@ -393,6 +396,13 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
 [data-bs-theme="dark"] .news-item {
   border-bottom-color: rgba(255,255,255,0.04);
+}
+
+.view-all {
+  font-family: $ui-font;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
 }
 
 // Software block
@@ -411,11 +421,11 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     flex: 1;
     font-size: 0.93rem;
 
-    strong { font-size: 1rem; }
+    strong { font-size: 1.05rem; }
 
     .software-links {
       font-family: $ui-font;
-      font-size: 0.82rem;
+      font-size: 0.85rem;
       font-weight: 500;
       margin-top: 0.3rem;
     }
@@ -447,7 +457,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   &:last-child { border-bottom: none; padding-bottom: 0; }
 
   > h3 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
 
     a { text-decoration: none; &:hover { text-decoration: underline; } }
@@ -468,7 +478,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     figcaption {
       font-family: $ui-font;
       font-size: 0.78rem;
-      color: #8896a8;
+      color: $faint;
       margin-top: 0.4rem;
       line-height: 1.5;
     }
@@ -476,13 +486,13 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
   .research-area-content {
     p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       line-height: 1.8;
     }
 
     .read-more {
       font-family: $ui-font;
-      font-size: 0.82rem;
+      font-size: 0.85rem;
       font-weight: 600;
       letter-spacing: 0.02em;
       padding: 0.3rem 0.9rem;
@@ -503,7 +513,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 [data-bs-theme="dark"] .research-area {
   border-bottom-color: rgba(255, 255, 255, 0.06);
 
-  .research-area-image figcaption { color: #7a8ba0; }
+  .research-area-image figcaption { color: $muted-dark; }
 }
 
 // ── Timeline (research pages) ───────────────────────────────
@@ -518,7 +528,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     position: relative;
     margin-bottom: 1.5rem;
     padding-left: 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.75;
 
     // Year dot
@@ -585,20 +595,20 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
     .cv-role {
       font-weight: 600;
-      font-size: 1.02rem;
+      font-size: 1.05rem;
       grid-column: 2;
     }
 
     .cv-institution {
       font-family: $ui-font;
-      font-size: 0.92rem;
-      color: #5a6577;
+      font-size: 0.93rem;
+      color: $muted;
       grid-column: 2;
     }
 
     .cv-details {
-      font-size: 0.92rem;
-      color: #5a6577;
+      font-size: 0.93rem;
+      color: $muted;
       grid-column: 2;
     }
   }
@@ -609,10 +619,10 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     border-bottom-color: rgba(255,255,255,0.04);
   }
   .cv-entry .cv-institution,
-  .cv-entry .cv-details { color: #7a8ba0; }
+  .cv-entry .cv-details { color: $muted-dark; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .cv-timeline .cv-entry {
     grid-template-columns: 1fr;
     gap: 0;
@@ -641,7 +651,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
   .team-name {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.05rem;
     margin-bottom: 0.15rem;
   }
 
@@ -662,14 +672,14 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   .team-meta {
     font-family: $ui-font;
     font-size: 0.78rem;
-    color: #8896a8;
+    color: $faint;
     margin-bottom: 0.4rem;
   }
 
   .team-desc {
     font-family: $ui-font;
     font-size: 0.85rem;
-    color: #5a6577;
+    color: $muted;
     margin-bottom: 0;
     line-height: 1.6;
   }
@@ -696,8 +706,8 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 .avatar-rose { background: #b85c6f; }
 
 [data-bs-theme="dark"] .team-card {
-  .team-meta { color: #7a8ba0; }
-  .team-desc { color: #7a8ba0; }
+  .team-meta { color: $muted-dark; }
+  .team-desc { color: $muted-dark; }
 }
 
 // ── Publication highlights ──────────────────────────────────
@@ -709,12 +719,12 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
   .pub-title {
     font-weight: 600;
-    font-size: 0.98rem;
+    font-size: 1rem;
   }
 
   .pub-venue {
     font-family: $ui-font;
-    font-size: 0.75rem;
+    font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -723,14 +733,14 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   }
 
   .pub-desc {
-    font-size: 0.9rem;
-    color: #5a6577;
+    font-size: 0.93rem;
+    color: $muted;
   }
 }
 
 [data-bs-theme="dark"] .pub-highlight {
   border-left-color: rgba(107, 163, 214, 0.2);
-  .pub-desc { color: #7a8ba0; }
+  .pub-desc { color: $muted-dark; }
 }
 
 // Citation counts (inline in venue/meta lines)
@@ -740,19 +750,19 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   letter-spacing: 0.02em;
   font-size: 0.9em;
   margin-left: 0.15em;
-  color: #8896a8;
+  color: $faint;
 }
 
 .bib-citations {
   font-family: $ui-font;
   font-size: 0.78rem;
   font-weight: 600;
-  color: #8896a8;
+  color: $faint;
 }
 
 [data-bs-theme="dark"] {
-  .pub-citations { color: #7a8ba0; }
-  .bib-citations { color: #6b7d91; }
+  .pub-citations { color: $muted-dark; }
+  .bib-citations { color: $muted-dark; }
 }
 
 // Publication highlight rows (image + text)
@@ -791,12 +801,12 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     justify-content: center;
     padding: 0.5rem 0 0.5rem 0.5rem;
     font-size: 0.85em;
-    color: #5a6577;
+    color: $muted;
   }
 }
 
 [data-bs-theme="dark"] .pub-row .pub-eq {
-  color: #7a8ba0;
+  color: $muted-dark;
 }
 
 @media (max-width: 576px) {
@@ -849,7 +859,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 #refs .csl-entry {
   padding: 0.4rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.03);
-  font-size: 0.92rem;
+  font-size: 0.93rem;
 }
 
 [data-bs-theme="dark"] #refs .csl-entry {
@@ -860,7 +870,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
 .btn {
   font-family: $ui-font;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   padding: 0.4rem 1.15rem;
@@ -877,7 +887,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   margin-bottom: 2rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 576px) {
   .talk-grid { grid-template-columns: 1fr; }
 }
 
@@ -901,7 +911,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     padding: 0.9rem 1rem;
 
     p {
-      font-size: 0.92rem;
+      font-size: 0.93rem;
       line-height: 1.5;
       margin-bottom: 0.15rem;
 
@@ -911,7 +921,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     // Venue line (second paragraph)
     > p:nth-of-type(2) {
       font-size: 0.85rem;
-      color: #5a6577;
+      color: $muted;
     }
 
     .talk-slides-link {
@@ -926,13 +936,13 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   border-color: rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.02);
 
-  .talk-card-body > p:nth-of-type(2) { color: #7a8ba0; }
+  .talk-card-body > p:nth-of-type(2) { color: $muted-dark; }
 }
 
 // Talk meta label (Invited, Keynote, etc.)
 .talk-meta {
   font-family: $ui-font;
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -959,14 +969,14 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   }
 
   > p {
-    font-size: 0.9rem;
-    color: #5a6577;
+    font-size: 0.93rem;
+    color: $muted;
     margin-bottom: 0.3rem;
   }
 
   .talk-links {
     font-family: $ui-font;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     font-weight: 500;
     margin-top: 0.3rem;
 
@@ -976,14 +986,14 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
 [data-bs-theme="dark"] .talk-entry {
   border-bottom-color: rgba(255, 255, 255, 0.05);
-  > p { color: #7a8ba0; }
+  > p { color: $muted-dark; }
 }
 
 // ── Footer ──────────────────────────────────────────────────
 
 .nav-footer {
   font-family: $ui-font;
-  font-size: 0.88rem;
+  font-size: 0.93rem;
   padding: 2rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 
@@ -1021,20 +1031,44 @@ blockquote {
   border-left: 3px solid var(--bs-primary);
   padding-left: 1.25rem;
   font-style: italic;
-  color: #5a6577;
+  color: $muted;
 }
 
 [data-bs-theme="dark"] blockquote {
-  color: #7a8ba0;
+  color: $muted-dark;
 }
 
 .column-margin, .margin-caption {
   font-family: $ui-font;
-  font-size: 0.83rem;
+  font-size: 0.85rem;
 }
 
 .lightbox img {
   cursor: zoom-in;
+}
+
+// ── Dark-mode shadows ──────────────────────────────────────
+// Light-mode rgba(0,0,0,...) shadows are invisible on dark backgrounds.
+
+[data-bs-theme="dark"] {
+  .hero-photo-wrap img {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .featured-pub-image img,
+  .research-area-image img,
+  .team-card img,
+  .avatar-placeholder {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+  }
+
+  .pub-img img {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  }
+
+  .talk-card:hover {
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (max-width: 768px) {

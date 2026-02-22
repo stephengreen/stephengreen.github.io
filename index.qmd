@@ -92,7 +92,7 @@ Led by Max Dax, this work demonstrates that neural posterior estimation can enab
 ::: {.featured-pub-block}
 
 ::: {.featured-pub-image}
-![](https://img.youtube.com/vi/gl5DchHeQF0/mqdefault.jpg)
+![](https://img.youtube.com/vi/gl5DchHeQF0/hqdefault.jpg)
 :::
 
 ::: {.featured-pub-body}
@@ -155,6 +155,8 @@ News
 
 :::{#home-news}
 :::
+
+[View all &rarr;](/blog/){.view-all}
 
 :::
 

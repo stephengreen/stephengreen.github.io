@@ -42,7 +42,7 @@ blog/                # News posts (navbar says "News")
   nature-publication/ # Nature 2025 paper
   flf/               # FLF announcement
   gwfreeride/         # Sexten workshop
-  welcome/            # Site launch
+  max-dax-phd/       # Max Dax PhD defence
 cv/index.qmd         # CV with grid layout
 styles/              # SCSS files
 scripts/             # Lua filter, INSPIRE fetch script
