@@ -141,7 +141,7 @@ Simulation-based inference for gravitational-wave parameter estimation. Our [Din
 ::: {.research-preview}
 ### [Classical Gravity](research/gravity/)
 
-Black hole perturbation theory and metric reconstruction for LISA sources. Discovery of turbulent cascades in anti-de Sitter spacetime. Rigorous perturbative framework for cosmological backreaction with R. Wald.
+New methods for black hole perturbation theory, including metric reconstruction and quasinormal mode orthogonality, with applications to LISA sources. Earlier work uncovered gravitational turbulence in anti-de Sitter spacetime and ruled out cosmological backreaction as an alternative to dark energy.
 
 [Read more &rarr;](research/gravity/){.read-more}
 :::

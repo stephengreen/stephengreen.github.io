@@ -29,7 +29,7 @@ over simulated data pairs $(\theta, d)$ drawn from the prior and likelihood. Onc
 
 ### Highlights
 
-My collaborators and I are an interdisciplinary team developing SBI methods for gravitational waves. Our research ranges from advancing ML methods to science applications. Highlights include:
+My group develops SBI methods for gravitational waves, in an interdisciplinary collaboration spanning physics and machine learning. Our work ranges from advancing methodology to astrophysical applications. Highlights include:
 
 ::: {.timeline}
 
