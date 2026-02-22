@@ -15,12 +15,12 @@ filters:
 ## Recent Highlights
 
 :::: {.pub-row}
-::: {.pub-highlight key="Dax:2024mcn"}
-M. Dax et al. Neural posterior estimation enables one-second inference for BNS mergers, including sky localization crucial for multimessenger follow-up.
+::: {.pub-highlight key="Kofler:2025dux"}
+A. Kofler et al. Transformer-based architecture for gravitational-wave inference that generalizes across detector networks and frequency ranges without retraining, with strong performance and a foundation for further flexibility.
 :::
 
 ::: {.pub-img}
-![](images/dax-bns.jpg)
+![](images/kofler-dingot1.png)
 :::
 ::::
 

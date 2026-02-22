@@ -41,9 +41,7 @@ My collaborators and I are an interdisciplinary team developing SBI methods for 
 
 **2023** -- Application to hierarchical Bayesian inference for **populations of binaries** [@Leyde:2023iof] (with K. Leyde). This combines results from many observations to infer properties of the population as a whole, including the distribution of masses and the cosmological expansion rate.
 
-**2024** -- Extension to **binary neutron stars** [@Dax:2024mcn], coupling classical GW data analysis techniques such as heterodyning and multibanding with prior conditioning to tackle the problem of high data dimensionality. We obtain complete inference results in one second, enabling localization even before the merger takes place.
-
-**2025** -- BNS work published in [*Nature*](https://doi.org/10.1038/s41586-025-08593-z) [@Dax:2024mcn], demonstrating real-time sky localization for **multimessenger follow-up** --- enabling telescopes to find neutron star mergers even before the merger takes place.
+**2025** -- Extension to **binary neutron stars**, published in [*Nature*](https://doi.org/10.1038/s41586-025-08593-z) [@Dax:2024mcn]. We coupled classical GW data analysis techniques (heterodyning and multibanding) with prior conditioning to simplify BNS signal morphology for the neural network. This enables complete inference in one second, including **sky localization for multimessenger follow-up** even before the merger takes place. ([Blog post](/blog/nature-publication/))
 
 :::
 

@@ -179,7 +179,7 @@ University of Toronto (Trinity College)
 - Nihar Gupte (AEI, 2021--2022)
 - Pablo Bosch (Perimeter, 2015--2019)
 
-### Schools
+### Lecture Series & Schools
 
 - **Kavli-Villum Summer School on Gravitational Waves**, Corfu, Greece (2023)
   Lecturer, "Machine Learning for Gravitational Waves"
