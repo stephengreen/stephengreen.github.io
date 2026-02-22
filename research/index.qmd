@@ -4,7 +4,11 @@ description-meta: Research overview covering simulation-based inference for grav
 toc: false
 ---
 
-My research develops computational and mathematical methods for gravitational-wave astronomy, and addresses foundational questions in general relativity. Two threads connect this work: extracting physics from complex data, and the nonlinear dynamics of Einstein's equations.
+My research spans machine learning for gravitational-wave astronomy and foundational problems in classical general relativity.
+
+My group's main focus is developing **simulation-based inference** methods for gravitational-wave data analysis, enabling real-time parameter estimation with neural networks. In **classical gravity**, I have worked on several distinct problems: black hole perturbation theory — where recent results on quasinormal mode orthogonality connect to gravitational-wave modelling — as well as the nonlinear dynamics of anti-de Sitter spacetime and the cosmological backreaction problem.
+
+See also the [research group](/team/) and [publications](/publications/).
 
 ::: {.research-area}
 
@@ -18,7 +22,7 @@ My research develops computational and mathematical methods for gravitational-wa
 
 Gravitational-wave detectors are observing an accelerating number of black hole and neutron star mergers, and extracting the physics from each event requires computationally intensive Bayesian inference. We develop **simulation-based inference** methods that train neural networks to directly learn the posterior distribution from simulated data, bypassing the likelihood entirely.
 
-Our open-source code [**Dingo**](https://github.com/dingo-gw/dingo) produces full 15-dimensional posterior distributions for binary black hole mergers in seconds --- a speedup of $10^4$--$10^5$ over traditional samplers, with statistically equivalent results. We have applied Dingo to [all events from the first three LIGO-Virgo observing runs](https://arxiv.org/abs/2404.14286), finding the first evidence for orbital eccentricity in the binary black hole population. Most recently, we extended these methods to [binary neutron star mergers](https://doi.org/10.1038/s41586-025-08593-z) (Nature, 2025), enabling real-time sky localization for multimessenger follow-up.
+Our open-source code [**Dingo**](https://github.com/dingo-gw/dingo) produces full posterior distributions in seconds --- a speedup of $10^4$--$10^5$ over traditional samplers --- and has been applied to all events from the first three LIGO-Virgo observing runs, including [binary neutron star mergers](https://doi.org/10.1038/s41586-025-08593-z) (Nature, 2025).
 
 [Read more &rarr;](sbi/){.read-more}
 
@@ -35,13 +39,7 @@ Our open-source code [**Dingo**](https://github.com/dingo-gw/dingo) produces ful
 ![Gravitational turbulence in anti-de Sitter spacetime. Vorticity snapshots from numerical simulations showing the inverse energy cascade from small to large scales, analogous to two-dimensional fluid turbulence.](gravity/turbulence-small.jpg)
 :::
 
-I work on foundational problems in gravitational physics, spanning perturbation theory, nonlinear dynamics, and cosmology.
-
-In **black hole perturbation theory**, with S. Hollands and others, we developed new techniques for [metric reconstruction in Kerr spacetime](https://arxiv.org/abs/1908.09095) that enable second-order self-force calculations, and established the [orthogonality of quasinormal modes](https://arxiv.org/abs/2210.15935), providing the foundation for a perturbation theory of black holes with applications to [boson clouds](https://doi.org/10.1103/PhysRevLett.132.051401) (PRL) and [nonlinear ringdown](https://arxiv.org/abs/2112.11168).
-
-In **anti-de Sitter spacetime**, we discovered that confined gravitational waves undergo a [turbulent inverse cascade](https://arxiv.org/abs/1309.7940), transferring energy to ever-larger scales. Using two-timescale perturbation theory, we identified [islands of stability](https://arxiv.org/abs/1504.04161) amid generic instability, connecting to the classical Fermi-Pasta-Ulam-Tsingou problem.
-
-In **cosmology**, with R. Wald, we established a rigorous [perturbative framework for backreaction](https://arxiv.org/abs/1407.8084), showing that nonlinear effects from inhomogeneities cannot mimic dark energy.
+With S. Hollands and others, we developed new methods for [metric reconstruction in Kerr spacetime](https://arxiv.org/abs/1908.09095) and proved the [orthogonality of quasinormal modes](https://arxiv.org/abs/2210.15935), with applications to [boson clouds](https://doi.org/10.1103/PhysRevLett.132.051401) (PRL) and [nonlinear ringdown](https://arxiv.org/abs/2112.11168). In anti-de Sitter spacetime, we discovered [gravitational turbulence](https://arxiv.org/abs/1309.7940) and identified [islands of stability](https://arxiv.org/abs/1504.04161) amid generic nonlinear instability. With R. Wald, we established a rigorous [backreaction framework](https://arxiv.org/abs/1407.8084) ruling out large-scale effects from cosmological inhomogeneities.
 
 [Read more &rarr;](gravity/){.read-more}
 

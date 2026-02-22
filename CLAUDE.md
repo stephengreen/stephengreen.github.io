@@ -19,10 +19,13 @@ Deployed to GitHub Pages from `/docs` on the `main` branch at [stephenrgreen.com
 ## Key Design Decisions
 
 - **Fonts**: Source Serif 4 (body/headings), Source Sans 3 (UI elements: navbar, buttons, labels, dates), JetBrains Mono (code). Serif is the primary body font.
-- **Colors**: Warm cream background (#faf9f6), scholarly blue accent (#1e5a96), navy text (#1b2a4a). Dark mode: deep blue-grey (#101824), muted blue (#6ba3d6).
+- **Colors**: Warm cream background (#faf9f6), scholarly blue accent (#1e5a96), navy text (#1b2a4a). Dark mode: deep blue-grey (#101824), muted blue (#6ba3d6). Muted text colors use SCSS variables: `$muted` (#5a6577), `$muted-dark` (#7a8ba0), `$faint` (#8896a8).
+- **Font-size scale**: 11 intentional sizes (display 2.2rem → label 0.72rem). Do not introduce new sizes without absorbing into the existing scale.
+- **Breakpoints**: 576px (layout collapse) and 768px (font-size). Do not introduce new breakpoints.
 - **No title-block-banner** anywhere. No Cosmo/Solar themes. Built on Quarto's `default` theme.
-- **Homepage** uses `page-layout: custom` with centered photo/bio hero.
-- Publications page has hand-curated highlights at top, then full auto-generated bibliography grouped by year.
+- **Homepage** uses `page-layout: custom` with hero, research previews, featured pub, news, software, and contact section (with Google Maps embed).
+- **Footer**: Three balanced columns — institution (left), academic icons (center), copyright + links (right). Contact details live on the homepage, not the footer.
+- Publications page has hand-curated highlights at top (currently 5), then full auto-generated bibliography grouped by year.
 
 ## Structure
 

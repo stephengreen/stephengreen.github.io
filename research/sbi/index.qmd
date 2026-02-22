@@ -68,4 +68,4 @@ With the Bayesian evidence from importance sampling, one can compare eccentric v
 
 ### Next steps
 
-We are currently working on extending Dingo to precessing and higher-order-mode waveform models, implementing realistic non-Gaussian noise modelling, and preparing for deployment within the LVK low-latency infrastructure for O5 and beyond.
+We are currently working on extending Dingo to precessing and higher-order-mode waveform models, implementing realistic non-Gaussian noise modelling, and preparing for deployment within the LVK low-latency infrastructure for O5 and beyond. See the [publications page](/publications/) for a full list of papers.

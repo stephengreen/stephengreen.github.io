@@ -79,7 +79,8 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 .talk-card .talk-card-body, .talk-card .talk-meta,
 .pub-highlight .pub-title, .pub-highlight .pub-venue, .pub-highlight .pub-desc,
 .pub-img, .pub-eq,
-.research-area-image {
+.research-area-image,
+.contact-text {
   > p {
     margin-bottom: 0;
   }
@@ -434,6 +435,47 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
 [data-bs-theme="dark"] .software-block {
   background: rgba(107, 163, 214, 0.05);
+}
+
+// Contact section
+.contact-grid {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.contact-text {
+  flex: 1;
+  font-family: $ui-font;
+  font-size: 0.93rem;
+  color: $muted;
+  line-height: 1.7;
+}
+
+[data-bs-theme="dark"] .contact-text {
+  color: $muted-dark;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  width: 280px;
+
+  iframe {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+  }
+}
+
+[data-bs-theme="dark"] .contact-map iframe {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 576px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+  .contact-map {
+    width: 100%;
+  }
 }
 
 // Section divider
@@ -996,6 +1038,16 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   font-size: 0.93rem;
   padding: 2rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
+  align-items: center !important;
+
+  .nav-footer-left, .nav-footer-center, .nav-footer-right {
+    > p { margin: 0; }
+  }
+
+  .nav-footer-center {
+    min-height: unset;
+    line-height: 1;
+  }
 
   a {
     color: inherit;

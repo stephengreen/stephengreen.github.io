@@ -151,6 +151,4 @@ Advanced architectures, scaling, and flexible networks.
 
 Our group sits at the intersection of machine learning and gravitational-wave physics, with strong ties to the LVK collaboration, the LISA Consortium, and the ML groups at MPI-IS Tübingen. We are funded by a [UKRI Future Leaders Fellowship](/blog/flf/) (2024--2028) and an STFC Consolidated Grant.
 
-We welcome enquiries from prospective postdocs, PhD students, and visiting researchers. Current interests include simulation-based inference for next-generation detectors, neural waveform modelling, and black hole perturbation theory for LISA sources.
-
-For current opportunities, contact [Stephen Green](mailto:stephen.green2@nottingham.ac.uk).
+We welcome enquiries from prospective PhD students, postdocs, fellowship applicants, and visiting researchers. Please [get in touch](mailto:{{< var email >}}).

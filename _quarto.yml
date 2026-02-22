@@ -44,13 +44,15 @@ website:
 
   page-footer:
     left: |
-      School of Mathematical Sciences, University of Nottingham
-      <br>[{{< var email >}}](mailto:{{< var email >}})
+      School of Mathematical Sciences
+      <br>University of Nottingham
     center: |
       [{{< iconify academicons:google-scholar size=1.3em >}}](https://scholar.google.com/citations?user={{< var google-scholar >}}&hl=en)&ensp;
       [{{< iconify academicons:orcid size=1.3em >}}](https://orcid.org/{{< var orcid >}})&ensp;
       [{{< iconify academicons:inspire size=1.3em >}}](https://inspirehep.net/authors/{{< var inspire >}})
-    right: "<script>document.write('&copy; ' + new Date().getFullYear() + ' Stephen Green')</script>"
+    right: |
+      <script>document.write('&copy; ' + new Date().getFullYear() + ' Stephen Green')</script>
+      Built with [Quarto](https://quarto.org) · [Source](https://github.com/stephenrgreen/stephenrgreen.github.io)
 
 bibliography: [references/INSPIRE.bib, references/references-other.bib]
 csl: references/aps.csl

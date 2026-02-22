@@ -29,6 +29,7 @@ listing:
 [{{< iconify academicons:google-scholar size=1.4em >}}](https://scholar.google.com/citations?user={{< var google-scholar >}}&hl=en)
 [{{< iconify academicons:inspire size=1.4em >}}](https://inspirehep.net/authors/{{< var inspire >}})
 [{{< iconify academicons:orcid size=1.4em >}}](https://orcid.org/{{< var orcid >}})
+[{{< iconify fa6-brands:linkedin size=1.3em >}}](https://www.linkedin.com/in/{{< var linkedin >}})
 [{{< iconify mdi:email size=1.3em >}}](mailto:{{< var email >}})
 :::
 :::
@@ -186,6 +187,33 @@ Software
 [Trained Networks](https://zenodo.org/communities/dingo-gw/records)
 :::
 
+:::
+
+:::
+
+:::
+:::
+
+::: {.home-band}
+::: {.home-content}
+
+::: {.section-label}
+Contact
+:::
+
+::: {.contact-grid}
+
+::: {.contact-text}
+{{< iconify mdi:email size=1.1em >}} [{{< var email >}}](mailto:{{< var email >}})\
+{{< iconify mdi:phone size=1.1em >}} {{< var phone >}}
+
+{{< iconify mdi:map-marker size=1.1em >}} B25 Mathematical Sciences Building\
+School of Mathematical Sciences\
+University of Nottingham
+:::
+
+::: {.contact-map}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-1.1920771!3d52.9405891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c20ed7e1d009%3A0xb1e4e36bf6f82fd!2sSchool%20of%20Mathematical%20Sciences!5e0!3m2!1sen!2suk!4v1" width="100%" height="200" style="border:0; border-radius: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 :::
 
 :::

@@ -22,3 +22,5 @@ where $\mathcal M = (m_1 m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass of the sy
 * **Multibanding.** We use a coarser resolution at higher frequencies, enabling greater compression of the data for input to the neural network.
 
 Together, heterodyning and multibanding greatly simplify the data and reduce its dimensionality. However, to successfully heterodyne, it is necessary to know an approximation to the chirp mass.
+
+For more on our simulation-based inference programme, see the [research page](/research/sbi/).

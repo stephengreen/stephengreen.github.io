@@ -72,4 +72,6 @@ With R. Wald, I developed a framework [@Green:2010qy] in which such "backreactio
 
 Our work on backreaction was controversial in certain communities, leading to heated discussions on the arXiv (see [@Buchert:2015iva] and our reply [@Green:2015bma]). In [@Green:2016cwo] we summarize our approach, and argue that the key point is that the universe should be viewed at the level of the metric, *not* the curvature. At the level of metric perturbations, the universe is homogeneous to one part in $10^4$ except near strong field objects like black holes. We prove general results that such inhomogeneities cannot lead to significant backreaction.
 
+See the [publications page](/publications/) for a full list of papers.
+
 ![At the level of the spacetime *metric*, the universe is very nearly FLRW. By contrast, density (and hence curvature) inhomogeneities are much larger.](averaging.png){.lightbox}
