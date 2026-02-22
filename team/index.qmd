@@ -15,7 +15,7 @@ Our research group works on gravitational waves, machine learning for science, a
 <img src="../profile.jpg" alt="Stephen Green">
 
 ::: {.team-name}
-Stephen Green
+Dr Stephen Green
 :::
 ::: {.team-role .team-role--pi}
 Principal Investigator
@@ -24,39 +24,8 @@ Principal Investigator
 UKRI Future Leaders Fellow
 :::
 ::: {.team-desc}
-Simulation-based inference for gravitational waves, black hole perturbation theory, nonlinear dynamics in AdS, cosmological backreaction.
-:::
-:::
-:::
-
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.team-card}
-<div class="avatar-placeholder avatar-purple">AG</div>
-
-::: {.team-name}
-Alexandre Göttel
-:::
-::: {.team-role .team-role--postdoc}
-Postdoctoral Researcher
-:::
-::: {.team-desc}
-GW data analysis, simulation-based inference, dark matter searches with LIGO.
-:::
-:::
-:::
-
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-::: {.team-card}
-<img src="images/lorenzo.png" alt="Lorenzo Pompili">
-
-::: {.team-name}
-[Lorenzo Pompili](https://lorenzopompili00.github.io/)
-:::
-::: {.team-role .team-role--postdoc}
-Postdoctoral Researcher
-:::
-::: {.team-desc}
-Waveform modeling (effective-one-body), tests of general relativity.
+SBI for gravitational waves,\
+black hole perturbation theory.
 :::
 :::
 :::
@@ -66,13 +35,45 @@ Waveform modeling (effective-one-body), tests of general relativity.
 <img src="images/matthew.jpg" alt="Matthew Mould">
 
 ::: {.team-name}
-[Matthew Mould](https://www.mattmould.com/)
+[Dr Matthew Mould](https://www.mattmould.com/)
 :::
 ::: {.team-role .team-role--fellow}
 1851 Research Fellow
 :::
 ::: {.team-desc}
-GW population inference, machine learning for black hole formation.
+Statistical methods for gravitational-wave populations and compact binary formation.
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.team-card}
+<div class="avatar-placeholder avatar-purple">AG</div>
+
+::: {.team-name}
+Dr Alexandre Göttel
+:::
+::: {.team-role .team-role--postdoc}
+Postdoctoral Researcher
+:::
+::: {.team-desc}
+Simulation-based inference, dark matter searches with GW detectors.
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.team-card}
+<img src="images/lorenzo.png" alt="Lorenzo Pompili">
+
+::: {.team-name}
+[Dr Lorenzo Pompili](https://lorenzopompili00.github.io/)
+:::
+::: {.team-role .team-role--postdoc}
+Postdoctoral Researcher
+:::
+::: {.team-desc}
+Waveform modelling, tests of general relativity, simulation-based inference.
 :::
 :::
 :::
@@ -88,14 +89,14 @@ Jacopo Lestingi
 PhD Student
 :::
 ::: {.team-desc}
-BH perturbation theory in GR and alternatives. Emphasis on quasinormal modes and asymmetric compact objects.
+BH perturbation theory, quasinormal modes, and asymmetric compact objects.
 :::
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.team-card}
-<div class="avatar-placeholder avatar-blue">AR</div>
+<img src="images/alex-r.png" alt="Alexander Roussopoulos">
 
 ::: {.team-name}
 Alex Roussopoulos
@@ -104,14 +105,14 @@ Alex Roussopoulos
 PhD Student
 :::
 ::: {.team-desc}
-SBI for environmental effects in binary mergers.
+SBI for astrophysical environments of binary mergers.
 :::
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.team-card}
-<div class="avatar-placeholder avatar-teal">CF</div>
+<img src="images/cecilia.jpeg" alt="Cecilia Fabbri">
 
 ::: {.team-name}
 Cecilia Fabbri
@@ -120,14 +121,14 @@ Cecilia Fabbri
 PhD Student
 :::
 ::: {.team-desc}
-Population inference and simulation-based inference for gravitational waves.
+Astrophysics of binaries using machine learning and population analysis.
 :::
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.team-card}
-<img src="images/annalena.jpg" alt="Annalena Kofler">
+<img src="images/annalena.png" alt="Annalena Kofler">
 
 ::: {.team-name}
 [Annalena Kofler](https://www.annalenakofler.com)
@@ -136,16 +137,19 @@ Population inference and simulation-based inference for gravitational waves.
 Affiliated PhD Student
 :::
 ::: {.team-meta}
-MPI for Intelligent Systems, Tübingen
+MPI for Intelligent Systems and AEI
 :::
 ::: {.team-desc}
-Advanced architectures, scaling, and flexible networks.
+Transformers for flexible GW simulation-based inference.
 :::
 :::
 :::
 
 :::
 
+## Alumni
+
+* **[Dr Maximilian Dax](https://www.max-dax.com/)** (PhD, MPI-IS, co-supervised; now PI at Ellis Institute Tübingen)
 
 ## Join Us
 
