@@ -47,10 +47,10 @@ website:
       School of Mathematical Sciences, University of Nottingham
       <br>[{{< var email >}}](mailto:{{< var email >}})
     center: |
-      [{{< iconify academicons:google-scholar size=1.2em >}}](https://scholar.google.com/citations?user={{< var google-scholar >}}&hl=en)&ensp;
-      [{{< iconify academicons:orcid size=1.2em >}}](https://orcid.org/{{< var orcid >}})&ensp;
-      [{{< iconify academicons:inspire size=1.2em >}}](https://inspirehep.net/authors/{{< var inspire >}})
-    right: "&copy; 2026 Stephen Green"
+      [{{< iconify academicons:google-scholar size=1.3em >}}](https://scholar.google.com/citations?user={{< var google-scholar >}}&hl=en)&ensp;
+      [{{< iconify academicons:orcid size=1.3em >}}](https://orcid.org/{{< var orcid >}})&ensp;
+      [{{< iconify academicons:inspire size=1.3em >}}](https://inspirehep.net/authors/{{< var inspire >}})
+    right: "<script>document.write('&copy; ' + new Date().getFullYear() + ' Stephen Green')</script>"
 
 bibliography: [references/INSPIRE.bib, references/references-other.bib]
 csl: references/aps.csl
