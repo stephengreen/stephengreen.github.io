@@ -149,7 +149,7 @@ Transformers for flexible GW simulation-based inference.
 
 ## Alumni
 
-* **[Dr Maximilian Dax](https://www.max-dax.com/)** (PhD, MPI-IS, co-supervised; now PI at Ellis Institute Tübingen)
+* **[Dr Maximilian Dax](https://max-dax.github.io)** (PhD, MPI-IS, co-supervised; now PI at Ellis Institute Tübingen)
 
 ## Join Us
 
