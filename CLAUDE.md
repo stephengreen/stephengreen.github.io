@@ -81,5 +81,5 @@ quarto render     # Builds to docs/
 ## Notes
 
 - Blog directory is `/blog/` but the navbar label is "News".
-- The team page deliberately does not have an "Alumni" section. MPI-IS collaborators (Max Dax et al.) are mentioned via the intro text linking to MPI-IS/AEI rather than individual entries, to avoid ambiguity about the supervisory relationship.
+- The team page has an Alumni section with Max Dax. MPI-IS collaborators are also mentioned via the intro text linking to MPI-IS/AEI.
 - Stephen co-supervises MPI-IS students day-to-day but B. Schölkopf is their official supervisor. Be careful about how this is framed.

@@ -171,23 +171,6 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   letter-spacing: 0.01em;
 }
 
-.hero-affiliations {
-  font-family: $ui-font;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: $muted;
-  letter-spacing: 0.01em;
-  margin-top: 0.5rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-
-  > p { margin-bottom: 0; }
-}
-
-[data-bs-theme="dark"] .hero-affiliations {
-  color: $muted-dark;
-  border-top-color: rgba(255, 255, 255, 0.06);
-}
 
 .hero-links {
   font-family: $ui-font;
@@ -742,10 +725,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   box-shadow: 0 1px 8px rgba(0,0,0,0.06);
 }
 
-.avatar-blue { background: #4a7fb5; }
 .avatar-purple { background: #7b6ba8; }
-.avatar-teal { background: #3a8f7d; }
-.avatar-rose { background: #b85c6f; }
 
 [data-bs-theme="dark"] .team-card {
   .team-meta { color: $muted-dark; }

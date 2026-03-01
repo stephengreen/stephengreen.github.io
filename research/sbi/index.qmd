@@ -22,7 +22,7 @@ SBI replaces likelihood evaluations with **simulations**. A neural network $q_\p
 $$
 L[\phi] = \mathbb{E}_{p(\theta, d)}\left[-\log q_\phi(\theta\mid d)\right],
 $$
-over simulated data pairs $(\theta, d)$ drawn from the joint distribution. To obtain these pairs, we sample hierarchically: first draw from the prior $\theta \sim p(\theta)$, then simulate data $d\sim p(d\mid\theta)$. Once trained, the network produces posterior samples via fast forward passes, and can be re-used for every new observation--amortizing the training cost.
+over simulated data pairs $(\theta, d)$ drawn from the joint distribution. To obtain these pairs, we sample hierarchically: first draw from the prior $\theta \sim p(\theta)$, then simulate data $d\sim p(d\mid\theta)$. Once trained, the network produces posterior samples via fast forward passes, and can be re-used for every new observation---amortizing the training cost.
 
 
 ## Our research
@@ -37,7 +37,7 @@ My group develops SBI methods for gravitational waves, in an interdisciplinary c
 
 **2021** -- Together with PhD student Max Dax at MPI-IS, achieved **full amortization** by conditioning on noise power spectral density $\to q_\phi(\theta | d, S_n)$ [@Dax:2021tsq]. This allows for tuning of the network to the detector at the time of the event. Also introduced group-equivariant NPE to achieve higher performance using symmetries [@Dax:2021myb].
 
-**2022** -- Introduced **neural importance sampling** to verify and correct NPE results [@Dax:2022pxd]. This gives also the Bayesian evidence and can be used as a flag for systematics issues (data quality, signal modeling).
+**2022** -- Introduced **neural importance sampling** to verify and correct NPE results [@Dax:2022pxd]. This also gives the Bayesian evidence and can be used as a flag for systematics issues (data quality, signal modeling).
 
 **2023** -- Application to hierarchical Bayesian inference for **populations of binaries** [@Leyde:2023iof] (with K. Leyde). This combines results from many observations to infer properties of the population as a whole, including the distribution of masses and the cosmological expansion rate.
 
@@ -70,5 +70,5 @@ With the Bayesian evidence from importance sampling, one can compare eccentric v
 
 ### Other applications
 
-* **Next-generation observatories.** Filippo Santoliquido *et al* have applied DINGO to inference of high-redshift sources for the Einstein Telescope [@Santoliquido:2025lot]. In later work, they used DINGO to to perform injections studies to compare various Einstein Telescope and Cosmic Explorer configurations [@Santoliquido:2025aiq]. They showed that certain combinations (e.g., two misaligned ET detectors) are better at breaking sky-position degeneracies.
-* **Gravitational lensing.** Several works have applied DINGO to look for GW signals distorted by intervening mass distributions [@Chan:2025pdf,@Caldarola:2025oxr,@Chan:2025kyu]. Lensing analyses are generally expensive because of the cost of calculating the frequency modulation due to the lens, making DINGO especially useful. DINGO has also been used to calculate background lensing rates and used to look for lensing in GW231123.
+* **Next-generation observatories.** Filippo Santoliquido *et al* have applied DINGO to inference of high-redshift sources for the Einstein Telescope [@Santoliquido:2025lot]. In later work, they used DINGO to perform injection studies to compare various Einstein Telescope and Cosmic Explorer configurations [@Santoliquido:2025aiq]. They showed that certain combinations (e.g., two misaligned ET detectors) are better at breaking sky-position degeneracies.
+* **Gravitational lensing.** Several works have applied DINGO to look for GW signals distorted by intervening mass distributions [@Chan:2025pdf,@Caldarola:2025oxr,@Chan:2025kyu]. Lensing analyses are generally expensive because of the cost of calculating the frequency modulation due to the lens, making DINGO especially useful. DINGO has also been used to calculate background lensing rates and to look for lensing in GW231123.
