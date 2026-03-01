@@ -6,6 +6,8 @@ categories: [workshop, news]
 description: "We organized GWFreeride, a workshop on AI for gravitational-wave astronomy, at the Sexten Center for Astrophysics."
 ---
 
+![Group photo at GWFreeride](sexten-group-photo.jpg)
+
 In January 2026 we held [GWFreeride: Carving the AI Gradient in Gravitational-Wave Astronomy](https://sites.google.com/unimib.it/gwfreeride), a workshop at the Sexten Center for Astrophysics in the Italian Dolomites.
 
 The workshop brought together researchers in AI and gravitational-wave astronomy to map out challenges and opportunities for the coming decade. Topics included simulation-based inference, waveform modeling with neural networks, population inference, the LISA global fit, non-Gaussian noise mitigation, and data analysis strategies for next-generation observatories like the Einstein Telescope and Cosmic Explorer.
