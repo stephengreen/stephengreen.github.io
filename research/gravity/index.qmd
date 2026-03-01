@@ -4,27 +4,37 @@ description-meta: Black hole perturbation theory, quasinormal mode orthogonality
 toc: true
 ---
 
-My work in theoretical gravitational physics spans black hole perturbation theory, nonlinear dynamics in anti-de Sitter spacetime, and relativistic cosmology.
+Accurate theoretical predictions for gravitational waves are essential for extracting the most physics from observations. My work in theoretical gravitational physics is in black hole perturbation theory, and aims to make better predictions for the ringdown phase following a merger. I have also worked on nonlinear dynamics in anti-de Sitter spacetime and relativistic cosmology.
 
 ## Black Hole Perturbation Theory
 
-Extreme mass-ratio inspirals are an exciting source for the future LISA gravitational-wave detector, but making predictions for waveforms is extremely complicated. For accurate parameter estimation, the "self force" must be calculated to second order in the mass ratio.
+In several astrophysically relevant scenarios, one can treat spacetime as a small deviation away from the [Kerr solution](https://en.wikipedia.org/wiki/Kerr_metric) for a stationary rotating black hole. For an extreme mass-ratio inspiral, for instance, where a small body spirals into a massive black hole, one can treat the small body as a perturbation about the massive Kerr black hole. Likewise, following a merger of roughly equal-mass black holes, the final remnant black hole is well-described as a perturbation away from Kerr. Here, the final black hole rings down until it is stationary, and for much of its evolution is described by [quasinormal modes](https://en.wikipedia.org/wiki/Quasinormal_mode)---with characteristeric frequencies that depend only on the mass and spin of the object. Much of my work is motivated by trying extend perturbation theory beyond linear order.
 
-### Metric reconstruction and self-force
+<!-- Extreme mass-ratio inspirals are an exciting source for the future LISA gravitational-wave detector, but making predictions for waveforms is extremely complicated. For accurate parameter estimation, the "self force" must be calculated to second order in the mass ratio. -->
 
-The self-force framework treats the small body as a "perturbation" about a much larger Kerr black hole. Because we are dealing with a spin-2 field, perturbation theory in general relativity is in general quite complicated. However, for perturbations of Kerr, the problem reduces to that of a single complex scalar field (a curvature scalar), which satisfies a *separable* wave equation. This discovery by Teukolsky is based on hidden symmetries of the Kerr spacetime.
+### Teukolsky formalism for nonlinear perturbations
+
+Because we are dealing with a spin-2 field, perturbation theory in general relativity is in general quite complicated. However, for perturbations of Kerr, the problem reduces to that of a single complex scalar field $\psi$ (a curvature scalar), which satisfies a *separable* wave equation, $\mathcal O(\psi)=0$. This discovery by Teukolsky is based on hidden symmetries of the Kerr spacetime.
 
 Remarkably, in vacuum, solutions for the metric perturbation can be obtained from solutions for the curvature scalar, using a method involving a Hertz potential. However, in the presence of sources, this method breaks down, and one must treat the metric perturbation directly. Since second-order perturbations are sourced nonlinearly by first order perturbations, the Teukolsky framework cannot be used to simplify second order calculations.
+
+::: {.column-margin}
+![Particle orbiting a Kerr black hole. The corrector tensor $x_{ab}$ is nonzero on the strings emanating from the particle to infinity [@Green:2019nam].](particle.png){.lightbox}
+:::
 
 With S. Hollands and P. Zimmerman, we found a method to obtain the metric perturbation from the curvature scalar *even in the presence of sources* [@Green:2019nam]. It requires the introduction of a corrector tensor $x_{ab}$, which disposes of the problematic source terms and which can be calculated by solving ordinary differential equations. Subsequently, with V. Toomani, P. Zimmerman, and S. Hollands, we developed a complete metric reconstruction scheme for self-force calculations [@Toomani:2021jlo], combining the corrector tensor with CCK reconstruction in radiation gauge.
 
 ### Quasinormal mode orthogonality
 
-Quasinormal modes (QNMs) describe how black holes ring down after being perturbed, but they are not orthogonal with respect to the standard Klein-Gordon inner product --- they grow exponentially toward the horizon and spatial infinity, so the usual inner product is ill-defined. With S. Hollands and P. Zimmerman, we constructed conserved currents (based on the symplectic current) for the Teukolsky equation that yield a well-defined bilinear form, and proved that QNMs of Kerr are orthogonal with respect to it [@Green:2022htq]. This provides the foundation for a perturbation theory of black holes, analogous to how normal mode orthogonality underpins quantum mechanics and other areas of wave physics.
+Quasinormal modes describe how black holes ring down after being perturbed. They are described by complex frequencies $\omega_\mathrm{QNM} = \omega_R + i \omega_I$, with the real part describing oscillations and the imaginary part decay (or growth, in the case of an instability). The decay arises beause the system is dissipative (energy is lost as it passes through the horizon and away to infinity) and therefore the spectral theorem does not apply to give rise to real frequencies or to guarantee an orthonormal set of modes. The radial functions of quasinormal modes also tend to explode at the bifurcation surface and spatial infinity. For these reasons, it is not straightforward to use quasinormal as fundamental objects in perturbation theory (as one might do for normal modes).
 
-### Applications: boson clouds and nonlinear ringdown
+Motivated by these questions, my collaborators and I showed that under an appropriate scalar product, quasinormal modes do in fact become orthogonal. We constructed conserved currents (based on the symplectic current) for the Teukolsky equation that yield a well-defined bilinear form, and proved that QNMs of Kerr are orthogonal with respect to it [@Green:2022htq]. This provides the foundation for a perturbation theory of black holes, analogous to how normal mode orthogonality underpins quantum mechanics and other areas of wave physics.
 
-With E. Cannizzaro, L. Sberna, and S. Hollands, we applied this perturbation theory to compute how a massive scalar boson cloud around a Kerr black hole modifies QNM frequencies --- published in PRL [@Cannizzaro:2023jle]. Follow-up work examined the excitation of scalar QNMs from boson clouds [@Cannizzaro:2025vpb]. Separately, with L. Sberna, P. Bosch, W. East, and L. Lehner, we studied nonlinear effects in the black hole ringdown, showing that absorption of one QNM can excite others [@Sberna:2021eui].
+### Applications: Boson clouds and nonlinear ringdown
+
+* With E. Cannizzaro, L. Sberna, and S. Hollands, we applied this perturbation theory to compute how a massive scalar boson cloud around a Kerr black hole modifies QNM frequencies [@Cannizzaro:2023jle]. Follow-up work examined the excitation of scalar QNMs from boson clouds [@Cannizzaro:2025vpb].
+* We studied nonlinear effects in the black hole ringdown, showing that absorption of one QNM can excite others by shifting the background solution [@Sberna:2021eui].
+* In work led by C. Iuliano and S. Hollands, we showed that for near-extreme Kerr, interactions between long-lived quasinormal modes can exhibit turbulent cascade-like behavior [@Iuliano:2024ogr]. This was one of the main motivating questions that led us to develop the metric reconstruction and mode orthogonality in the first place.
 
 
 ## Dynamics in Anti-de Sitter Spacetime

@@ -10,19 +10,19 @@ As gravitational-wave observatories detect growing numbers of compact binary mer
 
 ### GW parameter estimation
 
-Extracting source properties (masses, spins, sky location, orientation) from a gravitational-wave observation requires Bayesian inference. Given a *likelihood* $p(d|\theta)$ for data $d$ given parameters $\theta$, and a *prior* $p(\theta)$, the *posterior* is
+Extracting source properties (masses, spins, sky location, orientation) from a gravitational-wave observation requires Bayesian inference. Given a likelihood $p(d\mid\theta)$ for data $d$ given parameters $\theta$, and a prior $p(\theta)$, the *posterior* is
 $$
-p(\theta|d) = \frac{p(d|\theta)p(\theta)}{p(d)}.
+p(\theta|d) = \frac{p(d\mid\theta)p(\theta)}{p(d)}.
 $$
 Standard samplers (MCMC, nested sampling) require millions of waveform evaluations per event, each costing milliseconds to seconds depending on the model. This makes traditional methods prohibitively expensive at high event rates.
 
 ### Simulation-based inference
 
-SBI replaces likelihood evaluations with **simulations**. A neural network $q_\phi(\theta | d)$ is trained to approximate the posterior by minimizing
+SBI replaces likelihood evaluations with **simulations**. A neural network $q_\phi(\theta \mid d)$ is trained to approximate the posterior by minimizing
 $$
-L[\phi] = \mathbb{E}_{p(\theta, d)}\left[-\log q_\phi(\theta|d)\right],
+L[\phi] = \mathbb{E}_{p(\theta, d)}\left[-\log q_\phi(\theta\mid d)\right],
 $$
-over simulated data pairs $(\theta, d)$ drawn from the prior and likelihood. Once trained, the network produces posterior samples via fast forward passes, and can be re-used for every new observation --- amortizing the training cost. For a review of GW data analysis, see [@LIGOScientific:2019hgc].
+over simulated data pairs $(\theta, d)$ drawn from the joint distribution. To obtain these pairs, we sample hierarchically: first draw from the prior $\theta \sim p(\theta)$, then simulate data $d\sim p(d\mid\theta)$. Once trained, the network produces posterior samples via fast forward passes, and can be re-used for every new observation--amortizing the training cost.
 
 
 ## Our research
@@ -35,13 +35,15 @@ My group develops SBI methods for gravitational waves, in an interdisciplinary c
 
 **2020** -- Initial 5D **proof-of-principle** for black hole binaries, simulated data [@Green:2020hst] (with C. Simpson and J. Gair). Later expanded to 15D, with excellent agreement with standard samplers on GW150914 [@Green:2020dnx].
 
-**2021** -- Together with PhD student M. Dax at MPI-IS, achieved **full amortization** by conditioning on noise power spectral density $\to q_\phi(\theta | d, S_n)$ [@Dax:2021tsq]. This allows for tuning of the network to the detector at the time of the event. Also introduced group-equivariant NPE to achieve higher performance using symmetries [@Dax:2021myb].
+**2021** -- Together with PhD student Max Dax at MPI-IS, achieved **full amortization** by conditioning on noise power spectral density $\to q_\phi(\theta | d, S_n)$ [@Dax:2021tsq]. This allows for tuning of the network to the detector at the time of the event. Also introduced group-equivariant NPE to achieve higher performance using symmetries [@Dax:2021myb].
 
 **2022** -- Introduced **neural importance sampling** to verify and correct NPE results [@Dax:2022pxd]. This gives also the Bayesian evidence and can be used as a flag for systematics issues (data quality, signal modeling).
 
 **2023** -- Application to hierarchical Bayesian inference for **populations of binaries** [@Leyde:2023iof] (with K. Leyde). This combines results from many observations to infer properties of the population as a whole, including the distribution of masses and the cosmological expansion rate.
 
 **2025** -- Extension to **binary neutron stars**, published in [*Nature*](https://doi.org/10.1038/s41586-025-08593-z) [@Dax:2024mcn]. We coupled classical GW data analysis techniques (heterodyning and multibanding) with prior conditioning to simplify BNS signal morphology for the neural network. This enables complete inference in one second, including **sky localization for multimessenger follow-up** even before the merger takes place. ([Blog post](/blog/nature-publication/))
+
+**2025** -- **DINGO-T1**, a transformer-based model for flexible inference (led by MPI-IS PhD student Annalena Kofler [@Kofler:2025dux]). We partition the frequency-domain data into small sub-domains, and take each of these as a token for a transformer. By randomly dropping tokens during train time, the network learns to interpret incomplete data. Annalena used this to enable inference with variable detector combinations and frequency ranges---all with a single model.
 
 :::
 
@@ -66,6 +68,7 @@ Using standard techniques, analyzing a single event with an eccentric model can 
 
 With the Bayesian evidence from importance sampling, one can compare eccentric versus quasi-circular models. Nihar found consistent evidence for eccentricity, both from individual Bayes factors and from a population-level analysis. For further details see the full paper [@Gupte:2024jfe].
 
-### Next steps
+### Other applications
 
-We are currently working on extending Dingo to precessing and higher-order-mode waveform models, implementing realistic non-Gaussian noise modelling, and preparing for deployment within the LVK low-latency infrastructure for O5 and beyond. See the [publications page](/publications/) for a full list of papers.
+* **Next-generation observatories.** Filippo Santoliquido *et al* have applied DINGO to inference of high-redshift sources for the Einstein Telescope [@Santoliquido:2025lot]. In later work, they used DINGO to to perform injections studies to compare various Einstein Telescope and Cosmic Explorer configurations [@Santoliquido:2025aiq]. They showed that certain combinations (e.g., two misaligned ET detectors) are better at breaking sky-position degeneracies.
+* **Gravitational lensing.** Several works have applied DINGO to look for GW signals distorted by intervening mass distributions [@Chan:2025pdf,@Caldarola:2025oxr,@Chan:2025kyu]. Lensing analyses are generally expensive because of the cost of calculating the frequency modulation due to the lens, making DINGO especially useful. DINGO has also been used to calculate background lensing rates and used to look for lensing in GW231123.

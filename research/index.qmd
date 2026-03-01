@@ -6,7 +6,7 @@ toc: false
 
 My research spans machine learning for gravitational-wave astronomy and foundational problems in classical general relativity.
 
-My group's main focus is developing **simulation-based inference** methods for gravitational-wave data analysis, enabling real-time parameter estimation with neural networks. In **classical gravity**, I have worked on several distinct problems: black hole perturbation theory — where recent results on quasinormal mode orthogonality connect to gravitational-wave modelling — as well as the nonlinear dynamics of anti-de Sitter spacetime and the cosmological backreaction problem.
+My group's main focus is developing **simulation-based inference** methods for gravitational-wave data analysis, enabling fast-and-accurate parameter estimation with neural networks. In **classical gravity**, I have worked on several distinct problems: black hole perturbation theory (where recent results on quasinormal mode orthogonality connect to ringdown modelling) as well as the nonlinear dynamics of anti-de Sitter spacetime and the cosmological backreaction problem.
 
 See also the [research group](/team/) and [publications](/publications/).
 
@@ -17,12 +17,12 @@ See also the [research group](/team/) and [publications](/publications/).
 ::: {.research-area-content}
 
 ::: {.research-area-image}
-![Posterior distributions for the first detected gravitational-wave event GW150914, comparing traditional MCMC sampling (blue) with Dingo neural posterior estimation (orange). Dingo produces equivalent results in seconds rather than days.](sbi/posterior_GW150914_full.jpg)
+![Posterior distribution for the first detected gravitational-wave event GW150914, comparing traditional MCMC sampling (blue) with Dingo neural posterior estimation (orange). Dingo produces accurate results in seconds.](sbi/posterior_GW150914_full.jpg)
 :::
 
-Gravitational-wave detectors are observing an accelerating number of black hole and neutron star mergers, and extracting the physics from each event requires computationally intensive Bayesian inference. We develop **simulation-based inference** methods that train neural networks to directly learn the posterior distribution from simulated data, bypassing the likelihood entirely.
+Gravitational-wave detectors are observing an increasing number of signals from merging black holes and neutron stars, and extracting the physics from each event requires computationally intensive Bayesian sampling techniques. We develop **simulation-based inference** methods that train neural networks to learn the posterior distribution from simulated data, bypassing the likelihood entirely.
 
-Our open-source code [**Dingo**](https://github.com/dingo-gw/dingo) produces full posterior distributions in seconds --- a speedup of $10^4$--$10^5$ over traditional samplers --- and has been applied to all events from the first three LIGO-Virgo observing runs, including [binary neutron star mergers](https://doi.org/10.1038/s41586-025-08593-z) (Nature, 2025).
+Our open-source code [**Dingo**](https://github.com/dingo-gw/dingo) produces full posterior distributions in seconds (compared to hours or days for traditional samplers) and has been applied for accurate inference of many LIGO-Virgo-KAGRA events, including [binary neutron star mergers](https://doi.org/10.1038/s41586-025-08593-z) (Nature, 2025). We have also recently extended to population-level inference.
 
 [Read more &rarr;](sbi/){.read-more}
 
@@ -39,7 +39,9 @@ Our open-source code [**Dingo**](https://github.com/dingo-gw/dingo) produces ful
 ![Gravitational turbulence in anti-de Sitter spacetime. Vorticity snapshots from numerical simulations showing the inverse energy cascade from small to large scales, analogous to two-dimensional fluid turbulence.](gravity/turbulence-small.jpg)
 :::
 
-With S. Hollands and others, we developed new methods for [metric reconstruction in Kerr spacetime](https://arxiv.org/abs/1908.09095) and proved the [orthogonality of quasinormal modes](https://arxiv.org/abs/2210.15935), with applications to [boson clouds](https://doi.org/10.1103/PhysRevLett.132.051401) (PRL) and [nonlinear ringdown](https://arxiv.org/abs/2112.11168). In anti-de Sitter spacetime, we discovered [gravitational turbulence](https://arxiv.org/abs/1309.7940) and identified [islands of stability](https://arxiv.org/abs/1504.04161) amid generic nonlinear instability. With R. Wald, we established a rigorous [backreaction framework](https://arxiv.org/abs/1407.8084) ruling out large-scale effects from cosmological inhomogeneities.
+It's essential to have accurate theoretical predictions for interpreting gravitational wave data, especially as observations become more precise with sensitive detectors. My main focus is on the ringdown problem---the characteristic oscillations following a binary merger.
+
+Recent highlights include uncovering an orthogonality relation between quasinormal modes (putting them on a closer footing to normal modes) and developing metric reconstruction for sourced Teukolsky solutions in Kerr. Applications include to boson clouds, nonlinear ringdown, and gravitational turbulence. In past work, I studied gravitational turbulence in anti-de Sitter spacetime and established a rigorous backreaction framework ruling out large-scale effects from cosmological inhomogeneities.
 
 [Read more &rarr;](gravity/){.read-more}
 
