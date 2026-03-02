@@ -1,6 +1,8 @@
 ---
 title: Research
 description-meta: Research overview covering simulation-based inference for gravitational waves and foundational problems in classical gravity.
+open-graph:
+  description: Research overview covering simulation-based inference for gravitational waves and foundational problems in classical gravity.
 toc: false
 ---
 

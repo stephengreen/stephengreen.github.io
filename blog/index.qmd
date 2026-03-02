@@ -1,6 +1,8 @@
 ---
 title: News
 description-meta: Latest news, publications, and events from Stephen Green's research group.
+open-graph:
+  description: Latest news, publications, and events from Stephen Green's research group.
 listing:
   contents: "*/index.qmd"
   sort: "date desc"

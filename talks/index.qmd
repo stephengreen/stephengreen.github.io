@@ -1,6 +1,8 @@
 ---
 title: Talks
 description-meta: Selected recorded talks and invited presentations on simulation-based inference, gravitational waves, and classical gravity.
+open-graph:
+  description: Selected recorded talks and invited presentations on simulation-based inference, gravitational waves, and classical gravity.
 toc: true
 ---
 

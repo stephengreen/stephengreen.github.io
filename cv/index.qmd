@@ -1,6 +1,8 @@
 ---
 title: Curriculum Vitae
 description-meta: Academic CV of Stephen Green, Principal Research Fellow at the University of Nottingham.
+open-graph:
+  description: Academic CV of Stephen Green, Principal Research Fellow at the University of Nottingham.
 toc: true
 ---
 

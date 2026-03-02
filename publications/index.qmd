@@ -1,6 +1,8 @@
 ---
 title: Publications
 description-meta: Publications by Stephen Green on simulation-based inference, gravitational waves, black hole perturbation theory, and cosmology.
+open-graph:
+  description: Publications by Stephen Green on simulation-based inference, gravitational waves, black hole perturbation theory, and cosmology.
 toc: true
 body-classes: pub-page
 bibliography: ../references/INSPIRE.bib
