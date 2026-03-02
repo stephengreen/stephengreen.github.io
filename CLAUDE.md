@@ -23,7 +23,7 @@ Deployed to GitHub Pages from `/docs` on the `main` branch at [stephenrgreen.com
 - **Font-size scale**: 11 intentional sizes (display 2.2rem → label 0.72rem). Do not introduce new sizes without absorbing into the existing scale.
 - **Breakpoints**: 576px (layout collapse) and 768px (font-size). Do not introduce new breakpoints.
 - **No title-block-banner** anywhere. No Cosmo/Solar themes. Built on Quarto's `default` theme.
-- **Homepage** uses `page-layout: custom` with hero, research previews, featured pub, news, software, and contact section (with Google Maps embed).
+- **Homepage** uses `page-layout: custom` with hero, featured publication + Dingo software, news feed, and contact section.
 - **Footer**: Three balanced columns — institution (left), academic icons (center), copyright + links (right). Contact details live on the homepage, not the footer.
 - Publications page has hand-curated highlights at top (currently 5), then full auto-generated bibliography grouped by year.
 
@@ -39,7 +39,7 @@ research/
   gravity/index.qmd  # Classical gravity
 publications/index.qmd  # Highlights + full bibliography
 talks/index.qmd      # Selected recorded talks
-team/index.qmd       # Research group
+team/index.qmd       # Research group (navbar says "Group")
 blog/                # News posts (navbar says "News")
   index.qmd          # Listing page
   nature-publication/ # Nature 2025 paper
@@ -67,7 +67,7 @@ quarto preview    # Runs on localhost:22222
 quarto render     # Builds to docs/
 ```
 
-## Team (Current)
+## Group (Current)
 
 - Stephen Green (PI)
 - Alexandre Göttel (postdoc)
@@ -80,6 +80,6 @@ quarto render     # Builds to docs/
 
 ## Notes
 
-- Blog directory is `/blog/` but the navbar label is "News".
-- The team page has an Alumni section with Max Dax. MPI-IS collaborators are also mentioned via the intro text linking to MPI-IS/AEI.
+- Blog directory is `/blog/` but the navbar label is "News". Team directory is `/team/` but the navbar label is "Group".
+- The group page has an Alumni section with Max Dax. MPI-IS collaborators are also mentioned via the intro text linking to MPI-IS/AEI.
 - Stephen co-supervises MPI-IS students day-to-day but B. Schölkopf is their official supervisor. Be careful about how this is framed.
