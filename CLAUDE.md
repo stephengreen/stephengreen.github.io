@@ -46,7 +46,7 @@ blog/                # News posts (navbar says "News")
   flf/               # FLF announcement
   gwfreeride/         # Sexten workshop
   max-dax-phd/       # Max Dax PhD defence
-cv/index.qmd         # CV with grid layout
+cv/index.qmd         # CV (streamlined: experience, education, funding, lectures, conferences)
 styles/              # SCSS files
 scripts/             # Lua filter, INSPIRE fetch script
 references/          # .bib and .csl files

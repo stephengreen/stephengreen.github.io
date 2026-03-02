@@ -229,7 +229,29 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 }
 
 .home-band {
-  padding: 2.5rem 0;
+  padding: 2rem 0;
+}
+
+.hero-band + .home-band {
+  padding: 3rem 0;
+}
+
+// News band: gentle top border to separate from featured band
+.home-band + .home-band {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-bs-theme="dark"] .home-band + .home-band {
+  border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+// Contact band (last): subtle warm background to close the page
+.home-band:last-of-type {
+  background: rgba(0, 0, 0, 0.012);
+}
+
+[data-bs-theme="dark"] .home-band:last-of-type {
+  background: rgba(255, 255, 255, 0.012);
 }
 
 .home-band--warm {
@@ -270,6 +292,17 @@ h4 { font-size: 1.05rem; font-weight: 600; }
       border-radius: 3px;
       box-shadow: 0 1px 8px rgba(0,0,0,0.08);
     }
+
+    &.software-logo {
+      text-align: center;
+
+      img {
+        width: 120px;
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+
   }
 
   .featured-pub-body {
@@ -313,10 +346,16 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   color: $muted-dark;
 }
 
+
 @media (max-width: 576px) {
   .featured-pub-block {
     flex-direction: column;
     .featured-pub-image { width: 100%; max-width: 260px; }
+  }
+
+  .software-block {
+    flex-direction: column;
+    .software-logo { width: auto; }
   }
 }
 
@@ -392,14 +431,17 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 // Software block
 .software-block {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
-  padding: 1.25rem 1.5rem;
-  background: rgba(30, 90, 150, 0.04);
-  border-radius: 4px;
-  border-left: 3px solid var(--bs-primary);
+  padding: 0.5rem 0;
 
-  .software-logo img { width: 70px; }
+  .software-logo {
+    flex-shrink: 0;
+    width: 180px;
+    text-align: center;
+
+    img { width: 120px; }
+  }
 
   .software-body {
     flex: 1;
@@ -416,9 +458,6 @@ h4 { font-size: 1.05rem; font-weight: 600; }
   }
 }
 
-[data-bs-theme="dark"] .software-block {
-  background: rgba(107, 163, 214, 0.05);
-}
 
 // Contact section
 .contact-grid {

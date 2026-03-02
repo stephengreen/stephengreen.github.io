@@ -56,10 +56,6 @@ Previously I was at the Max Planck Institute for Gravitational Physics (AEI), th
 ::: {.home-band}
 ::: {.home-content}
 
-::: {.section-label}
-Featured
-:::
-
 ::: {.featured-pub-block}
 
 ::: {.featured-pub-image}
@@ -92,24 +88,25 @@ Led by Max Dax, this work demonstrates that neural posterior estimation can enab
 
 ::: {.featured-pub-block}
 
-::: {.featured-pub-image}
-![](https://img.youtube.com/vi/gl5DchHeQF0/hqdefault.jpg)
+::: {.featured-pub-image .software-logo}
+![](images/dingo_05.png)
 :::
 
 ::: {.featured-pub-body}
 
 ::: {.pub-journal}
-Invited Talk &middot; 2025
+Software
 :::
 
-### AI/ML for Gravitational-Wave Data Analysis
+### Dingo --- Deep Inference for Gravitational-wave Observations
 
 ::: {.pub-summary}
-The Future of Gravitational-Wave Astronomy, ICTS Bangalore
+Open-source simulation-based inference for gravitational waves, developed for use by the LIGO-Virgo-KAGRA collaboration.
 :::
 
 ::: {.pub-links}
-[Watch talk](https://www.youtube.com/watch?v=gl5DchHeQF0){.btn .btn-primary .btn-sm}
+<a href="https://github.com/dingo-gw/dingo" class="btn btn-primary btn-sm me-2"><iconify-icon inline icon="fa6-brands:github"></iconify-icon> GitHub</a>
+<a href="https://zenodo.org/communities/dingo-gw/records" class="btn btn-outline-primary btn-sm"><iconify-icon inline icon="simple-icons:zenodo" style="font-size: 1.3em;"></iconify-icon> Trained Networks</a>
 :::
 
 :::
@@ -119,40 +116,8 @@ The Future of Gravitational-Wave Astronomy, ICTS Bangalore
 :::
 :::
 
-::: {.home-band .home-band--warm}
+::: {.home-band}
 ::: {.home-content}
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-7}
-
-::: {.section-label}
-Research
-:::
-
-::: {.research-preview}
-### [Machine Learning for Gravitational Waves](research/sbi/)
-
-Simulation-based inference for gravitational-wave parameter estimation. Our [Dingo](https://github.com/dingo-gw/dingo) framework produces full posterior distributions in seconds --- a $10^4\times$ speedup --- and has revealed the first evidence for eccentric binary black holes.
-
-[Read more &rarr;](research/sbi/){.read-more}
-:::
-
-::: {.research-preview}
-### [Classical Gravity](research/gravity/)
-
-New methods for black hole perturbation theory, including metric reconstruction and quasinormal mode orthogonality, with applications to LISA sources. Earlier work uncovered gravitational turbulence in anti-de Sitter spacetime and ruled out cosmological backreaction as an alternative to dark energy.
-
-[Read more &rarr;](research/gravity/){.read-more}
-:::
-
-:::
-
-::: {.g-col-12 .g-col-md-5}
-
-::: {.section-label}
-News
-:::
 
 :::{#home-news}
 :::
@@ -160,48 +125,10 @@ News
 [View all &rarr;](/blog/){.view-all}
 
 :::
-
-:::
-
-:::
 :::
 
 ::: {.home-band}
 ::: {.home-content}
-
-::: {.section-label}
-Software
-:::
-
-::: {.software-block}
-
-::: {.software-logo}
-![](images/dingo_05.png)
-:::
-
-::: {.software-body}
-**Dingo** --- Deep Inference for Gravitational-wave Observations. Open-source simulation-based inference for gravitational waves, developed for use by the LIGO-Virgo-KAGRA collaboration.
-
-::: {.software-links}
-[{{< iconify fa6-brands:github >}} GitHub](https://github.com/dingo-gw/dingo){.me-3}
-[Trained Networks](https://zenodo.org/communities/dingo-gw/records)
-:::
-
-:::
-
-:::
-
-:::
-:::
-
-::: {.home-band}
-::: {.home-content}
-
-::: {.section-label}
-Contact
-:::
-
-::: {.contact-grid}
 
 ::: {.contact-text}
 {{< iconify mdi:email size=1.1em >}} [{{< var email >}}](mailto:{{< var email >}})\
@@ -212,12 +139,5 @@ School of Mathematical Sciences\
 University of Nottingham
 :::
 
-::: {.contact-map}
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.5!2d-1.1920771!3d52.9405891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c20ed7e1d009%3A0xb1e4e36bf6f82fd!2sSchool%20of%20Mathematical%20Sciences!5e0!3m2!1sen!2suk!4v1" width="100%" height="200" style="border:0; border-radius: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-:::
-
-:::
-
 :::
 :::
-

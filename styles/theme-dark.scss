@@ -23,3 +23,7 @@ $footer-bg: #0a1018;
 $footer-fg: #7a8ba0;
 
 /*-- scss:rules --*/
+
+.featured-pub-image.software-logo img {
+  filter: invert(1) hue-rotate(180deg);
+}
