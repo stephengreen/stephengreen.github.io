@@ -4,7 +4,7 @@ description-meta: Research group members working on gravitational waves, machine
 toc: true
 ---
 
-Our research group works on gravitational waves, machine learning for science, and theoretical gravity, in close collaboration with computer scientists at the [Max Planck Institute for Intelligent Systems](https://is.mpg.de/) and the [Max Planck Institute for Gravitational Physics (AEI)](https://www.aei.mpg.de/). We are funded by a [UKRI Future Leaders Fellowship](/blog/flf/) and an STFC Consolidated Grant. We are members of the LIGO Collaboration and the LISA Consortium.
+Our research group works on gravitational waves, machine learning for science, and theoretical gravity, in close collaboration with the [Max Planck Institute for Intelligent Systems](https://is.mpg.de/) and the [Max Planck Institute for Gravitational Physics (AEI)](https://www.aei.mpg.de/). We are funded by a [UKRI Future Leaders Fellowship](/blog/flf/) and an STFC Consolidated Grant. We are members of the LIGO Collaboration and the LISA Consortium.
 
 ## Current Group
 
