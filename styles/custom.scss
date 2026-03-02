@@ -725,13 +725,9 @@ h4 { font-size: 1.05rem; font-weight: 600; }
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    color: $muted;
     margin-bottom: 0.15rem;
   }
-
-  .team-role--pi { color: var(--bs-primary); }
-  .team-role--postdoc { color: #2e7d5b; }
-  .team-role--fellow { color: #b8860b; }
-  .team-role--phd { color: #6b5ba8; }
 
   .team-meta {
     font-family: $ui-font;
@@ -767,6 +763,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 .avatar-purple { background: #7b6ba8; }
 
 [data-bs-theme="dark"] .team-card {
+  .team-role { color: $muted-dark; }
   .team-meta { color: $muted-dark; }
   .team-desc { color: $muted-dark; }
 }
