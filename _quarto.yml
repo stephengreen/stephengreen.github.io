@@ -7,7 +7,6 @@ project:
   resources:
     - CNAME
     - .nojekyll
-  # pre-render: python scripts/fetch_inspire.py
 
   preview:
     port: 22222
