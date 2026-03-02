@@ -10,8 +10,6 @@ Accurate theoretical predictions for gravitational waves are essential for extra
 
 In several astrophysically relevant scenarios, one can treat spacetime as a small deviation away from the [Kerr solution](https://en.wikipedia.org/wiki/Kerr_metric) for a stationary rotating black hole. For an extreme mass-ratio inspiral, for instance, where a small body spirals into a massive black hole, one can treat the small body as a perturbation about the massive Kerr black hole. Likewise, following a merger of roughly equal-mass black holes, the final remnant black hole is well-described as a perturbation away from Kerr. Here, the final black hole rings down until it is stationary, and for much of its evolution is described by [quasinormal modes](https://en.wikipedia.org/wiki/Quasinormal_mode)---with characteristic frequencies that depend only on the mass and spin of the object. Much of my work is motivated by trying to extend perturbation theory beyond linear order.
 
-<!-- Extreme mass-ratio inspirals are an exciting source for the future LISA gravitational-wave detector, but making predictions for waveforms is extremely complicated. For accurate parameter estimation, the "self force" must be calculated to second order in the mass ratio. -->
-
 ### Teukolsky formalism for nonlinear perturbations
 
 Because we are dealing with a spin-2 field, perturbation theory in general relativity is in general quite complicated. However, for perturbations of Kerr, the problem reduces to that of a single complex scalar field $\psi$ (a curvature scalar), which satisfies a *separable* wave equation, $\mathcal O(\psi)=0$. This discovery by Teukolsky is based on hidden symmetries of the Kerr spacetime.

@@ -12,7 +12,7 @@ filters:
   - ../scripts/group-refs-by-year.lua
 ---
 
-## Recent Highlights
+## Highlights
 
 :::: {.pub-row}
 ::: {.pub-highlight key="Kofler:2025dux"}
@@ -30,7 +30,7 @@ N. Gupte et al. Amortized SBI analysis of all O1--O3 events reveals evidence for
 :::
 
 ::: {.pub-img}
-![](images/gupte-eccentricity.jpg)
+![](images/eccentricity-r-phi.png)
 :::
 ::::
 
@@ -56,13 +56,29 @@ $$c_{\ell mn} = \frac{\langle\langle {}_s\Upsilon_{\ell mn},\Upsilon_s\rangle\ra
 :::
 ::::
 
-:::: {.pub-row}
+<!-- :::: {.pub-row}
 ::: {.pub-highlight key="Cannizzaro:2023jle"}
 E. Cannizzaro, L. Sberna, S. Green, and S. Hollands. Application of QNM perturbation theory to compute frequency shifts from massive scalar boson clouds.
 :::
 
 ::: {.pub-img}
 ![](images/cannizzaro-boson.jpg)
+:::
+:::: -->
+
+:::: {.pub-row}
+::: {.pub-highlight key="Balasubramanian:2014cja"}
+Discovery of Fermi-Pasta-Ulam recurrence behavior in the nonlinear dynamics of anti-de Sitter spacetime. Led to improved understanding of AdS instability.
+:::
+
+::: {.pub-img}
+![](images/ads-ttf.png)
+:::
+::::
+
+:::: {.pub-row}
+::: {.pub-highlight key="Green:2010qy"}
+S. Green and R. Wald. A rigorous framework for analyzing the effects of small-scale inhomogeneities in cosmology, showing that backreaction cannot mimic dark energy.
 :::
 ::::
 

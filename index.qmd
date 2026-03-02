@@ -98,7 +98,7 @@ Led by Max Dax, this work demonstrates that neural posterior estimation can enab
 Software
 :::
 
-### Dingo --- Deep Inference for Gravitational-wave Observations
+### Dingo -- Deep Inference for Gravitational-Wave Observations
 
 ::: {.pub-summary}
 Open-source simulation-based inference code for gravitational waves, developed for research and use by the LIGO-Virgo-KAGRA collaboration.

@@ -4,6 +4,7 @@ author: "Stephen Green"
 date: "2026-01-30"
 categories: [workshop, news]
 description: "We organized GWFreeride, a workshop on AI for gravitational-wave astronomy, at the Sexten Center for Astrophysics."
+image: sexten-group-photo.jpg
 ---
 
 ![Group photo at GWFreeride](sexten-group-photo.jpg)
