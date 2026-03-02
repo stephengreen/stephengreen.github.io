@@ -1,4 +1,4 @@
-name: Update INSPIRE
+name: Fetch INSPIRE Citations
 
 on:
   schedule:
@@ -26,5 +26,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add references/INSPIRE.bib references/citations.json
-          git diff --staged --quiet || git commit -m "Update INSPIRE publications and citations"
+          git diff --staged --quiet || git commit -m "Fetch latest publications and citations from INSPIRE"
           git push
