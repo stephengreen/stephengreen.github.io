@@ -1,8 +1,8 @@
 ---
 pagetitle: "Stephen Green"
-description-meta: "Stephen Green, Principal Research Fellow at the University of Nottingham. Machine learning for gravitational waves and classical gravity."
+description-meta: "Stephen Green, Principal Research Fellow at the University of Nottingham. AI and deep learning for gravitational waves, and classical gravity."
 open-graph:
-  description: "Stephen Green, Principal Research Fellow at the University of Nottingham. Machine learning for gravitational waves and classical gravity."
+  description: "Stephen Green, Principal Research Fellow at the University of Nottingham. AI and deep learning for gravitational waves, and classical gravity."
 page-layout: custom
 toc: false
 listing:
