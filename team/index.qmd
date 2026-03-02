@@ -51,7 +51,8 @@ Statistical methods for GW populations and compact binary formation.
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.team-card}
-<div class="avatar-placeholder avatar-purple">AG</div>
+<img src="images/alex-goettel.jpeg" alt="Alexandre Göttel">
+<!-- <div class="avatar-placeholder avatar-purple">AG</div> -->
 
 ::: {.team-name}
 Dr Alexandre Göttel
