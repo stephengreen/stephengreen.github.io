@@ -137,10 +137,7 @@ Astrophysics of binaries using machine learning and population analysis.
 [Annalena Kofler](https://www.annalenakofler.com)
 :::
 ::: {.team-role .team-role--phd}
-Affiliated PhD Student
-:::
-::: {.team-meta}
-MPI for Intelligent Systems and AEI
+PhD Student (MPI-IS / AEI)
 :::
 ::: {.team-desc}
 Transformers for flexible GW simulation-based inference.
