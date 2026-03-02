@@ -34,7 +34,7 @@ website:
         href: publications/index.qmd
       - text: "Talks"
         href: talks/index.qmd
-      - text: "Team"
+      - text: "Group"
         href: team/index.qmd
       - text: "News"
         href: blog/index.qmd

@@ -1,10 +1,10 @@
 ---
-title: Team
+title: Group
 description-meta: Research group members working on gravitational waves, machine learning, and theoretical gravity at the University of Nottingham.
 toc: true
 ---
 
-Our research group works on gravitational waves, machine learning for science, and theoretical gravity, in close collaboration with computer scientists at the [Max Planck Institute for Intelligent Systems](https://is.mpg.de/) and the [Max Planck Institute for Gravitational Physics (AEI)](https://www.aei.mpg.de/).
+Our research group works on gravitational waves, machine learning for science, and theoretical gravity, in close collaboration with computer scientists at the [Max Planck Institute for Intelligent Systems](https://is.mpg.de/) and the [Max Planck Institute for Gravitational Physics (AEI)](https://www.aei.mpg.de/). We are funded by a [UKRI Future Leaders Fellowship](/blog/flf/) and an STFC Consolidated Grant. We are members of the LIGO Collaboration and the LISA Consortium.
 
 ## Current Group
 
@@ -21,7 +21,7 @@ Dr Stephen Green
 Principal Investigator
 :::
 ::: {.team-meta}
-UKRI Future Leaders Fellow
+UKRI Future Leaders Fellowship
 :::
 ::: {.team-desc}
 SBI for gravitational waves,\
@@ -38,10 +38,13 @@ black hole perturbation theory.
 [Dr Matthew Mould](https://www.mattmould.com/)
 :::
 ::: {.team-role .team-role--fellow}
-1851 Research Fellow
+Postdoctoral Fellow
+:::
+::: {.team-meta}
+1851 Research Fellowship
 :::
 ::: {.team-desc}
-Statistical methods for gravitational-wave populations and compact binary formation.
+Statistical methods for GW populations and compact binary formation.
 :::
 :::
 :::
@@ -152,7 +155,5 @@ Transformers for flexible GW simulation-based inference.
 * **[Dr Maximilian Dax](https://max-dax.github.io)** (PhD, MPI-IS, co-supervised; now PI at Ellis Institute Tübingen)
 
 ## Join Us
-
-Our group sits at the intersection of machine learning and gravitational-wave physics, with strong ties to the LVK collaboration, the LISA Consortium, and the ML groups at MPI-IS Tübingen. We are funded by a [UKRI Future Leaders Fellowship](/blog/flf/) (2024--2028) and an STFC Consolidated Grant.
 
 We welcome enquiries from prospective PhD students, postdocs, fellowship applicants, and visiting researchers. Please [get in touch](mailto:{{< var email >}}).
