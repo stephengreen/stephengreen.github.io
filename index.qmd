@@ -71,7 +71,7 @@ Nature &middot; 2025
 ### Real-time inference for binary neutron star mergers using machine learning
 
 ::: {.pub-summary}
-Led by Max Dax, this work demonstrates that neural posterior estimation can enable one-second inference for binary neutron star mergers --- complete parameter estimation including sky localization, crucial for multimessenger astronomy.
+Led by Max Dax, this work demonstrates that neural posterior estimation can enable one-second inference for binary neutron star mergers---even before the merger occurs. Fast sky localization is crucial for searching for multimessenger counterparts.
 :::
 
 ::: {.pub-links}
@@ -101,12 +101,12 @@ Software
 ### Dingo --- Deep Inference for Gravitational-wave Observations
 
 ::: {.pub-summary}
-Open-source simulation-based inference for gravitational waves, developed for use by the LIGO-Virgo-KAGRA collaboration.
+Open-source simulation-based inference code for gravitational waves, developed for research and use by the LIGO-Virgo-KAGRA collaboration.
 :::
 
 ::: {.pub-links}
-<a href="https://github.com/dingo-gw/dingo" class="btn btn-primary btn-sm me-2"><iconify-icon inline icon="fa6-brands:github"></iconify-icon> GitHub</a>
-<a href="https://zenodo.org/communities/dingo-gw/records" class="btn btn-outline-primary btn-sm"><iconify-icon inline icon="simple-icons:zenodo" style="font-size: 1.3em;"></iconify-icon> Trained Networks</a>
+<a href="https://github.com/dingo-gw/dingo" class="btn btn-primary btn-sm me-2"><iconify-icon inline icon="fa6-brands:github"></iconify-icon> Code</a>
+<a href="https://zenodo.org/communities/dingo-gw/records" class="btn btn-outline-primary btn-sm"><iconify-icon inline icon="academicons:zenodo"></iconify-icon> Trained Networks</a>
 :::
 
 :::
