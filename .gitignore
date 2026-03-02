@@ -1,6 +1,7 @@
 /.quarto/
 /.claude/
 /docs/
+CLAUDE.md
 __pycache__/
 *.pyc
 .DS_Store
