@@ -9,6 +9,12 @@
 -- Citation counts (loaded in Pandoc function)
 local citation_counts = {}
 
+-- Bib file order: cite key -> index (1 = first entry in INSPIRE.bib).
+-- fetch_inspire.py writes entries in INSPIRE's "mostrecent" order, so a
+-- smaller index means a more recent paper. Used as a secondary sort key
+-- to break ties within a year.
+local bib_order = {}
+
 -- Journal abbreviation to full name mapping
 local journal_names = {
   ["Phys. Rev. Lett."] = "Physical Review Letters",
@@ -79,11 +85,18 @@ local function get_entry_year(item, ref_lookup)
   return text:match("%((%d%d%d%d)%)") or text:match("(%d%d%d%d)") or "0000"
 end
 
+local function get_entry_order(item)
+  local id = (item.identifier or ""):gsub("^ref%-", "")
+  -- Entries not found in the bib file (e.g. from a secondary bib) sort last
+  return bib_order[id] or math.huge
+end
+
 function Pandoc(doc)
-  -- Load citation counts from JSON (graceful fallback)
-  -- Resolve path relative to the script's directory (scripts/ -> references/)
+  -- Load citation counts and bib file order (graceful fallback).
+  -- Resolve paths relative to the script's directory (scripts/ -> references/)
+  local script_dir = pandoc.path.directory(PANDOC_SCRIPT_FILE)
+
   do
-    local script_dir = pandoc.path.directory(PANDOC_SCRIPT_FILE)
     local citations_path = pandoc.path.join({script_dir, "..", "references", "citations.json"})
     local f = io.open(citations_path, "r")
     if f then
@@ -93,6 +106,25 @@ function Pandoc(doc)
       if ok and type(decoded) == "table" then
         citation_counts = decoded
       end
+    end
+  end
+
+  -- Record the order in which cite keys appear in INSPIRE.bib.
+  -- fetch_inspire.py writes entries in INSPIRE's "mostrecent" order, so
+  -- earlier = newer. Used below as the secondary sort key within a year.
+  do
+    local bib_path = pandoc.path.join({script_dir, "..", "references", "INSPIRE.bib"})
+    local f = io.open(bib_path, "r")
+    if f then
+      local i = 0
+      for line in f:lines() do
+        local key = line:match("^@%w+%s*{%s*([^,]+)%s*,")
+        if key then
+          i = i + 1
+          bib_order[key] = i
+        end
+      end
+      f:close()
     end
   end
 
@@ -209,15 +241,20 @@ function Pandoc(doc)
             end
           end
           local year = get_entry_year(item, ref_lookup)
-          table.insert(entries, { year = year, item = item })
+          local order = get_entry_order(item)
+          table.insert(entries, { year = year, order = order, item = item })
         else
           other_items:insert(item)
         end
       end
 
-      -- Sort entries by year descending
+      -- Sort by year (descending), breaking ties by bib file order
+      -- (ascending = most recent first, since INSPIRE.bib is mostrecent-sorted)
       table.sort(entries, function(a, b)
-        return a.year > b.year
+        if a.year ~= b.year then
+          return a.year > b.year
+        end
+        return a.order < b.order
       end)
 
       -- Build result with year headings
