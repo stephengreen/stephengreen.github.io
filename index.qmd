@@ -41,10 +41,10 @@ listing:
 # Stephen Green
 
 ::: {.hero-subtitle}
-Principal Research Fellow &middot; University of Nottingham
+UKRI Future Leaders Fellow &middot; University of Nottingham
 :::
 
-I develop machine learning methods for gravitational-wave astronomy, supported by a [UKRI Future Leaders Fellowship](https://www.ukri.org/news/68-new-future-leaders-fellows-awarded-104-million-in-the-eighth-round/). Based at the [Nottingham Centre of Gravity](https://www.nottingham.ac.uk/gravity/), my group develops simulation-based inference methods for gravitational-wave data analysis, from parameter estimation to population studies. I also work on black hole perturbation theory, motivated by waveform modelling and foundational questions in general relativity.
+I co-lead the development of the Dingo machine learning framework for gravitational-wave inference, supported by a £1.5M [UKRI Future Leaders Fellowship](https://www.ukri.org/news/68-new-future-leaders-fellows-awarded-104-million-in-the-eighth-round/) (2024--2028). We develop simulation-based inference methods for gravitational-wave data analysis, from parameter estimation to population studies. I also work on black hole perturbation theory, motivated by waveform modelling and foundational questions in general relativity. My group at Nottingham includes three postdocs and three PhD students, and is part of the  [Nottingham Centre of Gravity](https://www.nottingham.ac.uk/gravity/).
 
 Previously I was at the Max Planck Institute for Gravitational Physics (AEI), the Perimeter Institute, and a CITA National Fellow at Guelph. I did my PhD at the University of Chicago with [Robert Wald](https://en.wikipedia.org/wiki/Robert_Wald).
 
@@ -61,6 +61,36 @@ Previously I was at the Max Planck Institute for Gravitational Physics (AEI), th
 ::: {.featured-pub-block}
 
 ::: {.featured-pub-image}
+![](blog/2026-05-dingo-pop/pipeline.svg)
+:::
+
+::: {.featured-pub-body}
+
+::: {.pub-journal}
+2026
+:::
+
+### End-to-end population inference from gravitational-wave strain using transformers
+
+::: {.pub-summary}
+We extend DINGO from single events to population analysis: a transformer combines event-level embeddings into a single summary, and a normalizing flow decodes the population hyperparameters---about one second per catalog, no per-event PE step. Work led by Konstantin Leyde (Flatiron CCA).
+:::
+
+::: {.pub-links}
+[arXiv](https://arxiv.org/abs/2605.11274){.btn .btn-primary .btn-sm .me-2}
+[Blog post](/blog/2026-05-dingo-pop/){.btn .btn-outline-primary .btn-sm}
+:::
+
+:::
+
+:::
+
+::: {.section-rule}
+:::
+
+::: {.featured-pub-block}
+
+::: {.featured-pub-image}
 ![](blog/nature-publication/bns.jpg)
 :::
 
@@ -73,12 +103,13 @@ Nature &middot; 2025
 ### Real-time inference for binary neutron star mergers using machine learning
 
 ::: {.pub-summary}
-Led by Max Dax, this work demonstrates that neural posterior estimation can enable one-second inference for binary neutron star mergers---even before the merger occurs. Fast sky localization is crucial for searching for multimessenger counterparts.
+In work led by Max Dax (now PI at Ellis Tübingen), we demonstrate that neural posterior estimation can enable one-second inference for binary neutron star mergers---even before the merger occurs. Fast sky localization is crucial for searching for multimessenger counterparts.
 :::
 
 ::: {.pub-links}
 [Read article](https://doi.org/10.1038/s41586-025-08593-z){.btn .btn-primary .btn-sm .me-2}
-[arXiv](https://arxiv.org/abs/2407.09602){.btn .btn-outline-primary .btn-sm}
+[arXiv](https://arxiv.org/abs/2407.09602){.btn .btn-outline-primary .btn-sm .me-2}
+[Nature News & Views](https://www.nature.com/articles/d41586-025-00543-z){.btn .btn-outline-primary .btn-sm}
 :::
 
 :::

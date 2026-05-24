@@ -17,13 +17,14 @@ toc: true
 2025 -- present
 :::
 ::: {.cv-role}
-Principal Research Fellow
+Principal Research Fellow (permanent, Associate Professor-level)
 :::
 ::: {.cv-institution}
 University of Nottingham, School of Mathematical Sciences
 :::
 ::: {.cv-details}
-Permanent, research-only (equivalent to Associate Professor). Member of LIGO Scientific Collaboration since 2018. Member of LISA Consortium since 2021.
+Member of LIGO Scientific Collaboration since 2018.\
+Member of LISA Consortium since 2021.
 :::
 :::
 

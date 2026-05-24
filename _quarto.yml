@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  pre-render: scripts/merge_bibs.sh
   render:
     - "**/*.qmd"
     - "!CLAUDE.md"

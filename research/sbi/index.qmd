@@ -47,6 +47,8 @@ My group develops SBI methods for gravitational waves, in an interdisciplinary c
 
 **2025** -- **DINGO-T1**, a transformer-based model for flexible inference (led by MPI-IS PhD student Annalena Kofler [@Kofler:2025dux]). We partition the frequency-domain data into small sub-domains, and take each of these as a token for a transformer. By randomly dropping tokens during train time, the network learns to interpret incomplete data. Annalena used this to enable inference with variable detector combinations and frequency ranges---all with a single model.
 
+**2026** -- End-to-end population inference with **DINGO-Pop** [@Leyde:2026hvm]. Treating individual events as tokens, we use transformers to combine information from an entire catalog for population inference. This avoids the intermediate step of individual-event parameter estimation, reduces Monte Carlo uncertainty, and gives complete inference in about 1 second. ([Blog post](/blog/2026-05-dingo-pop/))
+
 :::
 
 We also develop and maintain the [Dingo code {{< iconify fa6-brands:github >}}](https://github.com/dingo-gw/dingo), which implements these methods. Dingo has already been used to drive GW science forward, including finding evidence for eccentric models and making forecasts for next-generation observatories.

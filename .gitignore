@@ -1,5 +1,6 @@
 /.quarto/
 /.claude/
+/.obsidian/
 /docs/
 CLAUDE.md
 __pycache__/
@@ -7,5 +8,6 @@ __pycache__/
 .DS_Store
 .env
 _freeze/
+references/_all.bib
 
 **/*.quarto_ipynb

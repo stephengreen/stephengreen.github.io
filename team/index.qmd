@@ -43,7 +43,8 @@ black hole perturbation theory.
 Postdoctoral Fellow
 :::
 ::: {.team-meta}
-1851 Research Fellowship
+1851 Research Fellowship\
+(hosted by SG)
 :::
 ::: {.team-desc}
 Statistical methods for GW populations and compact binary formation.
@@ -140,7 +141,8 @@ Astrophysics of binaries using machine learning and population analysis.
 [Annalena Kofler](https://www.annalenakofler.com)
 :::
 ::: {.team-role .team-role--phd}
-PhD Student (MPI-IS / AEI)
+PhD Student\
+(MPI-IS / AEI, co-supervised)
 :::
 ::: {.team-desc}
 Transformers for flexible GW simulation-based inference.
