@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 # Concatenates the project's .bib files into references/_all.bib so that
 # Obsidian's Citations plugin (which only accepts a single path) sees both
 # the INSPIRE-fetched and the manually-curated entries.
