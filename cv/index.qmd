@@ -24,7 +24,7 @@ University of Nottingham, School of Mathematical Sciences
 :::
 ::: {.cv-details}
 Member of LIGO Scientific Collaboration since 2018.\
-Member of LISA Consortium since 2021.
+Member of LISA Consortium since 2021 (Council member since 2025).
 :::
 :::
 
@@ -162,13 +162,15 @@ University of Toronto (Trinity College)
 
 ## Lecture Series & Schools
 
-- **Kavli-Villum Summer School on Gravitational Waves**, Corfu, Greece (2023)
+- **IMPRS for Gravity at the Extreme Joint Lecture Week**, AEI (2026)\
+  Lecturer, "Machine Learning for Gravitational-Wave Astronomy"
+- **Kavli-Villum Summer School on Gravitational Waves**, Corfu, Greece (2023)\
   Lecturer, "Machine Learning for Gravitational Waves"
-- **LISA Data Analysis: From Classical Methods to Machine Learning**, Toulouse, France (2022)
+- **LISA Data Analysis: From Classical Methods to Machine Learning**, Toulouse, France (2022)\
   Lecturer, "GW Parameter Estimation with Bayesian Machine Learning"
-- **IMPRS Course on Statistics for GW Astronomy**, AEI (2021)
+- **IMPRS Course on Statistics for GW Astronomy**, AEI (2021)\
   Lecturer, machine learning component
-- **Numerical Methods in Gravity and Holography**, Universidad de Concepción, Chile (2017)
+- **Numerical Methods in Gravity and Holography**, Universidad de Concepción, Chile (2017)\
   Lecturer, "Stability of Gravitational Systems on Bounded Domains"
 
 
@@ -188,4 +190,4 @@ See the [Publications page](/publications/) for a full list and highlighted pape
 
 ## Presentations
 
-Over 80 research talks, including more than 50 invited presentations. See the [Talks page](/talks/) for selected recordings, or the CV PDF for the full list.
+Over 100 research talks, including more than 50 invited presentations. See the [Talks page](/talks/) for selected recordings, or the CV PDF for the full list.

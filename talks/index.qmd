@@ -6,12 +6,25 @@ open-graph:
 toc: true
 ---
 
-Over 80 presentations at venues including ICTS Bangalore, IPAM UCLA, the Lorentz Center, and the Niels Bohr Institute. Below is a selection of recorded talks; see my [CV](/cv/) for the full list.
+Over 100 presentations at conferences, workshops, and seminars worldwide. Below is a selection of recorded talks; see my [CV](/cv/) for the full list.
 
 
 ## Selected Recorded Talks
 
 ::: {.talk-grid}
+
+::: {.talk-card}
+[![](https://img.youtube.com/vi/mddah0yCSK8/hqdefault.jpg){.talk-thumb}](https://www.fieldsinstitute.ca/talks/Quasinormal-mode-orthogonality-and-applications)
+
+::: {.talk-card-body}
+::: {.talk-meta}
+Invited Talk &middot; 2026
+:::
+**[Quasinormal Mode Orthogonality and Applications](https://www.fieldsinstitute.ca/talks/Quasinormal-mode-orthogonality-and-applications)**
+
+Black Holes in General Relativity, Fields Institute
+:::
+:::
 
 ::: {.talk-card}
 [![](https://img.youtube.com/vi/gl5DchHeQF0/hqdefault.jpg){.talk-thumb}](https://youtu.be/gl5DchHeQF0)
@@ -56,6 +69,7 @@ Bayesian Deep Learning for Cosmology, APC Paris
 :::
 :::
 
+<!-- Commented out to keep the grid even (6 cards). Swap with the 2020 Capra card below if preferred.
 ::: {.talk-card}
 [![](https://img.youtube.com/vi/SzWH2Xd2jEA/hqdefault.jpg){.talk-thumb}](https://www.youtube.com/watch?v=SzWH2Xd2jEA)
 
@@ -70,6 +84,8 @@ Source Inference and PE in GW Astronomy, IPAM UCLA
 [Slides (PDF)](http://helper.ipam.ucla.edu/publications/gwaws3/gwaws3_17049.pdf){.talk-slides-link}
 :::
 :::
+-->
+
 
 ::: {.talk-card}
 [![](capra-2021-thumb.jpg){.talk-thumb}](https://pirsa.org/21060044)
@@ -101,6 +117,16 @@ Conference Talk &middot; 2020
 
 
 ## Lecture Series & Schools
+
+::: {.talk-entry}
+::: {.talk-meta}
+Lecturer &middot; 2026
+:::
+
+### Machine Learning for Gravitational-Wave Astronomy
+
+IMPRS for Gravity at the Extreme Joint Lecture Week, AEI
+:::
 
 ::: {.talk-entry}
 ::: {.talk-meta}
