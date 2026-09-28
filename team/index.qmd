@@ -87,6 +87,22 @@ Waveform modelling, tests of general relativity, simulation-based inference.
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.team-card}
+<div class="avatar-placeholder avatar-purple">SB</div>
+
+::: {.team-name}
+Dr Swetha Bhagwat
+:::
+::: {.team-role .team-role--postdoc}
+Postdoctoral Researcher
+:::
+::: {.team-desc}
+Ringdown analysis and simulation-based inference.
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.team-card}
 <img src="images/jacopo.jpeg" alt="Jacopo Lestingi">
 
 ::: {.team-name}
@@ -129,6 +145,22 @@ PhD Student
 :::
 ::: {.team-desc}
 Astrophysics of binaries using machine learning and population analysis.
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.team-card}
+<div class="avatar-placeholder avatar-purple">BS</div>
+
+::: {.team-name}
+Brian Sheridan
+:::
+::: {.team-role .team-role--phd}
+PhD Student
+:::
+::: {.team-desc}
+Simulation-based inference for LISA, extreme mass-ratio inspirals.
 :::
 :::
 :::

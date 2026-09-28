@@ -44,7 +44,7 @@ listing:
 UKRI Future Leaders Fellow &middot; University of Nottingham
 :::
 
-I co-lead the development of the Dingo machine learning framework for gravitational-wave inference, supported by a £1.5M [UKRI Future Leaders Fellowship](https://www.ukri.org/news/68-new-future-leaders-fellows-awarded-104-million-in-the-eighth-round/) (2024--2028). We develop simulation-based inference methods for gravitational-wave data analysis, from parameter estimation to population studies. I also work on black hole perturbation theory, motivated by waveform modelling and foundational questions in general relativity. My group at Nottingham includes three postdocs and three PhD students, and is part of the  [Nottingham Centre of Gravity](https://www.nottingham.ac.uk/gravity/).
+I co-lead the development of the Dingo machine learning framework for gravitational-wave inference, supported by a £1.5M [UKRI Future Leaders Fellowship](https://www.ukri.org/news/68-new-future-leaders-fellows-awarded-104-million-in-the-eighth-round/) (2024--2028). We develop simulation-based inference methods for gravitational-wave data analysis, from parameter estimation to population studies. I also work on black hole perturbation theory, motivated by waveform modelling and foundational questions in general relativity. My group at Nottingham includes four postdocs and four PhD students, and is part of the [Nottingham Centre of Gravity](https://www.nottingham.ac.uk/gravity/).
 
 Previously I was at the Max Planck Institute for Gravitational Physics (AEI), the Perimeter Institute, and a CITA National Fellow at Guelph. I did my PhD at the University of Chicago with [Robert Wald](https://en.wikipedia.org/wiki/Robert_Wald).
 
