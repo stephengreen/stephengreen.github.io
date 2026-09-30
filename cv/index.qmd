@@ -23,6 +23,7 @@ Principal Research Fellow (permanent, Associate Professor-level)
 University of Nottingham, School of Mathematical Sciences
 :::
 ::: {.cv-details}
+Lead an 8-person group: three postdocs, an 1851 Fellow, four PhD students.\
 Member of LIGO Scientific Collaboration since 2018.\
 Member of LISA Consortium since 2021 (Council member since 2025).
 :::
@@ -142,6 +143,10 @@ University of Toronto (Trinity College)
 
 ### Grants and Fellowships
 
+- **MSCA Staff Exchange** (2026--2030)
+  *Strong Gravity Crossroads: fundamental fields in the High-Energy Universe.*
+  Amount: £72,260. Role: Co-I.
+
 - **UKRI Future Leaders Fellowship** (2024--2028)
   *AI-Driven Inference for Gravitational Waves: Accelerating Discoveries in Fundamental Physics.*
   Amount: £1,522,003. Role: Fellow.
@@ -190,4 +195,4 @@ See the [Publications page](/publications/) for a full list and highlighted pape
 
 ## Presentations
 
-Over 100 research talks, including more than 50 invited presentations. See the [Talks page](/talks/) for selected recordings, or the CV PDF for the full list.
+Over 100 research talks, including more than 60 invited presentations. See the [Talks page](/talks/) for selected recordings, or the CV PDF for the full list.
